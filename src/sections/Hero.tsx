@@ -36,9 +36,18 @@ export default function Hero() {
 				))}
 			</div>
 
+			{/* 3D Scene Background (visible on small screens) */}
+			<div className="absolute inset-0 sm:block lg:hidden">
+				<Canvas camera={{ position: [0, 0, 12], fov: 60 }} className="bg-transparent opacity-30">
+					<Suspense fallback={null}>
+						<HeroScene isBackground={true} />
+					</Suspense>
+				</Canvas>
+			</div>
+
 			<div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
 				{/* Left Content */}
-				<div className="space-y-8">
+				<div className="space-y-8 relative z-20">
 					<div className="space-y-6">
 						<h1 className="text-5xl md:text-7xl font-bold leading-tight">
 							<span className="text-white">Joachim</span>
@@ -74,11 +83,11 @@ export default function Hero() {
 					</div>
 				</div>
 
-				{/* Right 3D Scene */}
-				<div className="h-[600px] relative hidden sm:block">
+				{/* Right 3D Scene (visible on large screens) */}
+				<div className="h-[600px] relative hidden lg:block">
 					<Canvas camera={{ position: [0, 0, 8], fov: 45 }} className="bg-transparent">
 						<Suspense fallback={null}>
-							<HeroScene />
+							<HeroScene isBackground={false} />
 						</Suspense>
 					</Canvas>
 
