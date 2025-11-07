@@ -14,7 +14,7 @@ export default function Hero() {
 	};
 
 	return (
-		<section id="hero" className="min-h-screen flex items-center relative overflow-hidden bg-gradient-cyber">
+		<section id="hero" className="min-h-screen flex items-center relative overflow-hidden bg-gradient-cyber pt-32">
 			{/* Background effect */}
 			<div className="absolute inset-0 bg-gradient-to-br from-cyber-dark via-slate-900 to-cyber-dark opacity-90"></div>
 
@@ -75,7 +75,7 @@ export default function Hero() {
 				</div>
 
 				{/* Right 3D Scene */}
-				<div className="h-[600px] relative">
+				<div className="h-[600px] relative hidden sm:block">
 					<Canvas camera={{ position: [0, 0, 8], fov: 45 }} className="bg-transparent">
 						<Suspense fallback={null}>
 							<HeroScene />
