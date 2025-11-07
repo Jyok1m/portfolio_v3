@@ -11,44 +11,54 @@ export default function Education() {
 
 	const education = [
 		{
-			type: "degree",
-			title: "MSc Corporate Financial Management",
-			institution: "SKEMA Business School",
-			year: "2023",
-			icon: ["fas", "university"] as IconProp,
-			color: "cyber-cyan",
-			description: "Management financier d'entreprise et stratégie",
-			pdfPath: "/documents/degrees/msc-skema.pdf",
-		},
-		{
-			type: "degree",
-			title: "BBA Management Hôtelier",
-			institution: "Glion Institute of Higher Education",
-			year: "2021",
-			icon: ["fas", "university"] as IconProp,
+			type: "certification",
+			title: t.education.items.aiEngineer.title,
+			institution: t.education.items.aiEngineer.institution,
+			year: "2025",
+			icon: ["fas", "award"] as IconProp,
 			color: "cyber-purple",
-			description: "Bachelor en management hôtelier international",
-			pdfPath: "/documents/degrees/bba-glion.pdf",
+			description: t.education.items.aiEngineer.description,
+			pdfPath: "/documents/certificates/AI_Engineer_Certificate-Joachim_Jasmin.pdf",
 		},
 		{
 			type: "certification",
-			title: "RNCP 6 Concepteur Développeur",
-			institution: "Applications Web & Mobiles",
+			title: t.education.items.rncp.title,
+			institution: t.education.items.rncp.institution,
 			year: "2024",
 			icon: ["fas", "certificate"] as IconProp,
 			color: "cyber-cyan",
-			description: "Certification professionnelle niveau Bac+3/4",
-			pdfPath: "/documents/certificates/rncp6-concepteur-dev.pdf",
+			description: t.education.items.rncp.description,
+			pdfPath: "/documents/certificates/AI_Engineer_Certificate-Joachim_Jasmin.pdf",
 		},
 		{
-			type: "certification",
-			title: "Certification Ingénieur IA",
-			institution: "Ironhack",
-			year: "2024",
-			icon: ["fas", "award"] as IconProp,
+			type: "degree",
+			title: t.education.items.mscSkema.title,
+			institution: t.education.items.mscSkema.institution,
+			year: "2022",
+			icon: ["fas", "university"] as IconProp,
+			color: "cyber-cyan",
+			description: t.education.items.mscSkema.description,
+			pdfPath: "/documents/degrees/Diplôme MSc - SKEMA Business School - Joachim Jasmin.pdf",
+		},
+		{
+			type: "degree",
+			title: t.education.items.desmiSkema.title,
+			institution: t.education.items.desmiSkema.institution,
+			year: "2022",
+			icon: ["fas", "university"] as IconProp,
+			color: "cyber-cyan",
+			description: t.education.items.desmiSkema.description,
+			pdfPath: "/documents/degrees/Diplôme DESMI - SKEMA Business School - Joachim Jasmin.pdf",
+		},
+		{
+			type: "degree",
+			title: t.education.items.bbaGlion.title,
+			institution: t.education.items.bbaGlion.institution,
+			year: "2019",
+			icon: ["fas", "university"] as IconProp,
 			color: "cyber-purple",
-			description: "Intelligence artificielle et machine learning",
-			pdfPath: "/documents/certificates/certification-ia-ironhack.pdf",
+			description: t.education.items.bbaGlion.description,
+			pdfPath: "/documents/degrees/Diploma BBA - Joachim Jasmin.pdf",
 		},
 	];
 
@@ -63,10 +73,7 @@ export default function Education() {
 	return (
 		<section id="education" className="py-20">
 			<div className="container mx-auto px-6">
-				<SectionTitle
-					title="Diplômes & Certificats"
-					subtitle="Mon parcours académique et professionnel en management, technologie et intelligence artificielle"
-				/>
+				<SectionTitle title={t.education.title} subtitle={t.education.subtitle} />
 
 				<div className="max-w-4xl mx-auto">
 					{/* Timeline container */}
@@ -130,7 +137,7 @@ export default function Education() {
 											}`}
 										>
 											<FontAwesomeIcon icon={item.type === "degree" ? ["fas", "medal"] : ["fas", "certificate"]} className="w-3 h-3 mr-1" />
-											{item.type === "degree" ? "Diplôme" : "Certification"}
+											{item.type === "degree" ? t.education.badges.degree : t.education.badges.certification}
 										</span>
 
 										{/* PDF buttons */}
@@ -142,7 +149,7 @@ export default function Education() {
 														? "bg-cyber-cyan/20 text-cyber-cyan hover:bg-cyber-cyan hover:text-white"
 														: "bg-cyber-purple/20 text-cyber-purple hover:bg-cyber-purple hover:text-white"
 												}`}
-												title="Voir le document"
+												title={t.education.actions.view}
 											>
 												<FontAwesomeIcon icon={["fas", "eye"]} className="w-3 h-3" />
 											</button>
@@ -155,7 +162,7 @@ export default function Education() {
 														? "bg-cyber-cyan/10 text-cyber-cyan hover:bg-cyber-cyan hover:text-white"
 														: "bg-cyber-purple/10 text-cyber-purple hover:bg-cyber-purple hover:text-white"
 												}`}
-												title="Télécharger le PDF"
+												title={t.education.actions.download}
 											>
 												<FontAwesomeIcon icon={["fas", "download"]} className="w-3 h-3" />
 											</a>
@@ -178,23 +185,23 @@ export default function Education() {
 					{/* Summary stats */}
 					<div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
 						<div className="cyber-card text-center">
-							<div className="text-2xl font-bold text-cyber-cyan mb-2">2</div>
-							<div className="text-slate-400 text-sm">Diplômes</div>
+							<div className="text-2xl font-bold text-cyber-cyan mb-2">3</div>
+							<div className="text-slate-400 text-sm">{t.education.stats.degrees}</div>
 						</div>
 
 						<div className="cyber-card text-center">
 							<div className="text-2xl font-bold text-cyber-purple mb-2">2</div>
-							<div className="text-slate-400 text-sm">Certifications</div>
+							<div className="text-slate-400 text-sm">{t.education.stats.certifications}</div>
 						</div>
 
 						<div className="cyber-card text-center">
-							<div className="text-2xl font-bold text-cyber-cyan mb-2">4</div>
-							<div className="text-slate-400 text-sm">Années d'études</div>
+							<div className="text-2xl font-bold text-cyber-cyan mb-2">6</div>
+							<div className="text-slate-400 text-sm">{t.education.stats.years}</div>
 						</div>
 
 						<div className="cyber-card text-center">
 							<div className="text-2xl font-bold text-cyber-purple mb-2">3</div>
-							<div className="text-slate-400 text-sm">Domaines</div>
+							<div className="text-slate-400 text-sm">{t.education.stats.domains}</div>
 						</div>
 					</div>
 				</div>

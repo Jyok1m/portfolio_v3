@@ -44,6 +44,51 @@ export const locales = {
 				},
 			},
 		},
+		education: {
+			title: "Diplômes & Certificats",
+			subtitle: "Mon parcours académique et professionnel en management, technologie et intelligence artificielle",
+			badges: {
+				degree: "Diplôme",
+				certification: "Certification",
+			},
+			actions: {
+				view: "Voir le document",
+				download: "Télécharger le PDF",
+			},
+			stats: {
+				degrees: "Diplômes",
+				certifications: "Certifications",
+				years: "Années d'études",
+				domains: "Domaines",
+			},
+			items: {
+				aiEngineer: {
+					title: "Certification Ingénieur IA",
+					institution: "Ironhack",
+					description: "Intelligence artificielle et machine learning",
+				},
+				rncp: {
+					title: "RNCP 6 - Chef de projet de développement d'applications web & mobiles",
+					institution: "Applications Web & Mobiles",
+					description: "Certification professionnelle niveau Bac+3/4",
+				},
+				mscSkema: {
+					title: "MSc Corporate Financial Management",
+					institution: "SKEMA Business School",
+					description: "Management financier d'entreprise et stratégie",
+				},
+				desmiSkema: {
+					title: "DESMI en Management International",
+					institution: "SKEMA Business School",
+					description: "Diplôme visé par le Ministère français de l'Enseignement Supérieur",
+				},
+				bbaGlion: {
+					title: "BBA (Hons.) en Management Hôtelier avec Développement Hôtelier International et Finance",
+					institution: "Glion Institute of Higher Education",
+					description: "Bachelor of Business Administration obtenu avec Honeurs et Merite",
+				},
+			},
+		},
 		interests: {
 			title: "Mes Passions",
 			description: "Au-delà du code, ce qui m'anime",
@@ -179,6 +224,51 @@ export const locales = {
 				teaching: {
 					title: "Teaching & Pedagogy",
 					skills: ["Bootcamp", "Mentoring", "Curriculum", "Assessment", "Practical projects", "Tech watch"],
+				},
+			},
+		},
+		education: {
+			title: "Degrees & Certificates",
+			subtitle: "My academic and professional journey in management, technology and artificial intelligence",
+			badges: {
+				degree: "Degree",
+				certification: "Certification",
+			},
+			actions: {
+				view: "View document",
+				download: "Download PDF",
+			},
+			stats: {
+				degrees: "Degrees",
+				certifications: "Certifications",
+				years: "Study years",
+				domains: "Domains",
+			},
+			items: {
+				aiEngineer: {
+					title: "AI Engineer Certification",
+					institution: "Ironhack",
+					description: "Artificial intelligence and machine learning",
+				},
+				rncp: {
+					title: "RNCP 6 - Web & Mobile Application Development Project Manager",
+					institution: "Web & Mobile Applications",
+					description: "Professional certification level Bachelor+3/4",
+				},
+				mscSkema: {
+					title: "MSc Corporate Financial Management",
+					institution: "SKEMA Business School",
+					description: "Corporate financial management and strategy",
+				},
+				desmiSkema: {
+					title: "DESMI in International Management",
+					institution: "SKEMA Business School",
+					description: "Degree endorsed by the French Ministry for Higher Education, Research and Innovation",
+				},
+				bbaGlion: {
+					title: "BBA (Hons.) in Hospitality Management with International Hotel Development and Finance",
+					institution: "Glion Institute of Higher Education",
+					description: "Bachelor of Business Administration obtained with Honours and Merit",
 				},
 			},
 		},
