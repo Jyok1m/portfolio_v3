@@ -1,0 +1,9 @@
+{
+	"buildCommand": "yarn build:vercel",
+	"outputDirectory": "dist",
+	"installCommand": "yarn install --frozen-lockfile",
+	"framework": "vite",
+	"env": {
+		"FONTAWESOME_TOKEN": "@fontawesome-token"
+	}
+}

@@ -1,5 +1,7 @@
 import { useLocale } from "../i18n/useLocale";
 import SectionTitle from "../components/SectionTitle";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 export default function Skills() {
 	const { t } = useLocale();
@@ -9,28 +11,28 @@ export default function Skills() {
 			key: "cloud",
 			title: t.skills.categories.cloud.title,
 			skills: t.skills.categories.cloud.skills,
-			icon: "☁️",
+			icon: ["fas", "cloud"] as IconProp,
 			color: "cyber-cyan",
 		},
 		{
 			key: "fullstack",
 			title: t.skills.categories.fullstack.title,
 			skills: t.skills.categories.fullstack.skills,
-			icon: "⚛️",
+			icon: ["fas", "atom"] as IconProp,
 			color: "cyber-purple",
 		},
 		{
 			key: "ai",
 			title: t.skills.categories.ai.title,
 			skills: t.skills.categories.ai.skills,
-			icon: "🤖",
+			icon: ["fas", "robot"] as IconProp,
 			color: "cyber-cyan",
 		},
 		{
 			key: "teaching",
 			title: t.skills.categories.teaching.title,
 			skills: t.skills.categories.teaching.skills,
-			icon: "🎓",
+			icon: ["fas", "graduation-cap"] as IconProp,
 			color: "cyber-purple",
 		},
 	];
@@ -45,7 +47,9 @@ export default function Skills() {
 						<div key={category.key} className="cyber-card group" style={{ animationDelay: `${index * 0.1}s` }}>
 							{/* Header */}
 							<div className="flex items-center space-x-4 mb-6">
-								<div className="text-4xl">{category.icon}</div>
+								<div className="text-4xl">
+									<FontAwesomeIcon icon={category.icon} className={`text-${category.color}`} />
+								</div>
 								<h3 className={`text-2xl font-bold text-${category.color}`}>{category.title}</h3>
 							</div>
 

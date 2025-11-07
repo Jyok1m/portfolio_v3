@@ -1,5 +1,7 @@
 import { useLocale } from "../i18n/useLocale";
 import SectionTitle from "../components/SectionTitle";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 export default function Passions() {
 	const { t } = useLocale();
@@ -9,42 +11,42 @@ export default function Passions() {
 			key: "kendo",
 			title: t.interests.items.kendo.title,
 			description: t.interests.items.kendo.description,
-			icon: "🥋",
+			icon: ["fas", "swords"] as IconProp,
 			color: "cyber-cyan",
 		},
 		{
 			key: "tech",
 			title: t.interests.items.tech.title,
 			description: t.interests.items.tech.description,
-			icon: "💻",
+			icon: ["fas", "laptop-code"] as IconProp,
 			color: "cyber-purple",
 		},
 		{
 			key: "anime",
 			title: t.interests.items.anime.title,
 			description: t.interests.items.anime.description,
-			icon: "🎌",
+			icon: ["fas", "flag"] as IconProp,
 			color: "cyber-cyan",
 		},
 		{
 			key: "gaming",
 			title: t.interests.items.gaming.title,
 			description: t.interests.items.gaming.description,
-			icon: "🎮",
+			icon: ["fas", "gamepad"] as IconProp,
 			color: "cyber-purple",
 		},
 		{
 			key: "theater",
 			title: t.interests.items.theater.title,
 			description: t.interests.items.theater.description,
-			icon: "🎭",
+			icon: ["fas", "mask"] as IconProp,
 			color: "cyber-cyan",
 		},
 		{
 			key: "food",
 			title: t.interests.items.food.title,
 			description: t.interests.items.food.description,
-			icon: "🍜",
+			icon: ["fas", "bowl-food"] as IconProp,
 			color: "cyber-purple",
 		},
 	];
@@ -60,7 +62,9 @@ export default function Passions() {
 							<div className="cyber-card h-full transition-all duration-500 hover:scale-105 hover:-translate-y-2">
 								{/* Icon */}
 								<div className="text-center mb-4">
-									<div className="text-6xl mb-4 transform group-hover:scale-110 transition-transform duration-500">{passion.icon}</div>
+									<div className="text-6xl mb-4 transform group-hover:scale-110 transition-transform duration-500">
+										<FontAwesomeIcon icon={passion.icon} className={`text-${passion.color}`} />
+									</div>
 								</div>
 
 								{/* Content */}

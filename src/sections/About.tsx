@@ -1,5 +1,7 @@
 import { useLocale } from "../i18n/useLocale";
 import SectionTitle from "../components/SectionTitle";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 export default function About() {
 	const { t } = useLocale();
@@ -54,17 +56,19 @@ export default function About() {
 									{/* Animated tech icons representation */}
 									<div className="grid grid-cols-2 gap-4 w-full h-full p-8">
 										{[
-											{ icon: "☁️", label: "Cloud" },
-											{ icon: "⚛️", label: "React" },
-											{ icon: "🤖", label: "AI" },
-											{ icon: "🎓", label: "Teaching" },
+											{ icon: ["fas", "cloud"] as IconProp, label: "Cloud" },
+											{ icon: ["fas", "atom"] as IconProp, label: "React" },
+											{ icon: ["fas", "robot"] as IconProp, label: "AI" },
+											{ icon: ["fas", "graduation-cap"] as IconProp, label: "Teaching" },
 										].map((item, index) => (
 											<div
 												key={item.label}
 												className="cyber-card bg-slate-800/50 flex flex-col items-center justify-center p-4 animate-pulse-slow"
 												style={{ animationDelay: `${index * 0.5}s` }}
 											>
-												<div className="text-2xl mb-2">{item.icon}</div>
+												<div className="text-2xl mb-2">
+													<FontAwesomeIcon icon={item.icon} className="text-cyber-cyan" />
+												</div>
 												<div className="text-cyber-cyan text-sm font-medium">{item.label}</div>
 											</div>
 										))}

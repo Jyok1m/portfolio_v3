@@ -1,5 +1,6 @@
 import { useLocale } from "../i18n/useLocale";
 import SectionTitle from "../components/SectionTitle";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function ProjectsLinks() {
 	const { t } = useLocale();
@@ -46,14 +47,14 @@ export default function ProjectsLinks() {
 							<div className="flex gap-4">
 								<a href={project.links.site} className="flex-1 cyber-button text-center" target="_blank" rel="noopener noreferrer">
 									<span className="flex items-center justify-center space-x-2">
-										<span>🌐</span>
+										<FontAwesomeIcon icon={["fas", "globe"]} />
 										<span>{t.projects.cta.site}</span>
 									</span>
 								</a>
 
 								<a href={project.links.repo} className="flex-1 cyber-button-secondary text-center" target="_blank" rel="noopener noreferrer">
 									<span className="flex items-center justify-center space-x-2">
-										<span>📄</span>
+										<FontAwesomeIcon icon={["fas", "file"]} />
 										<span>{t.projects.cta.repo}</span>
 									</span>
 								</a>
@@ -74,17 +75,24 @@ export default function ProjectsLinks() {
 							Je travaille constamment sur de nouveaux projets et expérimentations. Restez connecté pour découvrir mes prochaines créations !
 						</p>
 
-						<div className="flex justify-center space-x-4">
+						<div className="flex flex-wrap justify-center gap-4">
 							<a href="https://github.com/joachimjasmin" className="cyber-button" target="_blank" rel="noopener noreferrer">
 								<span className="flex items-center space-x-2">
-									<span>📁</span>
+									<FontAwesomeIcon icon={["fas", "folder"]} />
 									<span>GitHub</span>
+								</span>
+							</a>
+
+							<a href="https://gitlab.com/joachimjasmin" className="cyber-button" target="_blank" rel="noopener noreferrer">
+								<span className="flex items-center space-x-2">
+									<FontAwesomeIcon icon={["fas", "code-branch"]} />
+									<span>GitLab</span>
 								</span>
 							</a>
 
 							<a href="https://linkedin.com/in/joachimjasmin" className="cyber-button-secondary" target="_blank" rel="noopener noreferrer">
 								<span className="flex items-center space-x-2">
-									<span>💼</span>
+									<FontAwesomeIcon icon={["fas", "briefcase"]} />
 									<span>LinkedIn</span>
 								</span>
 							</a>

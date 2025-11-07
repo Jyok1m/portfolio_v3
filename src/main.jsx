@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import "./index-simple.css";
 import App from "./App.tsx";
 import { LocaleProvider } from "./i18n/useLocale";
+import "./fontawesome";
 
 createRoot(document.getElementById("root")).render(
 	<StrictMode>

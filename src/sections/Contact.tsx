@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useLocale } from "../i18n/useLocale";
 import SectionTitle from "../components/SectionTitle";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Contact() {
 	const { t } = useLocale();
@@ -56,7 +57,7 @@ export default function Contact() {
 											className="flex items-center space-x-4 text-slate-300 hover:text-cyber-cyan transition-colors duration-300 group"
 										>
 											<div className="w-10 h-10 bg-cyber-cyan/20 rounded-lg flex items-center justify-center group-hover:bg-cyber-cyan group-hover:text-cyber-dark transition-all duration-300">
-												📧
+												<FontAwesomeIcon icon={["fas", "envelope"]} />
 											</div>
 											<div>
 												<div className="font-medium">Email</div>
@@ -71,7 +72,7 @@ export default function Contact() {
 											rel="noopener noreferrer"
 										>
 											<div className="w-10 h-10 bg-cyber-purple/20 rounded-lg flex items-center justify-center group-hover:bg-cyber-purple group-hover:text-cyber-dark transition-all duration-300">
-												💼
+												<FontAwesomeIcon icon={["fas", "briefcase"]} />
 											</div>
 											<div>
 												<div className="font-medium">LinkedIn</div>
@@ -86,11 +87,26 @@ export default function Contact() {
 											rel="noopener noreferrer"
 										>
 											<div className="w-10 h-10 bg-cyber-cyan/20 rounded-lg flex items-center justify-center group-hover:bg-cyber-cyan group-hover:text-cyber-dark transition-all duration-300">
-												📁
+												<FontAwesomeIcon icon={["fas", "folder"]} />
 											</div>
 											<div>
 												<div className="font-medium">GitHub</div>
 												<div className="text-sm text-slate-400">Code Repository</div>
+											</div>
+										</a>
+
+										<a
+											href="https://gitlab.com/joachimjasmin"
+											className="flex items-center space-x-4 text-slate-300 hover:text-cyber-purple transition-colors duration-300 group"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											<div className="w-10 h-10 bg-cyber-purple/20 rounded-lg flex items-center justify-center group-hover:bg-cyber-purple group-hover:text-cyber-dark transition-all duration-300">
+												<FontAwesomeIcon icon={["fas", "code-branch"]} />
+											</div>
+											<div>
+												<div className="font-medium">GitLab</div>
+												<div className="text-sm text-slate-400">Git Repository</div>
 											</div>
 										</a>
 									</div>
