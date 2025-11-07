@@ -67,10 +67,7 @@ export default function Hero() {
 					{/* Tech badges */}
 					<div className="flex flex-wrap gap-3 pt-4">
 						{["Cloud & DevOps", "Fullstack", "AI/LLM", "Teaching"].map((tech) => (
-							<span
-								key={tech}
-								className="px-4 py-2 bg-slate-900/50 border border-cyber-cyan/30 rounded-full text-cyber-cyan text-sm font-medium backdrop-blur-sm"
-							>
+							<span key={tech} className="tech-badge">
 								{tech}
 							</span>
 						))}

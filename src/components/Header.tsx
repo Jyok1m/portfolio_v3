@@ -24,35 +24,56 @@ export default function Header() {
 	];
 
 	return (
-		<header className="fixed top-0 left-0 right-0 z-50 glass-morphism border-b border-cyber-cyan/30">
-			<div className="container mx-auto px-6 py-4">
+		<header className="fixed top-0 left-0 right-0 z-50 glass-morphism border-b border-cyber-cyan/30 shadow-2xl">
+			<div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
 				<div className="flex items-center justify-between">
 					{/* Logo */}
-					<div className="text-2xl font-bold neon-text">JJ</div>
+					<div className="text-xl sm:text-2xl font-bold neon-text logo-glow cursor-pointer">JJ</div>
 
-					{/* Desktop Navigation */}
-					<nav className="hidden md:flex items-center space-x-8">
+					{/* Desktop Navigation - Show only on large screens */}
+					<nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
 						{navItems.map((item) => (
 							<button
 								key={item.key}
 								onClick={() => scrollToSection(item.id)}
-								className="text-slate-300 hover:text-cyber-cyan transition-colors duration-300 font-medium"
+								className="text-slate-300 hover:text-cyber-cyan transition-colors duration-300 font-medium text-base whitespace-nowrap"
 							>
 								{item.label}
 							</button>
 						))}
 					</nav>
 
+					{/* Medium screens navigation - Compact version */}
+					<nav className="hidden md:flex lg:hidden items-center space-x-3">
+						{navItems.slice(0, 4).map((item) => (
+							<button
+								key={item.key}
+								onClick={() => scrollToSection(item.id)}
+								className="text-slate-300 hover:text-cyber-cyan transition-colors duration-300 font-medium text-base px-2 py-1 rounded border border-transparent hover:border-cyber-cyan/30"
+							>
+								{item.label}
+							</button>
+						))}
+						<button
+							className="text-slate-300 hover:text-cyber-cyan transition-colors duration-300 text-xs"
+							onClick={() => setIsMenuOpen(!isMenuOpen)}
+						>
+							•••
+						</button>
+					</nav>
+
 					{/* Language Switcher & Mobile Menu Button */}
-					<div className="flex items-center space-x-4">
-						<LanguageSwitcher />
+					<div className="flex items-center space-x-2 sm:space-x-4">
+						<div className="hidden sm:block">
+							<LanguageSwitcher />
+						</div>
 
 						{/* Mobile Menu Button */}
 						<button
-							className="md:hidden text-slate-300 hover:text-cyber-cyan transition-colors duration-300"
+							className="lg:hidden text-slate-300 hover:text-cyber-cyan transition-colors duration-300"
 							onClick={() => setIsMenuOpen(!isMenuOpen)}
 						>
-							<svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 								{isMenuOpen ? (
 									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
 								) : (
@@ -63,19 +84,24 @@ export default function Header() {
 					</div>
 				</div>
 
-				{/* Mobile Navigation */}
+				{/* Mobile/Medium Navigation */}
 				{isMenuOpen && (
-					<nav className="md:hidden mt-4 pb-4 border-t border-cyber-cyan/30">
+					<nav className="lg:hidden mt-4 pb-4 border-t border-cyber-cyan/30">
 						<div className="flex flex-col space-y-3 pt-4">
 							{navItems.map((item) => (
 								<button
 									key={item.key}
 									onClick={() => scrollToSection(item.id)}
-									className="text-slate-300 hover:text-cyber-cyan transition-colors duration-300 font-medium text-left"
+									className="text-slate-300 hover:text-cyber-cyan transition-colors duration-300 font-medium text-left py-2 px-3 rounded hover:bg-cyber-cyan/10"
 								>
 									{item.label}
 								</button>
 							))}
+
+							{/* Language switcher in mobile menu */}
+							<div className="sm:hidden pt-3 border-t border-slate-700/50">
+								<LanguageSwitcher />
+							</div>
 						</div>
 					</nav>
 				)}

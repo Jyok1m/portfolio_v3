@@ -16,12 +16,12 @@ export default function LanguageSwitcher() {
 					key={lang.code}
 					onClick={() => setLocale(lang.code)}
 					className={`
-            px-3 py-1 rounded-md text-sm font-medium transition-all duration-300
+            px-2 sm:px-3 py-1 rounded-md text-xs sm:text-sm font-medium transition-all duration-300
             ${locale === lang.code ? "bg-cyber-cyan text-cyber-dark shadow-neon" : "text-slate-300 hover:text-cyber-cyan hover:bg-slate-800"}
           `}
 				>
-					<span className="mr-1">{lang.flag}</span>
-					{lang.label}
+					<span className="mr-1 text-xs">{lang.flag}</span>
+					<span className="hidden xs:inline sm:inline">{lang.label}</span>
 				</button>
 			))}
 		</div>
