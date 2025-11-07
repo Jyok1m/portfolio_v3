@@ -18,6 +18,7 @@ export default function Header() {
 		{ key: "home", label: t.nav.home, id: "hero" },
 		{ key: "about", label: t.nav.about, id: "about" },
 		{ key: "skills", label: t.nav.skills, id: "skills" },
+		{ key: "education", label: t.nav.education, id: "education" },
 		{ key: "interests", label: t.nav.interests, id: "interests" },
 		{ key: "projects", label: t.nav.projects, id: "projects" },
 		{ key: "contact", label: t.nav.contact, id: "contact" },

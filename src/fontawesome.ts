@@ -23,6 +23,15 @@ import {
 	faGraduationCap,
 	faRobot,
 	faCodeBranch,
+	faCertificate,
+	faUniversity,
+	faMedal,
+	faAward,
+	faDownload,
+	faTimes,
+	faFileExclamation,
+	faFilePdf,
+	faEye,
 } from "@fortawesome/pro-solid-svg-icons";
 
 // Ajouter les icônes à la librairie
@@ -49,5 +58,14 @@ library.add(
 	faAtom,
 	faGraduationCap,
 	faRobot,
-	faCodeBranch
+	faCodeBranch,
+	faCertificate,
+	faUniversity,
+	faMedal,
+	faAward,
+	faDownload,
+	faTimes,
+	faFileExclamation,
+	faFilePdf,
+	faEye
 );
