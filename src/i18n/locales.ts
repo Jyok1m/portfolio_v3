@@ -1,5 +1,22 @@
 export const locales = {
 	fr: {
+		common: {
+			loading: "Chargement...",
+			error: "Erreur",
+			download: "Télécharger",
+			close: "Fermer",
+			view: "Voir",
+		},
+		pdf: {
+			downloadTitle: "Télécharger le PDF",
+			loading: "Chargement du document...",
+			error: "Erreur lors du chargement du PDF",
+			downloadButton: "Télécharger le fichier",
+		},
+		footer: {
+			copyright: "© 2025 Joachim Jasmin. Fait avec",
+			madeWith: "et React Three Fiber.",
+		},
 		nav: {
 			home: "Accueil",
 			about: "À propos",
@@ -25,6 +42,7 @@ export const locales = {
 		skills: {
 			title: "Compétences",
 			description: "Un éventail de technologies pour des solutions complètes",
+			additionalTech: "Technologies Complémentaires",
 			categories: {
 				cloud: {
 					title: "Cloud & DevOps",
@@ -92,6 +110,7 @@ export const locales = {
 		interests: {
 			title: "Mes Passions",
 			description: "Au-delà du code, ce qui m'anime",
+			quote: "La passion pour la technologie se nourrit de la curiosité constante et du partage des connaissances.",
 			items: {
 				kendo: {
 					title: "Kendo",
@@ -122,6 +141,15 @@ export const locales = {
 		projects: {
 			title: "Mes Projets et Liens",
 			description: "Quelques plateformes, outils et expériences techniques que j'ai développés.",
+			status: {
+				active: "Actif",
+			},
+			techStack: "Stack Technique :",
+			moreProjects: {
+				title: "Plus de projets à venir",
+				description:
+					"Je travaille constamment sur de nouveaux projets et expérimentations. Restez connecté pour découvrir mes prochaines créations !",
+			},
 			cta: {
 				site: "Voir le site",
 				repo: "Code source",
@@ -172,17 +200,62 @@ export const locales = {
 		contact: {
 			title: "Contactez-moi",
 			description: "Prêt pour de nouveaux défis techniques",
+			connectTitle: "Connectons-nous",
+			availability: {
+				status: "Disponible pour nouveaux projets",
+				description: "Ouvert aux opportunités en Cloud/DevOps, Fullstack, IA et formations.",
+			},
+			formTitle: "Envoyez-moi un message",
+			contactMethods: {
+				email: {
+					label: "Email",
+					description: "joachim.jasmin@example.com",
+				},
+				linkedin: {
+					label: "LinkedIn",
+					description: "Réseau Professionnel",
+				},
+				github: {
+					label: "GitHub",
+					description: "Dépôt de Code",
+				},
+				gitlab: {
+					label: "GitLab",
+					description: "Dépôt Git",
+				},
+			},
 			form: {
 				name: "Nom",
+				namePlaceholder: "Votre nom",
 				email: "Email",
+				emailPlaceholder: "votre@email.com",
 				message: "Message",
+				messagePlaceholder: "Votre message...",
 				submit: "Envoyer",
+				submitting: "Envoi en cours...",
 				success: "Message envoyé avec succès !",
 				error: "Erreur lors de l'envoi du message.",
 			},
 		},
 	},
 	en: {
+		common: {
+			loading: "Loading...",
+			error: "Error",
+			download: "Download",
+			close: "Close",
+			view: "View",
+		},
+		pdf: {
+			downloadTitle: "Download PDF",
+			loading: "Loading document...",
+			error: "Error loading PDF",
+			downloadButton: "Download file",
+		},
+		footer: {
+			copyright: "© 2025 Joachim Jasmin. Made with",
+			madeWith: "and React Three Fiber.",
+		},
 		nav: {
 			home: "Home",
 			about: "About",
@@ -208,6 +281,7 @@ export const locales = {
 		skills: {
 			title: "Skills",
 			description: "A range of technologies for complete solutions",
+			additionalTech: "Additional Technologies",
 			categories: {
 				cloud: {
 					title: "Cloud & DevOps",
@@ -275,6 +349,7 @@ export const locales = {
 		interests: {
 			title: "My Interests",
 			description: "Beyond code, what drives me",
+			quote: "Passion for technology is nurtured by constant curiosity and knowledge sharing.",
 			items: {
 				kendo: {
 					title: "Kendo",
@@ -305,6 +380,14 @@ export const locales = {
 		projects: {
 			title: "My Projects & Links",
 			description: "Some platforms, tools and technical experiments I've developed.",
+			status: {
+				active: "Active",
+			},
+			techStack: "Tech Stack:",
+			moreProjects: {
+				title: "More projects coming",
+				description: "I'm constantly working on new projects and experiments. Stay connected to discover my next creations!",
+			},
 			cta: {
 				site: "View site",
 				repo: "Source code",
@@ -355,11 +438,39 @@ export const locales = {
 		contact: {
 			title: "Contact me",
 			description: "Ready for new technical challenges",
+			connectTitle: "Let's connect",
+			availability: {
+				status: "Available for new projects",
+				description: "Open to opportunities in Cloud/DevOps, Fullstack, AI and training.",
+			},
+			formTitle: "Send me a message",
+			contactMethods: {
+				email: {
+					label: "Email",
+					description: "joachim.jasmin@example.com",
+				},
+				linkedin: {
+					label: "LinkedIn",
+					description: "Professional Network",
+				},
+				github: {
+					label: "GitHub",
+					description: "Code Repository",
+				},
+				gitlab: {
+					label: "GitLab",
+					description: "Git Repository",
+				},
+			},
 			form: {
 				name: "Name",
+				namePlaceholder: "Your name",
 				email: "Email",
+				emailPlaceholder: "your@email.com",
 				message: "Message",
+				messagePlaceholder: "Your message...",
 				submit: "Send",
+				submitting: "Sending...",
 				success: "Message sent successfully!",
 				error: "Error sending message.",
 			},

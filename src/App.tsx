@@ -7,8 +7,11 @@ import Passions from "./sections/Passions";
 import ProjectsLinks from "./sections/ProjectsLinks";
 import Contact from "./sections/Contact";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useLocale } from "./i18n/useLocale";
 
 function App() {
+	const { t } = useLocale();
+
 	return (
 		<div className="min-h-screen bg-cyber-dark">
 			<Header />
@@ -28,7 +31,7 @@ function App() {
 				<div className="container mx-auto px-6">
 					<div className="flex flex-col md:flex-row justify-between items-center">
 						<div className="text-slate-400 text-sm mb-4 md:mb-0">
-							© 2025 Joachim Jasmin. Fait avec <FontAwesomeIcon icon={["fas", "heart"]} className="text-red-500" /> et React Three Fiber.
+							{t.footer.copyright} <FontAwesomeIcon icon={["fas", "heart"]} className="text-red-500" /> {t.footer.madeWith}
 						</div>
 
 						<div className="flex space-x-6">

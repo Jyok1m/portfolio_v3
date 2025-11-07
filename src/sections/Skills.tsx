@@ -90,7 +90,7 @@ export default function Skills() {
 				{/* Additional tech stack */}
 				<div className="mt-16 text-center">
 					<div className="inline-block bg-slate-900/50 rounded-lg p-6 border border-slate-700">
-						<p className="text-slate-400 mb-4 font-medium">Technologies Complémentaires</p>
+						<p className="text-slate-400 mb-4 font-medium">{t.skills.additionalTech}</p>
 						<div className="flex flex-wrap justify-center gap-3">
 							{["Git", "Linux", "VS Code", "Figma", "Postman", "Redis", "Nginx", "GraphQL"].map((tech) => (
 								<span

@@ -47,7 +47,7 @@ export default function Contact() {
 						{/* Contact Info */}
 						<div className="space-y-8">
 							<div className="cyber-card">
-								<h3 className="text-2xl font-bold neon-text mb-6">Connectons-nous</h3>
+								<h3 className="text-2xl font-bold neon-text mb-6">{t.contact.connectTitle}</h3>
 
 								<div className="space-y-6">
 									{/* Contact methods */}
@@ -60,8 +60,8 @@ export default function Contact() {
 												<FontAwesomeIcon icon={["fas", "envelope"]} />
 											</div>
 											<div>
-												<div className="font-medium">Email</div>
-												<div className="text-sm text-slate-400">joachim.jasmin@example.com</div>
+												<div className="font-medium">{t.contact.contactMethods.email.label}</div>
+												<div className="text-sm text-slate-400">{t.contact.contactMethods.email.description}</div>
 											</div>
 										</a>
 
@@ -75,8 +75,8 @@ export default function Contact() {
 												<FontAwesomeIcon icon={["fas", "briefcase"]} />
 											</div>
 											<div>
-												<div className="font-medium">LinkedIn</div>
-												<div className="text-sm text-slate-400">Professional Network</div>
+												<div className="font-medium">{t.contact.contactMethods.linkedin.label}</div>
+												<div className="text-sm text-slate-400">{t.contact.contactMethods.linkedin.description}</div>
 											</div>
 										</a>
 
@@ -90,8 +90,8 @@ export default function Contact() {
 												<FontAwesomeIcon icon={["fas", "folder"]} />
 											</div>
 											<div>
-												<div className="font-medium">GitHub</div>
-												<div className="text-sm text-slate-400">Code Repository</div>
+												<div className="font-medium">{t.contact.contactMethods.github.label}</div>
+												<div className="text-sm text-slate-400">{t.contact.contactMethods.github.description}</div>
 											</div>
 										</a>
 
@@ -105,8 +105,8 @@ export default function Contact() {
 												<FontAwesomeIcon icon={["fas", "code-branch"]} />
 											</div>
 											<div>
-												<div className="font-medium">GitLab</div>
-												<div className="text-sm text-slate-400">Git Repository</div>
+												<div className="font-medium">{t.contact.contactMethods.gitlab.label}</div>
+												<div className="text-sm text-slate-400">{t.contact.contactMethods.gitlab.description}</div>
 											</div>
 										</a>
 									</div>
@@ -115,9 +115,9 @@ export default function Contact() {
 									<div className="border-t border-slate-700 pt-6">
 										<div className="flex items-center space-x-3 mb-3">
 											<div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-											<span className="text-green-400 font-medium">Disponible pour nouveaux projets</span>
+											<span className="text-green-400 font-medium">{t.contact.availability.status}</span>
 										</div>
-										<p className="text-slate-400 text-sm">Ouvert aux opportunités en Cloud/DevOps, Fullstack, IA et formations.</p>
+										<p className="text-slate-400 text-sm">{t.contact.availability.description}</p>
 									</div>
 								</div>
 							</div>
@@ -125,7 +125,7 @@ export default function Contact() {
 
 						{/* Contact Form */}
 						<div className="cyber-card">
-							<h3 className="text-2xl font-bold text-cyber-purple mb-6">Envoyez-moi un message</h3>
+							<h3 className="text-2xl font-bold text-cyber-purple mb-6">{t.contact.formTitle}</h3>
 
 							<form onSubmit={handleSubmit} className="space-y-6">
 								{/* Name field */}
@@ -141,7 +141,7 @@ export default function Contact() {
 										onChange={handleChange}
 										required
 										className="w-full px-4 py-3 bg-slate-800/50 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-cyber-cyan focus:ring-1 focus:ring-cyber-cyan transition-colors duration-300"
-										placeholder="Votre nom"
+										placeholder={t.contact.form.namePlaceholder}
 									/>
 								</div>
 
@@ -158,7 +158,7 @@ export default function Contact() {
 										onChange={handleChange}
 										required
 										className="w-full px-4 py-3 bg-slate-800/50 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-cyber-cyan focus:ring-1 focus:ring-cyber-cyan transition-colors duration-300"
-										placeholder="votre@email.com"
+										placeholder={t.contact.form.emailPlaceholder}
 									/>
 								</div>
 
@@ -175,7 +175,7 @@ export default function Contact() {
 										required
 										rows={6}
 										className="w-full px-4 py-3 bg-slate-800/50 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-cyber-cyan focus:ring-1 focus:ring-cyber-cyan transition-colors duration-300 resize-none"
-										placeholder="Votre message..."
+										placeholder={t.contact.form.messagePlaceholder}
 									/>
 								</div>
 
@@ -191,7 +191,7 @@ export default function Contact() {
 									{isSubmitting ? (
 										<span className="flex items-center justify-center space-x-2">
 											<div className="w-4 h-4 border-2 border-slate-400 border-t-transparent rounded-full animate-spin"></div>
-											<span>Envoi en cours...</span>
+											<span>{t.contact.form.submitting}</span>
 										</span>
 									) : (
 										t.contact.form.submit

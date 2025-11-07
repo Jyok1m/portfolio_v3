@@ -22,7 +22,9 @@ export default function ProjectsLinks() {
 								<h3 className="text-2xl font-bold neon-text group-hover:text-cyber-blue transition-colors duration-300">{project.name}</h3>
 
 								{/* Status badge */}
-								<div className="px-3 py-1 bg-cyber-cyan/20 border border-cyber-cyan/50 rounded-full text-cyber-cyan text-xs font-medium">Active</div>
+								<div className="px-3 py-1 bg-cyber-cyan/20 border border-cyber-cyan/50 rounded-full text-cyber-cyan text-xs font-medium">
+									{t.projects.status.active}
+								</div>
 							</div>
 
 							{/* Description */}
@@ -30,7 +32,7 @@ export default function ProjectsLinks() {
 
 							{/* Tech Stack */}
 							<div className="mb-6">
-								<h4 className="text-sm font-semibold text-cyber-purple mb-3">Tech Stack:</h4>
+								<h4 className="text-sm font-semibold text-cyber-purple mb-3">{t.projects.techStack}</h4>
 								<div className="flex flex-wrap gap-2">
 									{project.stack.map((tech) => (
 										<span
@@ -70,10 +72,8 @@ export default function ProjectsLinks() {
 				{/* Call to action */}
 				<div className="mt-16 text-center">
 					<div className="cyber-card bg-gradient-to-r from-slate-900/70 to-slate-800/70 max-w-2xl mx-auto">
-						<h3 className="text-2xl font-bold neon-text mb-4">Plus de projets à venir</h3>
-						<p className="text-slate-300 mb-6">
-							Je travaille constamment sur de nouveaux projets et expérimentations. Restez connecté pour découvrir mes prochaines créations !
-						</p>
+						<h3 className="text-2xl font-bold neon-text mb-4">{t.projects.moreProjects.title}</h3>
+						<p className="text-slate-300 mb-6">{t.projects.moreProjects.description}</p>
 
 						<div className="flex flex-wrap justify-center gap-4">
 							<a href="https://github.com/joachimjasmin" className="cyber-button" target="_blank" rel="noopener noreferrer">

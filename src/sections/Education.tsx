@@ -9,6 +9,12 @@ export default function Education() {
 	const { t } = useLocale();
 	const [selectedPDF, setSelectedPDF] = useState<{ url: string; title: string } | null>(null);
 
+	// Fonction utilitaire pour créer des URLs de PDF sûres
+	const createSafePdfUrl = (path: string) => {
+		// Encoder l'URL complète en gérant les caractères spéciaux
+		return encodeURI(path);
+	};
+
 	const education = [
 		{
 			type: "certification",
@@ -16,7 +22,7 @@ export default function Education() {
 			institution: t.education.items.aiEngineer.institution,
 			year: "2025",
 			icon: ["fas", "award"] as IconProp,
-			color: "cyber-purple",
+			color: "cyber-cyan",
 			description: t.education.items.aiEngineer.description,
 			pdfPath: "/documents/certificates/AI_Engineer_Certificate-Joachim_Jasmin.pdf",
 		},
@@ -28,7 +34,7 @@ export default function Education() {
 			icon: ["fas", "certificate"] as IconProp,
 			color: "cyber-cyan",
 			description: t.education.items.rncp.description,
-			pdfPath: "/documents/certificates/AI_Engineer_Certificate-Joachim_Jasmin.pdf",
+			pdfPath: "/documents/certificates/RNCP_6-Joachim_Jasmin.pdf",
 		},
 		{
 			type: "degree",
@@ -36,9 +42,9 @@ export default function Education() {
 			institution: t.education.items.mscSkema.institution,
 			year: "2022",
 			icon: ["fas", "university"] as IconProp,
-			color: "cyber-cyan",
+			color: "cyber-purple",
 			description: t.education.items.mscSkema.description,
-			pdfPath: "/documents/degrees/Diplôme MSc - SKEMA Business School - Joachim Jasmin.pdf",
+			pdfPath: "/documents/degrees/MSc - SKEMA Business School - Joachim Jasmin.pdf",
 		},
 		{
 			type: "degree",
@@ -46,9 +52,9 @@ export default function Education() {
 			institution: t.education.items.desmiSkema.institution,
 			year: "2022",
 			icon: ["fas", "university"] as IconProp,
-			color: "cyber-cyan",
+			color: "cyber-purple",
 			description: t.education.items.desmiSkema.description,
-			pdfPath: "/documents/degrees/Diplôme DESMI - SKEMA Business School - Joachim Jasmin.pdf",
+			pdfPath: "/documents/degrees/DESMI - SKEMA Business School - Joachim Jasmin.pdf",
 		},
 		{
 			type: "degree",
@@ -63,7 +69,9 @@ export default function Education() {
 	];
 
 	const openPDF = (pdfPath: string, title: string) => {
-		setSelectedPDF({ url: pdfPath, title });
+		// Utiliser la fonction utilitaire pour créer une URL sûre
+		const safeUrl = createSafePdfUrl(pdfPath);
+		setSelectedPDF({ url: safeUrl, title });
 	};
 
 	const closePDF = () => {
@@ -83,7 +91,7 @@ export default function Education() {
 
 						{education.map((item, index) => (
 							<div
-								key={`${item.institution}-${item.year}`}
+								key={`${item.type}-${index}-${item.title.substring(0, 20)}`}
 								className={`relative mb-12 ${index % 2 === 0 ? "md:text-right md:pr-1/2" : "md:pl-1/2 md:text-left"}`}
 								style={{ animationDelay: `${index * 0.1}s` }}
 							>
@@ -155,7 +163,7 @@ export default function Education() {
 											</button>
 
 											<a
-												href={item.pdfPath}
+												href={createSafePdfUrl(item.pdfPath)}
 												download={`${item.title.replace(/\s+/g, "_")}.pdf`}
 												className={`p-2 rounded-lg transition-all duration-300 hover:scale-110 ${
 													item.color === "cyber-cyan"

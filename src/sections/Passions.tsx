@@ -108,9 +108,7 @@ export default function Passions() {
 				<div className="mt-16 text-center">
 					<div className="max-w-2xl mx-auto">
 						<blockquote className="cyber-card bg-gradient-to-r from-slate-900/50 to-slate-800/50">
-							<p className="text-lg text-slate-300 italic mb-4 leading-relaxed">
-								"La passion pour la technologie se nourrit de la curiosité constante et du partage des connaissances."
-							</p>
+							<p className="text-lg text-slate-300 italic mb-4 leading-relaxed">"{t.interests.quote}"</p>
 							<div className="w-24 h-1 bg-gradient-neon mx-auto rounded-full"></div>
 						</blockquote>
 					</div>

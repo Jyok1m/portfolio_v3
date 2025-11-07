@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useLocale } from "../i18n/useLocale";
 
 interface PDFModalProps {
 	isOpen: boolean;
@@ -9,6 +10,7 @@ interface PDFModalProps {
 }
 
 export default function PDFModal({ isOpen, onClose, pdfUrl, title }: PDFModalProps) {
+	const { t } = useLocale();
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState(false);
 
@@ -26,7 +28,7 @@ export default function PDFModal({ isOpen, onClose, pdfUrl, title }: PDFModalPro
 
 	const handleDownload = () => {
 		const link = document.createElement("a");
-		link.href = pdfUrl;
+		link.href = pdfUrl; // pdfUrl est déjà encodé depuis openPDF
 		link.download = `${title.replace(/\s+/g, "_")}.pdf`;
 		document.body.appendChild(link);
 		link.click();
@@ -49,7 +51,7 @@ export default function PDFModal({ isOpen, onClose, pdfUrl, title }: PDFModalPro
 						<button
 							onClick={handleDownload}
 							className="p-2 rounded-lg bg-cyber-purple/20 text-cyber-purple hover:bg-cyber-purple hover:text-white transition-all duration-300"
-							title="Télécharger le PDF"
+							title={t.pdf.downloadTitle}
 						>
 							<FontAwesomeIcon icon={["fas", "download"]} />
 						</button>
@@ -70,7 +72,7 @@ export default function PDFModal({ isOpen, onClose, pdfUrl, title }: PDFModalPro
 						<div className="absolute inset-0 flex items-center justify-center">
 							<div className="text-center">
 								<div className="w-8 h-8 border-2 border-cyber-cyan border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-								<p className="text-slate-400">Chargement du document...</p>
+								<p className="text-slate-400">{t.pdf.loading}</p>
 							</div>
 						</div>
 					)}
@@ -79,9 +81,9 @@ export default function PDFModal({ isOpen, onClose, pdfUrl, title }: PDFModalPro
 						<div className="absolute inset-0 flex items-center justify-center">
 							<div className="text-center">
 								<FontAwesomeIcon icon={["fas", "file-exclamation"]} className="text-4xl text-red-400 mb-4" />
-								<p className="text-red-400 mb-4">Erreur lors du chargement du PDF</p>
+								<p className="text-red-400 mb-4">{t.pdf.error}</p>
 								<button onClick={handleDownload} className="cyber-button">
-									Télécharger le fichier
+									{t.pdf.downloadButton}
 								</button>
 							</div>
 						</div>
