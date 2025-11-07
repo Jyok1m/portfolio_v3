@@ -5,8 +5,8 @@ export default function LanguageSwitcher() {
 	const { locale, setLocale } = useLocale();
 
 	const languages = [
-		{ code: "fr" as LocaleKey, label: "FR", flag: "🇫🇷" },
-		{ code: "en" as LocaleKey, label: "EN", flag: "🇺🇸" },
+		{ code: "fr" as LocaleKey, label: "🇫🇷", flag: "🇫🇷" },
+		{ code: "en" as LocaleKey, label: "🇺🇸", flag: "🇺🇸" },
 	];
 
 	return (
@@ -20,7 +20,6 @@ export default function LanguageSwitcher() {
             ${locale === lang.code ? "bg-cyber-cyan text-cyber-dark shadow-neon" : "text-slate-300 hover:text-cyber-cyan hover:bg-slate-800"}
           `}
 				>
-					<span className="mr-1 text-xs">{lang.flag}</span>
 					<span className="hidden xs:inline sm:inline">{lang.label}</span>
 				</button>
 			))}
