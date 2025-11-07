@@ -1,41 +1,11 @@
-import { useState } from "react";
 import { useLocale } from "../i18n/useLocale";
 import SectionTitle from "../components/SectionTitle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useContactForm } from "../hooks/useContactForm";
 
 export default function Contact() {
 	const { t } = useLocale();
-	const [formData, setFormData] = useState({
-		name: "",
-		email: "",
-		message: "",
-	});
-	const [isSubmitting, setIsSubmitting] = useState(false);
-	const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
-
-	const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-		setFormData((prev) => ({
-			...prev,
-			[e.target.name]: e.target.value,
-		}));
-	};
-
-	const handleSubmit = async (e: React.FormEvent) => {
-		e.preventDefault();
-		setIsSubmitting(true);
-
-		// Simulate form submission
-		setTimeout(() => {
-			setIsSubmitting(false);
-			setSubmitStatus("success");
-			setFormData({ name: "", email: "", message: "" });
-
-			// Reset status after 3 seconds
-			setTimeout(() => {
-				setSubmitStatus("idle");
-			}, 3000);
-		}, 1000);
-	};
+	const { formData, isSubmitting, submitStatus, errorMessage, handleChange, handleSubmit } = useContactForm();
 
 	return (
 		<section id="contact" className="py-20 bg-slate-900/30">
@@ -53,7 +23,7 @@ export default function Contact() {
 									{/* Contact methods */}
 									<div className="space-y-4">
 										<a
-											href="mailto:joachim.jasmin@example.com"
+											href="mailto:joachim.jasmin-dev@proton.me"
 											className="flex items-center space-x-4 text-slate-300 hover:text-cyber-cyan transition-colors duration-300 group"
 										>
 											<div className="w-10 h-10 bg-cyber-cyan/20 rounded-lg flex items-center justify-center group-hover:bg-cyber-cyan group-hover:text-cyber-dark transition-all duration-300">
@@ -182,16 +152,21 @@ export default function Contact() {
 								{/* Submit button */}
 								<button
 									type="submit"
-									disabled={isSubmitting}
+									disabled={isSubmitting || submitStatus === "success"}
 									className={`
                     w-full py-3 rounded-lg font-semibold transition-all duration-300
-                    ${isSubmitting ? "bg-slate-600 text-slate-400 cursor-not-allowed" : "cyber-button"}
+                    ${isSubmitting || submitStatus === "success" ? "bg-slate-600 text-slate-400 cursor-not-allowed" : "cyber-button"}
                   `}
 								>
-									{isSubmitting ? (
+									{submitStatus === "submitting" ? (
 										<span className="flex items-center justify-center space-x-2">
 											<div className="w-4 h-4 border-2 border-slate-400 border-t-transparent rounded-full animate-spin"></div>
 											<span>{t.contact.form.submitting}</span>
+										</span>
+									) : submitStatus === "success" ? (
+										<span className="flex items-center justify-center space-x-2">
+											<FontAwesomeIcon icon={["fas", "check"]} />
+											<span>Message envoyé !</span>
 										</span>
 									) : (
 										t.contact.form.submit
@@ -200,11 +175,21 @@ export default function Contact() {
 
 								{/* Status messages */}
 								{submitStatus === "success" && (
-									<div className="p-4 bg-green-900/50 border border-green-500/50 rounded-lg text-green-400 text-center">{t.contact.form.success}</div>
+									<div className="p-4 bg-green-900/50 border border-green-500/50 rounded-lg text-green-400 text-center">
+										<div className="flex items-center justify-center space-x-2">
+											<FontAwesomeIcon icon={["fas", "check-circle"]} />
+											<span>{t.contact.form.success}</span>
+										</div>
+									</div>
 								)}
 
 								{submitStatus === "error" && (
-									<div className="p-4 bg-red-900/50 border border-red-500/50 rounded-lg text-red-400 text-center">{t.contact.form.error}</div>
+									<div className="p-4 bg-red-900/50 border border-red-500/50 rounded-lg text-red-400 text-center">
+										<div className="flex items-center justify-center space-x-2">
+											<FontAwesomeIcon icon={["fas", "exclamation-triangle"]} />
+											<span>{errorMessage || t.contact.form.error}</span>
+										</div>
+									</div>
 								)}
 							</form>
 						</div>

@@ -25,3 +25,4 @@ dist-ssr
 
 # Font Awesome credentials
 .npmrc
+.env
