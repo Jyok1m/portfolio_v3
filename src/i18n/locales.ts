@@ -27,8 +27,8 @@ export const locales = {
 			contact: "Contact",
 		},
 		hero: {
-			title: "Ingénieur Cloud & DevOps, Fullstack et IA — et formateur.",
-			subtitle: "Je construis des plateformes cloud, des apps web et j'enseigne en bootcamp.",
+			title: "Ingénieur et formateur IA, DevOps et Web & Mobile.",
+			subtitle: "Expert en DevOps, IA et Développement Web & Mobile FullStack - je transforme les idées en solutions techniques complètes.",
 			ctaPrimary: "Voir mes projets",
 			ctaSecondary: "Me contacter",
 		},
@@ -223,7 +223,7 @@ export const locales = {
 					label: "GitLab",
 					description: "Dépôt Git",
 				},
-			}
+			},
 		},
 	},
 	en: {
@@ -255,7 +255,7 @@ export const locales = {
 		},
 		hero: {
 			title: "Cloud & DevOps, Fullstack and AI Engineer — and Teacher.",
-			subtitle: "I build cloud platforms, web apps and I teach in bootcamps.",
+			subtitle: "DevOps, AI and Web & Mobile FullStack Development expert - I transform ideas into complete technical solutions.",
 			ctaPrimary: "View my projects",
 			ctaSecondary: "Contact me",
 		},
@@ -449,7 +449,7 @@ export const locales = {
 					label: "GitLab",
 					description: "Git Repository",
 				},
-			}
+			},
 		},
 	},
 };
