@@ -226,15 +226,15 @@ export const locales = {
 		interests: {
 			title: "Mes Passions",
 			description: "Au-delà du code, ce qui m'anime",
-			quote: "La passion pour la technologie se nourrit de la curiosité constante et du partage des connaissances.",
+			quote: "De la finance à l'IA, chaque passion nourrit ma vision : comprendre, créer et transmettre avec authenticité.",
 			items: {
 				kendo: {
 					title: "Kendo",
 					description: "Art martial traditionnel japonais, discipline et dépassement de soi",
 				},
-				tech: {
-					title: "Veille Technologique",
-					description: "Exploration des nouvelles technologies et tendances",
+				rugby: {
+					title: "Rugby & Équipe de France",
+					description: "Passion pour l'ovalie et supporter inconditionnel du XV de France",
 				},
 				anime: {
 					title: "Animes & Mangas",
@@ -252,6 +252,19 @@ export const locales = {
 					title: "Gastronomie",
 					description: "Découverte culinaire et art de vivre",
 				},
+			},
+			detailedDescriptions: {
+				kendo:
+					"Pratiquant de kendo depuis plusieurs années, cet art martial japonais m'enseigne bien plus que des techniques de sabre. C'est une école de discipline mentale, de respect et de dépassement de soi. Chaque entraînement est une méditation en mouvement qui forge le caractère et la persévérance - des qualités essentielles dans le développement logiciel et la résolution de problèmes complexes.",
+				rugby:
+					"Passionné de rugby depuis l'enfance, je suis un supporter fervent de l'équipe de France. Chaque match est un moment d'émotion pure où se mélangent stratégie collective, dépassement individuel et esprit d'équipe. Ce sport m'enseigne des valeurs essentielles : la solidarité, la persévérance face à l'adversité et l'importance de chaque rôle dans la réussite collective - des principes que j'applique naturellement dans mes projets techniques et mes équipes.",
+				anime:
+					"Grand amateur d'animes et mangas, j'apprécie particulièrement les œuvres qui explorent des thématiques profondes : science-fiction, cyberpunk, développement personnel. Cette passion pour la culture japonaise nourrit ma créativité et ma compréhension de l'esthétique, influençant même mes choix de design d'interfaces et d'expérience utilisateur.",
+				gaming:
+					"Joueur solo passionné, je privilégie les aventures narratives riches et les mondes immersifs qui racontent des histoires captivantes. Cette passion développe ma capacité d'analyse, ma patience face aux défis complexes et ma compréhension des mécaniques d'engagement - des compétences directement transférables en développement d'applications et gamification.",
+				theater:
+					"Le théâtre m'a appris l'importance de la présence, de la communication claire et de la gestion du stress. Ces compétences sont précieuses lors de mes formations en bootcamp, présentations techniques ou démonstrations client. Sur scène comme en présentation, il faut savoir capter l'attention et transmettre son message avec impact.",
+				food: "La gastronomie est pour moi un art de vivre qui cultive la patience, la précision et l'attention aux détails. Comme en programmation, cuisiner demande de suivre des processus, d'ajuster selon les résultats et de viser l'excellence. Cette passion développe également ma créativité et mon sens de l'expérimentation, toujours utiles pour innover techniquement.",
 			},
 		},
 		projects: {
@@ -557,15 +570,15 @@ export const locales = {
 		interests: {
 			title: "My Interests",
 			description: "Beyond code, what drives me",
-			quote: "Passion for technology is nurtured by constant curiosity and knowledge sharing.",
+			quote: "From finance to AI, every passion feeds my vision: understand, create and share with authenticity.",
 			items: {
 				kendo: {
 					title: "Kendo",
 					description: "Traditional Japanese martial art, discipline and self-improvement",
 				},
-				tech: {
-					title: "Tech Watch",
-					description: "Exploring new technologies and trends",
+				rugby: {
+					title: "Rugby & French Team",
+					description: "Passion for rugby and unconditional supporter of the French national team",
 				},
 				anime: {
 					title: "Anime & Manga",
@@ -583,6 +596,19 @@ export const locales = {
 					title: "Gastronomy",
 					description: "Culinary discovery and art of living",
 				},
+			},
+			detailedDescriptions: {
+				kendo:
+					"Practicing kendo for several years, this Japanese martial art teaches me much more than sword techniques. It's a school of mental discipline, respect and self-improvement. Each training session is a meditation in movement that forges character and perseverance - essential qualities in software development and complex problem solving.",
+				rugby:
+					"Passionate about rugby since childhood, I'm a fervent supporter of the French national team. Every match is a moment of pure emotion where collective strategy, individual excellence and team spirit merge. This sport teaches me essential values: solidarity, perseverance in the face of adversity and the importance of every role in collective success - principles I naturally apply in my technical projects and teams.",
+				anime:
+					"Great fan of anime and manga, I particularly appreciate works that explore deep themes: science fiction, cyberpunk, personal development. This passion for Japanese culture nourishes my creativity and understanding of aesthetics, even influencing my interface design and user experience choices.",
+				gaming:
+					"Passionate solo gamer, I favor rich narrative adventures and immersive worlds that tell captivating stories. This passion develops my analytical ability, patience with complex challenges and understanding of engagement mechanics - skills directly transferable to application development and gamification.",
+				theater:
+					"Theater taught me the importance of presence, clear communication and stress management. These skills are valuable during my bootcamp training, technical presentations or client demonstrations. On stage as in presentation, you must know how to capture attention and convey your message with impact.",
+				food: "Gastronomy is for me an art of living that cultivates patience, precision and attention to detail. Like in programming, cooking requires following processes, adjusting according to results and aiming for excellence. This passion also develops my creativity and sense of experimentation, always useful for technical innovation.",
 			},
 		},
 		projects: {

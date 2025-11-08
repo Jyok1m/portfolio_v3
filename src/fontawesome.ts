@@ -31,8 +31,11 @@ import {
 	faTimes,
 	faFileExclamation,
 	faFilePdf,
+	faTv,
+	faMasksTheater,
 	faEye,
 	faCode,
+	faRugbyBall,
 } from "@fortawesome/pro-solid-svg-icons";
 
 // Ajouter les icônes à la librairie
@@ -45,6 +48,7 @@ library.add(
 	faRocket,
 	faPalette,
 	faMobile,
+	faMasksTheater,
 	faChevronRight,
 	faEnvelope,
 	faPhone,
@@ -57,6 +61,8 @@ library.add(
 	faBriefcase,
 	faCloud,
 	faAtom,
+	faRugbyBall,
+	faTv,
 	faGraduationCap,
 	faRobot,
 	faCodeBranch,

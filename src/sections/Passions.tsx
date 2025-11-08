@@ -1,10 +1,18 @@
 import { useLocale } from "../i18n/useLocale";
 import SectionTitle from "../components/SectionTitle";
+import TechModal from "../components/TechModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { useState } from "react";
 
 export default function Passions() {
 	const { t } = useLocale();
+	const [selectedPassion, setSelectedPassion] = useState<{
+		name: string;
+		icon: IconProp;
+		description: string;
+		color?: string;
+	} | null>(null);
 
 	const passions = [
 		{
@@ -15,17 +23,17 @@ export default function Passions() {
 			color: "cyber-cyan",
 		},
 		{
-			key: "tech",
-			title: t.interests.items.tech.title,
-			description: t.interests.items.tech.description,
-			icon: ["fas", "laptop-code"] as IconProp,
+			key: "rugby",
+			title: t.interests.items.rugby.title,
+			description: t.interests.items.rugby.description,
+			icon: ["fas", "rugby-ball"] as IconProp,
 			color: "cyber-purple",
 		},
 		{
 			key: "anime",
 			title: t.interests.items.anime.title,
 			description: t.interests.items.anime.description,
-			icon: ["fas", "flag"] as IconProp,
+			icon: ["fas", "tv"] as IconProp,
 			color: "cyber-cyan",
 		},
 		{
@@ -39,7 +47,7 @@ export default function Passions() {
 			key: "theater",
 			title: t.interests.items.theater.title,
 			description: t.interests.items.theater.description,
-			icon: ["fas", "mask"] as IconProp,
+			icon: ["fas", "masks-theater"] as IconProp,
 			color: "cyber-cyan",
 		},
 		{
@@ -58,7 +66,19 @@ export default function Passions() {
 
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
 					{passions.map((passion, index) => (
-						<div key={passion.key} className="group cursor-pointer" style={{ animationDelay: `${index * 0.1}s` }}>
+						<div
+							key={passion.key}
+							className="group cursor-pointer"
+							style={{ animationDelay: `${index * 0.1}s` }}
+							onClick={() =>
+								setSelectedPassion({
+									name: passion.title,
+									icon: passion.icon,
+									description: t.interests.detailedDescriptions[passion.key as keyof typeof t.interests.detailedDescriptions],
+									color: passion.color,
+								})
+							}
+						>
 							<div className="cyber-card h-full transition-all duration-500 hover:scale-105 hover:-translate-y-2">
 								{/* Icon */}
 								<div className="text-center mb-4">
@@ -104,15 +124,8 @@ export default function Passions() {
 					))}
 				</div>
 
-				{/* Personal quote or motto */}
-				<div className="mt-16 text-center">
-					<div className="max-w-2xl mx-auto">
-						<blockquote className="cyber-card bg-gradient-to-r from-slate-900/50 to-slate-800/50">
-							<p className="text-lg text-slate-300 italic mb-4 leading-relaxed">"{t.interests.quote}"</p>
-							<div className="w-24 h-1 bg-gradient-neon mx-auto rounded-full"></div>
-						</blockquote>
-					</div>
-				</div>
+				{/* Passion Modal */}
+				{selectedPassion && <TechModal isOpen={!!selectedPassion} onClose={() => setSelectedPassion(null)} tech={selectedPassion} />}
 			</div>
 		</section>
 	);
