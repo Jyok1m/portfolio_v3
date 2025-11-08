@@ -64,12 +64,12 @@ export const locales = {
 			techDetails: {
 				// About section icons
 				"Cloud & DevOps":
-					"Expertise en architectures cloud scalables avec AWS, déploiement d'infrastructures robustes et automatisation DevOps pour des solutions d'entreprise.",
+					"Je vois le DevOps comme une philosophie : automatiser et collaborer dès l'amont pour éviter les crises en aval. En pratique, je conçois des infrastructures AWS scalables avec Terraform, automatise les déploiements pour libérer du temps à l'innovation.",
 				"Full-Stack":
-					"Développement d'interfaces utilisateur modernes et performantes avec React, Next.js et l'écosystème JavaScript/TypeScript pour des expériences web exceptionnelles.",
-				AI: "Intégration d'intelligence artificielle via OpenAI, LangChain et développement de solutions IA personnalisées pour automatiser et enrichir les applications.",
+					"Pour moi, le développement fullstack c'est maîtriser toute la chaîne : de l'interface utilisateur élégante avec React/Next.js jusqu'aux APIs robustes en Node.js. L'objectif ? Créer des expériences cohérentes où technique et usage se rejoignent.",
+				AI: "L'IA, je la vois comme un amplificateur d'intelligence humaine plutôt qu'un remplacement. J'intègre OpenAI et LangChain pour créer des solutions qui augmentent les capacités métier sans perdre le contrôle.",
 				Teaching:
-					"Formation technique en bootcamp, mentorat de développeurs juniors et création de curricula adaptés aux besoins du marché tech actuel.",
+					"Enseigner, c'est transmettre plus que des compétences : c'est partager une passion et accompagner des reconversions. En bootcamp, je forme des développeurs opérationnels tout en cultivant leur curiosité technique.",
 				// Skills section technologies
 				AWS: "Plateforme cloud leader pour déployer des infrastructures scalables, gérer les services managés et optimiser les coûts d'exploitation.",
 				Terraform: "Infrastructure as Code pour provisionner et gérer les ressources cloud de manière déclarative, reproductible et versionnée.",
@@ -354,11 +354,12 @@ export const locales = {
 			techDetails: {
 				// About section icons
 				"Cloud & DevOps":
-					"Expertise in scalable cloud architectures with AWS, deploying robust infrastructures and DevOps automation for enterprise solutions.",
+					"I see DevOps as a philosophy: automate and collaborate upstream to prevent crises downstream. In practice, I design scalable AWS infrastructures with Terraform, automate deployments to free up time for innovation.",
 				"Full-Stack":
-					"Development of modern and performant user interfaces with React, Next.js and JavaScript/TypeScript ecosystem for exceptional web experiences.",
-				AI: "Artificial intelligence integration via OpenAI, LangChain and development of custom AI solutions to automate and enrich applications.",
-				Teaching: "Technical training in bootcamps, mentoring junior developers and creating curricula adapted to current tech market needs.",
+					"For me, fullstack development means mastering the entire chain: from elegant user interfaces with React/Next.js to robust APIs in Node.js. The goal? Creating coherent experiences where technology and usage converge.",
+				AI: "I see AI as an amplifier of human intelligence rather than a replacement. I integrate OpenAI and LangChain to create solutions that enhance business capabilities without losing control.",
+				Teaching:
+					"Teaching means transmitting more than skills: it's about sharing passion and supporting career transitions. In bootcamps, I train operational developers while cultivating their technical curiosity.",
 				// Skills section technologies
 				AWS: "Leading cloud platform for deploying scalable infrastructures, managing managed services and optimizing operational costs.",
 				Terraform: "Infrastructure as Code to provision and manage cloud resources declaratively, reproducibly and versioned.",
