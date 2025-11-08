@@ -30,7 +30,7 @@ export default function Education() {
 			type: "certification",
 			title: t.education.items.rncp.title,
 			institution: t.education.items.rncp.institution,
-			year: "2024",
+			year: "2023",
 			icon: ["fas", "certificate"] as IconProp,
 			color: "cyber-cyan",
 			description: t.education.items.rncp.description,
