@@ -14,8 +14,7 @@ export const locales = {
 			downloadButton: "Télécharger le fichier",
 		},
 		footer: {
-			copyright: "© 2025 Joachim Jasmin. Fait avec",
-			madeWith: "et React Three Fiber.",
+			copyright: "© 2025 Joachim Jasmin.",
 		},
 		nav: {
 			home: "Accueil",
@@ -272,6 +271,7 @@ export const locales = {
 			description: "Quelques plateformes, outils et expériences techniques que j'ai développés.",
 			status: {
 				active: "Actif",
+				paused: "En pause",
 			},
 			techStack: "Stack Technique :",
 			moreProjects: {
@@ -281,48 +281,71 @@ export const locales = {
 			},
 			cta: {
 				site: "Voir le site",
-				repo: "Code source",
+				"repo-front": "Front",
+				"repo-back": "Back",
+				repo: "Microservice",
 			},
 			items: [
 				{
 					slug: "odyssai",
 					name: "Odyssai",
-					description: "Jeu narratif IA mêlant voix, texte et aventure interactive.",
-					stack: ["LangChain", "React Native", "Flask", "OpenAI"],
+					description:
+						"Application de jeu de rôle narratif propulsée par l’IA, où le joueur devient le héros de sa propre histoire. Vous pouvez créer des mondes, façonner des personnages et faire évoluer le scénario à travers de vraies conversations naturelles.",
+					stack: ["Flask", "Expo", "LangChain", "MongoDB", "Docker", "Docker Compose", "ChromaDB", "OpenAI", "fly.io"],
 					links: {
 						site: "#",
-						repo: "#",
+						"repo-front": "https://github.com/Jyok1m/odyssai-app",
+						"repo-back": "https://github.com/Jyok1m/odyssai-core",
 					},
+					status: "Actif",
+				},
+				{
+					slug: "neoney",
+					name: "Neoney",
+					description:
+						"Le réseau social destiné aux Neo entrepreneurs pour révolutionner l’entrepreneuriat et faciliter encore plus la génération de business pour les membres. Un réseau social créé par des entrepreneurs pour les entrepreneurs.",
+					stack: ["Next.js", "Express", "Tailwind", "MongoDB", "Vercel", "Northflank"],
+					links: {
+						site: "https://www.neoney.co/",
+					},
+					status: "Actif",
+				},
+				{
+					slug: "ipseis",
+					name: "Ipseis",
+					description:
+						"IPSEIS conçoit des formations actives, immersives et sur mesure pour les professionnels de la santé, du social et médico-social.",
+					stack: ["Next.js", "Express", "Docker", "Tailwind", "Fontawesome", "MongoDB", "Vercel"],
+					links: {
+						site: "https://www.ipseis.fr",
+						"repo-front": "https://github.com/Jyok1m/ipseis",
+						"repo-back": "https://github.com/Jyok1m/ipseis-backend",
+					},
+					status: "Actif",
+				},
+				{
+					slug: "generation_sauveteurs",
+					name: "Génération Sauveteur",
+					description:
+						"Conçus par des professionnels du sauvetage, ce jeu permet d'apprendre sur la sécurité aquatique et l'environnement tout en vous amusant !",
+					stack: ["React", "Symphony", "Nginx", "OVH", "MariaDB"],
+					links: {
+						site: "https://app.generationsauveteur.fr/",
+					},
+					status: "Actif",
 				},
 				{
 					slug: "ai-wedder",
 					name: "AI Wedder",
 					description: "Plateforme d'analyse d'avis prestataires mariage avec IA.",
-					stack: ["FastAPI", "MongoDB", "OpenAI", "React"],
+					stack: ["Next.js", "FastAPI", "MongoDB", "HuggingFace", "Playwright", "OpenAI", "CamemBERT"],
 					links: {
-						site: "#",
-						repo: "#",
+						site: "https://ai-wedder-frontend.vercel.app/",
+						"repo-front": "https://github.com/Jyok1m/ai-wedder-frontend",
+						"repo-back": "https://github.com/Jyok1m/ai-wedder-backend",
+						repo: "https://github.com/Jyok1m/ai-wedder-microservice",
 					},
-				},
-				{
-					slug: "cloud-infra",
-					name: "Infrastructure Cloud",
-					description: "Templates Terraform pour architectures AWS scalables.",
-					stack: ["Terraform", "AWS", "Kubernetes", "Ansible"],
-					links: {
-						site: "#",
-						repo: "#",
-					},
-				},
-				{
-					slug: "bootcamp-platform",
-					name: "Plateforme Bootcamp",
-					description: "Outil de gestion et suivi des apprenants en formation intensive.",
-					stack: ["Next.js", "NestJS", "PostgreSQL", "Docker"],
-					links: {
-						site: "#",
-						repo: "#",
-					},
+					status: "En pause",
 				},
 			],
 		},
@@ -331,14 +354,14 @@ export const locales = {
 			description: "Prêt pour de nouveaux défis techniques",
 			connectTitle: "Connectons-nous",
 			availability: {
-				status: "Disponible pour nouveaux projets",
+				status: "Disponible pour de nouveaux projets",
 				description: "Ouvert aux opportunités en Cloud/DevOps, Fullstack, IA et formations.",
 			},
 			formTitle: "Envoyez-moi un message",
 			contactMethods: {
 				email: {
 					label: "Email",
-					description: "joachim.jasmin@example.com",
+					description: "joachim.jasmin-dev@proton.me",
 				},
 				linkedin: {
 					label: "LinkedIn",
@@ -370,8 +393,7 @@ export const locales = {
 			downloadButton: "Download file",
 		},
 		footer: {
-			copyright: "© 2025 Joachim Jasmin. Made with",
-			madeWith: "and React Three Fiber.",
+			copyright: "© 2025 Joachim Jasmin.",
 		},
 		nav: {
 			home: "Home",
@@ -613,62 +635,86 @@ export const locales = {
 		},
 		projects: {
 			title: "My Projects & Links",
-			description: "Some platforms, tools and technical experiments I've developed.",
+			description: "A few platforms, tools, and technical experiences I've developed.",
 			status: {
 				active: "Active",
+				paused: "Paused",
 			},
 			techStack: "Tech Stack:",
 			moreProjects: {
-				title: "More projects coming",
-				description: "I'm constantly working on new projects and experiments. Stay connected to discover my next creations!",
+				title: "More Projects Coming Soon",
+				description: "I'm constantly working on new projects and experiments. Stay tuned to discover what's next!",
 			},
 			cta: {
-				site: "View site",
-				repo: "Source code",
+				site: "Visit site",
+				"repo-front": "Frontend",
+				"repo-back": "Backend",
+				repo: "Microservice",
 			},
 			items: [
 				{
 					slug: "odyssai",
 					name: "Odyssai",
-					description: "AI narrative game blending voice, text and interactive adventure.",
-					stack: ["LangChain", "React Native", "Flask", "OpenAI"],
+					description:
+						"An AI-powered narrative role-playing game where the player becomes the hero of their own story. You can create worlds, shape characters, and influence the plot through natural conversations.",
+					stack: ["Flask", "Expo", "LangChain", "MongoDB", "Docker", "Docker Compose", "ChromaDB", "OpenAI", "fly.io"],
 					links: {
 						site: "#",
-						repo: "#",
+						"repo-front": "https://github.com/Jyok1m/odyssai-app",
+						"repo-back": "https://github.com/Jyok1m/odyssai-core",
 					},
+					status: "Active",
+				},
+				{
+					slug: "neoney",
+					name: "Neoney",
+					description:
+						"A social network for Neo-entrepreneurs, designed to reinvent entrepreneurship and make business generation easier for its members. A platform built by entrepreneurs, for entrepreneurs.",
+					stack: ["Next.js", "Express", "Tailwind", "MongoDB", "Vercel", "Northflank"],
+					links: {
+						site: "https://www.neoney.co/",
+					},
+					status: "Active",
+				},
+				{
+					slug: "ipseis",
+					name: "Ipseis",
+					description:
+						"IPSEIS designs active, immersive, and tailor-made training programs for professionals in the healthcare, social, and medical-social sectors.",
+					stack: ["Next.js", "Express", "Docker", "Tailwind", "Fontawesome", "MongoDB", "Vercel"],
+					links: {
+						site: "https://www.ipseis.fr",
+						"repo-front": "https://github.com/Jyok1m/ipseis",
+						"repo-back": "https://github.com/Jyok1m/ipseis-backend",
+					},
+					status: "Active",
+				},
+				{
+					slug: "generation_sauveteurs",
+					name: "Génération Sauveteur",
+					description: "Created by professional rescuers, this educational game teaches water safety and environmental awareness while having fun.",
+					stack: ["React", "Symphony", "Nginx", "OVH", "MariaDB"],
+					links: {
+						site: "https://app.generationsauveteur.fr/",
+					},
+					status: "Active",
 				},
 				{
 					slug: "ai-wedder",
 					name: "AI Wedder",
-					description: "Wedding vendors review analysis platform with AI.",
-					stack: ["FastAPI", "MongoDB", "OpenAI", "React"],
+					description: "An AI-based platform that analyzes wedding vendor reviews to assess quality and sentiment.",
+					stack: ["Next.js", "FastAPI", "MongoDB", "HuggingFace", "Playwright", "OpenAI", "CamemBERT"],
 					links: {
-						site: "#",
-						repo: "#",
+						site: "https://ai-wedder-frontend.vercel.app/",
+						"repo-front": "https://github.com/Jyok1m/ai-wedder-frontend",
+						"repo-back": "https://github.com/Jyok1m/ai-wedder-backend",
+						repo: "https://github.com/Jyok1m/ai-wedder-microservice",
 					},
-				},
-				{
-					slug: "cloud-infra",
-					name: "Cloud Infrastructure",
-					description: "Terraform templates for scalable AWS architectures.",
-					stack: ["Terraform", "AWS", "Kubernetes", "Ansible"],
-					links: {
-						site: "#",
-						repo: "#",
-					},
-				},
-				{
-					slug: "bootcamp-platform",
-					name: "Bootcamp Platform",
-					description: "Management and tracking tool for intensive training students.",
-					stack: ["Next.js", "NestJS", "PostgreSQL", "Docker"],
-					links: {
-						site: "#",
-						repo: "#",
-					},
+					status: "Paused",
 				},
 			],
 		},
+
 		contact: {
 			title: "Contact me",
 			description: "Ready for new technical challenges",
@@ -681,7 +727,7 @@ export const locales = {
 			contactMethods: {
 				email: {
 					label: "Email",
-					description: "joachim.jasmin@example.com",
+					description: "joachim.jasmin-dev@proton.me",
 				},
 				linkedin: {
 					label: "LinkedIn",

@@ -23,7 +23,7 @@ export default function ProjectsLinks() {
 
 								{/* Status badge */}
 								<div className="px-3 py-1 bg-cyber-cyan/20 border border-cyber-cyan/50 rounded-full text-cyber-cyan text-xs font-medium">
-									{t.projects.status.active}
+									{project.status}
 								</div>
 							</div>
 
@@ -46,20 +46,53 @@ export default function ProjectsLinks() {
 							</div>
 
 							{/* Links */}
-							<div className="flex gap-4">
-								<a href={project.links.site} className="flex-1 cyber-button text-center" target="_blank" rel="noopener noreferrer">
-									<span className="flex items-center justify-center space-x-2">
-										<FontAwesomeIcon icon={["fas", "globe"]} />
-										<span>{t.projects.cta.site}</span>
-									</span>
-								</a>
+							<div className="flex flex-col gap-2">
+								{project.links.site && (
+									<a href={project.links.site} className="flex-1 cyber-button text-center" target="_blank" rel="noopener noreferrer">
+										<span className="flex items-center justify-center space-x-2">
+											<FontAwesomeIcon icon={["fas", "globe"]} className="w-4 h-4" />
+											<span>{t.projects.cta.site}</span>
+										</span>
+									</a>
+								)}
 
-								<a href={project.links.repo} className="flex-1 cyber-button-secondary text-center" target="_blank" rel="noopener noreferrer">
-									<span className="flex items-center justify-center space-x-2">
-										<FontAwesomeIcon icon={["fas", "file"]} />
-										<span>{t.projects.cta.repo}</span>
-									</span>
-								</a>
+								<div className="flex flex-row gap-2">
+									{project.links["repo-front"] && (
+										<a
+											href={project.links["repo-front"]}
+											className="flex-1 cyber-button-secondary text-center"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											<span className="flex items-center justify-center space-x-2">
+												<FontAwesomeIcon icon={["fas", "code"]} className="w-4 h-4" />
+												<span>{t.projects.cta["repo-front"]}</span>
+											</span>
+										</a>
+									)}
+
+									{project.links["repo-back"] && (
+										<a
+											href={project.links["repo-back"]}
+											className="flex-1 cyber-button-secondary text-center"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											<span className="flex items-center justify-center space-x-2">
+												<FontAwesomeIcon icon={["fas", "file"]} className="w-4 h-4" />
+												<span>{t.projects.cta["repo-back"]}</span>
+											</span>
+										</a>
+									)}
+								</div>
+								{project.links.repo && (
+									<a href={project.links.repo} className="flex-1 cyber-button-secondary text-center" target="_blank" rel="noopener noreferrer">
+										<span className="flex items-center justify-center space-x-2">
+											<FontAwesomeIcon icon={["fas", "code-branch"]} className="w-4 h-4" />
+											<span>{t.projects.cta.repo}</span>
+										</span>
+									</a>
+								)}
 							</div>
 
 							{/* Decorative corner accent */}
@@ -75,24 +108,29 @@ export default function ProjectsLinks() {
 						<h3 className="text-2xl font-bold neon-text mb-4">{t.projects.moreProjects.title}</h3>
 						<p className="text-slate-300 mb-6">{t.projects.moreProjects.description}</p>
 
-						<div className="flex flex-wrap justify-center gap-4">
-							<a href="https://github.com/joachimjasmin" className="cyber-button" target="_blank" rel="noopener noreferrer">
-								<span className="flex items-center space-x-2">
-									<FontAwesomeIcon icon={["fas", "folder"]} />
+						<div className="flex flex-col sm:flex-row justify-center gap-4">
+							<a href="https://github.com/Jyok1m" className="cyber-button min-w-[120px]" target="_blank" rel="noopener noreferrer">
+								<span className="flex items-center justify-center space-x-2">
+									<FontAwesomeIcon icon={["fas", "code-branch"]} className="w-4 h-4" />
 									<span>GitHub</span>
 								</span>
 							</a>
 
-							<a href="https://gitlab.com/joachimjasmin" className="cyber-button" target="_blank" rel="noopener noreferrer">
-								<span className="flex items-center space-x-2">
-									<FontAwesomeIcon icon={["fas", "code-branch"]} />
+							<a href="https://gitlab.com/Jyok1m" className="cyber-button min-w-[120px]" target="_blank" rel="noopener noreferrer">
+								<span className="flex items-center justify-center space-x-2">
+									<FontAwesomeIcon icon={["fas", "code"]} className="w-4 h-4" />
 									<span>GitLab</span>
 								</span>
 							</a>
 
-							<a href="https://linkedin.com/in/joachimjasmin" className="cyber-button-secondary" target="_blank" rel="noopener noreferrer">
-								<span className="flex items-center space-x-2">
-									<FontAwesomeIcon icon={["fas", "briefcase"]} />
+							<a
+								href="https://www.linkedin.com/in/joachim-jasmin/"
+								className="cyber-button-secondary min-w-[120px]"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<span className="flex items-center justify-center space-x-2">
+									<FontAwesomeIcon icon={["fas", "briefcase"]} className="w-4 h-4" />
 									<span>LinkedIn</span>
 								</span>
 							</a>

@@ -30,13 +30,11 @@ function App() {
 			<footer className="py-8 bg-slate-900 border-t border-slate-800">
 				<div className="container mx-auto px-6">
 					<div className="flex flex-col md:flex-row justify-between items-center">
-						<div className="text-slate-400 text-sm mb-4 md:mb-0">
-							{t.footer.copyright} <FontAwesomeIcon icon={["fas", "heart"]} className="text-red-500" /> {t.footer.madeWith}
-						</div>
+						<div className="text-slate-400 text-sm mb-4 md:mb-0">{t.footer.copyright}</div>
 
 						<div className="flex space-x-6">
 							<a
-								href="https://github.com/joachimjasmin"
+								href="https://github.com/Jyok1m"
 								className="text-slate-400 hover:text-cyber-cyan transition-colors duration-300"
 								target="_blank"
 								rel="noopener noreferrer"
@@ -44,7 +42,15 @@ function App() {
 								GitHub
 							</a>
 							<a
-								href="https://linkedin.com/in/joachimjasmin"
+								href="https://gitlab.com/Jyok1m"
+								className="text-slate-400 hover:text-cyber-cyan transition-colors duration-300"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								GitLab
+							</a>
+							<a
+								href="https://www.linkedin.com/in/joachim-jasmin/"
 								className="text-slate-400 hover:text-cyber-cyan transition-colors duration-300"
 								target="_blank"
 								rel="noopener noreferrer"

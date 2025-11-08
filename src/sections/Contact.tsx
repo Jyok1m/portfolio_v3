@@ -34,7 +34,7 @@ export default function Contact() {
 										</a>
 
 										<a
-											href="https://linkedin.com/in/joachimjasmin"
+											href="https://www.linkedin.com/in/joachim-jasmin/"
 											className="flex items-center space-x-4 text-slate-300 hover:text-cyber-purple transition-colors duration-300 group"
 											target="_blank"
 											rel="noopener noreferrer"
@@ -49,7 +49,7 @@ export default function Contact() {
 										</a>
 
 										<a
-											href="https://github.com/joachimjasmin"
+											href="https://github.com/Jyok1m"
 											className="flex items-center space-x-4 text-slate-300 hover:text-cyber-cyan transition-colors duration-300 group"
 											target="_blank"
 											rel="noopener noreferrer"
@@ -64,7 +64,7 @@ export default function Contact() {
 										</a>
 
 										<a
-											href="https://gitlab.com/joachimjasmin"
+											href="https://gitlab.com/Jyok1m"
 											className="flex items-center space-x-4 text-slate-300 hover:text-cyber-purple transition-colors duration-300 group"
 											target="_blank"
 											rel="noopener noreferrer"
