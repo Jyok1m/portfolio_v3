@@ -14,7 +14,7 @@ export default function Hero() {
 	};
 
 	return (
-		<section id="hero" className="min-h-screen flex items-center relative overflow-hidden bg-gradient-cyber pt-32">
+		<section id="hero" className="min-h-screen flex items-center relative overflow-hidden bg-gradient-cyber pt-24 sm:pt-32">
 			{/* Background effect */}
 			<div className="absolute inset-0 bg-gradient-to-br from-cyber-dark via-slate-900 to-cyber-dark opacity-90"></div>
 
@@ -88,7 +88,7 @@ export default function Hero() {
 			</div>
 
 			{/* Scroll indicator */}
-			<div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+			<div className="hidden sm:block absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
 				<div className="w-6 h-10 border-2 border-cyber-cyan rounded-full flex justify-center">
 					<div className="w-1 h-3 bg-cyber-cyan rounded-full mt-2 animate-pulse"></div>
 				</div>
