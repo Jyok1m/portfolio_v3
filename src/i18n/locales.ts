@@ -46,7 +46,24 @@ export const locales = {
 			categories: {
 				cloud: {
 					title: "Cloud & DevOps",
-					skills: ["AWS", "Terraform", "Ansible", "Docker", "Kubernetes", "CI/CD", "Jenkins", "GitLab CI"],
+					skills: [
+						"AWS",
+						"Terraform",
+						"Ansible",
+						"Docker",
+						"Kubernetes",
+						"CI/CD",
+						"Jenkins",
+						"GitLab CI",
+						"Traefik",
+						"Prometheus",
+						"Grafana",
+						"SonarQube",
+						"Cypress",
+						"Playwright",
+						"Locust",
+						"Artillery",
+					],
 				},
 				fullstack: {
 					title: "Développement Fullstack",
@@ -86,6 +103,20 @@ export const locales = {
 					"Jenkins, c'est le chef d'orchestre de mes pipelines : il coordonne, execute, signale. Un peu vintage mais tellement fiable pour automatiser les workflows.",
 				"GitLab CI":
 					"GitLab CI, c'est DevOps tout-en-un : code, CI/CD, monitoring dans une même interface. Simple et efficace quand on veut éviter de jongler entre outils.",
+				Prometheus:
+					"Prometheus, c'est l'œil qui surveille tout : métriques temps réel, alertes configurables, scraping automatique. La télémétrie qui anticipe les problèmes avant qu'ils arrivent.",
+				Grafana:
+					"Grafana, c'est la beauté des données : dashboards élégants, visualisations parlantes, drill-down intuitif. Transformer les métriques en insights visuels compréhensibles.",
+				SonarQube:
+					"SonarQube, c'est l'inspecteur de code implacable : vulnérabilités détectées, qualité mesurée, dette technique quantifiée. Le garde-fou qui maintient un code propre et sécurisé.",
+				Cypress:
+					"Cypress, c'est les tests E2E comme si on était l'utilisateur : simulation réelle du navigateur, debugging visuel, assertions naturelles. Tester sans se prendre la tête.",
+				Playwright:
+					"Playwright, c'est le multi-navigateur sans effort : Chrome, Firefox, Safari en parallèle, mobile inclus. L'assurance que ça marche partout, vraiment partout.",
+				Locust:
+					"Locust, c'est l'armée de testeurs virtuels : montée en charge progressive, scénarios réalistes, métriques précises. Savoir si l'app tiendra la charge avant le jour J.",
+				Artillery:
+					"Artillery, c'est l'artillerie lourde des tests de performance : load testing moderne, APIs et WebSockets, reporting détaillé. La puissance de feu pour valider la scalabilité.",
 				"Next.js":
 					"Next.js, c'est React qui grandit : SSR, optimisations automatiques, routing intégré. Un framework qui anticipe mes besoins avant même que j'y pense.",
 				TypeScript:
@@ -135,9 +166,10 @@ export const locales = {
 				Postman:
 					"Postman, c'est mon laboratoire d'APIs : tester, documenter, partager les endpoints. Indispensable pour éviter les surprises en intégration.",
 				Redis: "Redis, c'est la mémoire flash de mes apps : ultra-rapide, clé-valeur simple, parfait pour du cache ou des sessions. La vitesse pure.",
-				Nginx: "Nginx, c'est le portier haute performance : il distribue, cache, sécurise le trafic web sans broncher. Léger mais costaud.",
 				GraphQL:
 					"GraphQL, c'est l'API à la carte : le client demande exactement ce qu'il veut, pas plus, pas moins. Fini le sur-fetching et les endpoints multiples.",
+				Traefik:
+					"Traefik, c'est le reverse proxy intelligent : découverte automatique des services, certificats SSL auto-générés, load balancing élégant. Le routage moderne sans configuration manuelle.",
 			},
 		},
 		education: {
@@ -351,7 +383,24 @@ export const locales = {
 			categories: {
 				cloud: {
 					title: "Cloud & DevOps",
-					skills: ["AWS", "Terraform", "Ansible", "Docker", "Kubernetes", "CI/CD", "Jenkins", "GitLab CI"],
+					skills: [
+						"AWS",
+						"Terraform",
+						"Ansible",
+						"Docker",
+						"Kubernetes",
+						"CI/CD",
+						"Jenkins",
+						"GitLab CI",
+						"Traefik",
+						"Prometheus",
+						"Grafana",
+						"SonarQube",
+						"Cypress",
+						"Playwright",
+						"Locust",
+						"Artillery",
+					],
 				},
 				fullstack: {
 					title: "Fullstack Development",
@@ -430,7 +479,22 @@ export const locales = {
 					"Figma is the bridge between design and dev: living mockups, reusable components, real-time collaboration. Pixel-perfect finally accessible.",
 				Postman: "Postman is my API laboratory: test, document, share endpoints. Essential to avoid integration surprises.",
 				Redis: "Redis is the flash memory of my apps: ultra-fast, simple key-value, perfect for cache or sessions. Pure speed.",
-				Nginx: "Nginx is the high-performance doorman: it distributes, caches, secures web traffic without breaking a sweat. Light but tough.",
+				Traefik:
+					"Traefik is the intelligent reverse proxy: automatic service discovery, auto-generated SSL certificates, elegant load balancing. Modern routing without manual configuration.",
+				Prometheus:
+					"Prometheus is the all-seeing eye: real-time metrics, configurable alerts, automatic scraping. Telemetry that anticipates problems before they happen.",
+				Grafana:
+					"Grafana is data made beautiful: elegant dashboards, meaningful visualizations, intuitive drill-down. Transforming metrics into understandable visual insights.",
+				SonarQube:
+					"SonarQube is the relentless code inspector: vulnerabilities detected, quality measured, technical debt quantified. The guardian that keeps code clean and secure.",
+				Cypress:
+					"Cypress is E2E testing like being the user: real browser simulation, visual debugging, natural assertions. Testing without the headache.",
+				Playwright:
+					"Playwright is multi-browser made effortless: Chrome, Firefox, Safari in parallel, mobile included. The assurance it works everywhere, truly everywhere.",
+				Locust:
+					"Locust is the virtual tester army: progressive load ramping, realistic scenarios, precise metrics. Knowing if the app will handle the load before D-day.",
+				Artillery:
+					"Artillery is the heavy artillery of performance testing: modern load testing, APIs and WebSockets, detailed reporting. The firepower to validate scalability.",
 				GraphQL:
 					"GraphQL is the à la carte API: the client asks for exactly what it wants, no more, no less. No more over-fetching and multiple endpoints.",
 			},
