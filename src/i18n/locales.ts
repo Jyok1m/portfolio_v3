@@ -35,9 +35,9 @@ export const locales = {
 		about: {
 			title: "À propos de moi",
 			description:
-				"Passionné par la technologie, je combine expertise technique et pédagogie pour créer des solutions innovantes. Mon parcours m'a mené de l'infrastructure cloud aux applications web, en passant par l'intelligence artificielle.",
+				"Mon parcours est celui d'une reconversion audacieuse : de la finance et l'hôtellerie à l'intelligence artificielle, en passant par le développement web et le DevOps. Une évolution guidée par la curiosité et la passion de transmettre.",
 			content:
-				"En tant qu'ingénieur Cloud & DevOps, je conçois et déploie des architectures scalables sur AWS avec Terraform, Ansible et Kubernetes. Côté développement, je crée des applications fullstack avec React/Next.js et Node.js/NestJS. Mon travail avec l'IA se concentre sur l'intégration des LLM via LangChain et FastAPI. En parallèle, je transmets ma passion en enseignant dans des bootcamps intensifs.",
+				"Diplômé en management hôtelier et finance, j'ai découvert ma passion pour la technologie et opéré une reconversion vers le développement fullstack, puis le DevOps et enfin l'IA. Aujourd'hui, je conçois des infrastructures Cloud avec Terraform, développe avec React/Node.js et intègre des LLM via LangChain. En parallèle, je forme la nouvelle génération de professionnels tech en bootcamp.",
 		},
 		skills: {
 			title: "Compétences",
@@ -262,9 +262,9 @@ export const locales = {
 		about: {
 			title: "About me",
 			description:
-				"Passionate about technology, I combine technical expertise and pedagogy to create innovative solutions. My journey has led me from cloud infrastructure to web applications, through artificial intelligence.",
+				"My journey is one of bold career transformation: from finance and hospitality to artificial intelligence, through web development and DevOps. An evolution guided by curiosity and the passion to share knowledge.",
 			content:
-				"As a Cloud & DevOps engineer, I design and deploy scalable architectures on AWS with Terraform, Ansible and Kubernetes. On the development side, I create fullstack applications with React/Next.js and Node.js/NestJS. My AI work focuses on LLM integration via LangChain and FastAPI. In parallel, I share my passion by teaching in intensive bootcamps.",
+				"With degrees in hospitality management and finance, I discovered my passion for technology and made a career shift to fullstack development, then DevOps, and finally AI. Today, I design Cloud infrastructures with Terraform, develop with React/Node.js, and integrate LLMs via LangChain. In parallel, I train the next generation of tech professionals in bootcamps.",
 		},
 		skills: {
 			title: "Skills",
