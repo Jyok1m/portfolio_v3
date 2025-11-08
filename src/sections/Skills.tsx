@@ -1,10 +1,18 @@
 import { useLocale } from "../i18n/useLocale";
 import SectionTitle from "../components/SectionTitle";
+import TechModal from "../components/TechModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { useState } from "react";
 
 export default function Skills() {
 	const { t } = useLocale();
+	const [selectedTech, setSelectedTech] = useState<{
+		name: string;
+		icon: IconProp;
+		description: string;
+		color?: string;
+	} | null>(null);
 
 	const skillCategories = [
 		{
@@ -60,7 +68,7 @@ export default function Skills() {
 										key={skill}
 										className={`
                       px-3 py-2 bg-slate-800/50 rounded-lg text-sm font-medium text-center
-                      border transition-all duration-300 hover:scale-105
+                      border transition-all duration-300 hover:scale-105 cursor-pointer
                       ${
 												category.color === "cyber-cyan"
 													? "border-cyber-cyan/30 text-cyber-cyan hover:border-cyber-cyan hover:shadow-neon"
@@ -68,6 +76,14 @@ export default function Skills() {
 											}
                     `}
 										style={{ animationDelay: `${index * 0.1 + skillIndex * 0.05}s` }}
+										onClick={() =>
+											setSelectedTech({
+												name: skill,
+												icon: category.icon,
+												description: t.skills.techDetails[skill as keyof typeof t.skills.techDetails],
+												color: category.color,
+											})
+										}
 									>
 										{skill}
 									</div>
@@ -95,7 +111,15 @@ export default function Skills() {
 							{["Git", "Linux", "VS Code", "Figma", "Postman", "Redis", "Nginx", "GraphQL"].map((tech) => (
 								<span
 									key={tech}
-									className="px-3 py-1 bg-slate-800 rounded-full text-slate-300 text-sm border border-slate-600 hover:border-cyber-cyan hover:text-cyber-cyan transition-colors duration-300"
+									className="px-3 py-1 bg-slate-800 rounded-full text-slate-300 text-sm border border-slate-600 hover:border-cyber-cyan hover:text-cyber-cyan transition-colors duration-300 cursor-pointer"
+									onClick={() =>
+										setSelectedTech({
+											name: tech,
+											icon: ["fas", "code"] as IconProp,
+											description: t.skills.techDetails[tech as keyof typeof t.skills.techDetails],
+											color: "cyber-cyan",
+										})
+									}
 								>
 									{tech}
 								</span>
@@ -103,6 +127,9 @@ export default function Skills() {
 						</div>
 					</div>
 				</div>
+
+				{/* Tech Modal */}
+				{selectedTech && <TechModal isOpen={!!selectedTech} onClose={() => setSelectedTech(null)} tech={selectedTech} />}
 			</div>
 		</section>
 	);

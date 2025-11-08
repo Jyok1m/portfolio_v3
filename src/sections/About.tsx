@@ -1,10 +1,18 @@
 import { useLocale } from "../i18n/useLocale";
 import SectionTitle from "../components/SectionTitle";
+import TechModal from "../components/TechModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { useState } from "react";
 
 export default function About() {
 	const { t } = useLocale();
+	const [selectedTech, setSelectedTech] = useState<{
+		name: string;
+		icon: IconProp;
+		description: string;
+		color?: string;
+	} | null>(null);
 
 	return (
 		<section id="about" className="py-20 bg-slate-900/30">
@@ -32,8 +40,16 @@ export default function About() {
 										].map((item, index) => (
 											<div
 												key={item.label}
-												className="cyber-card bg-slate-800/50 flex flex-col items-center justify-center p-4 animate-pulse-slow"
+												className="cyber-card bg-slate-800/50 flex flex-col items-center justify-center p-4 animate-pulse-slow cursor-pointer hover:scale-105 transition-transform duration-300"
 												style={{ animationDelay: `${index * 0.5}s` }}
+												onClick={() =>
+													setSelectedTech({
+														name: item.label,
+														icon: item.icon,
+														description: t.skills.techDetails[item.label as keyof typeof t.skills.techDetails],
+														color: "cyber-cyan",
+													})
+												}
 											>
 												<div className="text-2xl mb-2">
 													<FontAwesomeIcon icon={item.icon} className="text-cyber-cyan" />
@@ -65,6 +81,9 @@ export default function About() {
 						</div>
 					</div>
 				</div>
+
+				{/* Tech Modal */}
+				{selectedTech && <TechModal isOpen={!!selectedTech} onClose={() => setSelectedTech(null)} tech={selectedTech} />}
 			</div>
 		</section>
 	);

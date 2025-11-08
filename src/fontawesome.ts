@@ -32,6 +32,7 @@ import {
 	faFileExclamation,
 	faFilePdf,
 	faEye,
+	faCode,
 } from "@fortawesome/pro-solid-svg-icons";
 
 // Ajouter les icônes à la librairie
@@ -67,5 +68,6 @@ library.add(
 	faTimes,
 	faFileExclamation,
 	faFilePdf,
-	faEye
+	faEye,
+	faCode
 );
