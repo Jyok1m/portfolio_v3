@@ -5,10 +5,5 @@
 	"framework": "vite",
 	"env": {
 		"FONTAWESOME_TOKEN": "@fontawesome-token"
-	},
-	"functions": {
-		"api/send-email.ts": {
-			"runtime": "@vercel/node"
-		}
 	}
 }

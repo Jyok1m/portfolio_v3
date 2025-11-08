@@ -1,11 +1,9 @@
 import { useLocale } from "../i18n/useLocale";
 import SectionTitle from "../components/SectionTitle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useContactForm } from "../hooks/useContactForm";
 
 export default function Contact() {
 	const { t } = useLocale();
-	const { formData, isSubmitting, submitStatus, errorMessage, handleChange, handleSubmit } = useContactForm();
 
 	return (
 		<section id="contact" className="py-20 bg-slate-900/30">
@@ -13,7 +11,7 @@ export default function Contact() {
 				<SectionTitle title={t.contact.title} subtitle={t.contact.description} />
 
 				<div className="max-w-4xl mx-auto">
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+					<div className="grid grid-cols-1 gap-12">
 						{/* Contact Info */}
 						<div className="space-y-8">
 							<div className="cyber-card">
@@ -91,107 +89,6 @@ export default function Contact() {
 									</div>
 								</div>
 							</div>
-						</div>
-
-						{/* Contact Form */}
-						<div className="cyber-card">
-							<h3 className="text-2xl font-bold text-cyber-purple mb-6">{t.contact.formTitle}</h3>
-
-							<form onSubmit={handleSubmit} className="space-y-6">
-								{/* Name field */}
-								<div>
-									<label htmlFor="name" className="block text-sm font-medium text-slate-300 mb-2">
-										{t.contact.form.name}
-									</label>
-									<input
-										type="text"
-										id="name"
-										name="name"
-										value={formData.name}
-										onChange={handleChange}
-										required
-										className="w-full px-4 py-3 bg-slate-800/50 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-cyber-cyan focus:ring-1 focus:ring-cyber-cyan transition-colors duration-300"
-										placeholder={t.contact.form.namePlaceholder}
-									/>
-								</div>
-
-								{/* Email field */}
-								<div>
-									<label htmlFor="email" className="block text-sm font-medium text-slate-300 mb-2">
-										{t.contact.form.email}
-									</label>
-									<input
-										type="email"
-										id="email"
-										name="email"
-										value={formData.email}
-										onChange={handleChange}
-										required
-										className="w-full px-4 py-3 bg-slate-800/50 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-cyber-cyan focus:ring-1 focus:ring-cyber-cyan transition-colors duration-300"
-										placeholder={t.contact.form.emailPlaceholder}
-									/>
-								</div>
-
-								{/* Message field */}
-								<div>
-									<label htmlFor="message" className="block text-sm font-medium text-slate-300 mb-2">
-										{t.contact.form.message}
-									</label>
-									<textarea
-										id="message"
-										name="message"
-										value={formData.message}
-										onChange={handleChange}
-										required
-										rows={6}
-										className="w-full px-4 py-3 bg-slate-800/50 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-cyber-cyan focus:ring-1 focus:ring-cyber-cyan transition-colors duration-300 resize-none"
-										placeholder={t.contact.form.messagePlaceholder}
-									/>
-								</div>
-
-								{/* Submit button */}
-								<button
-									type="submit"
-									disabled={isSubmitting || submitStatus === "success"}
-									className={`
-                    w-full py-3 rounded-lg font-semibold transition-all duration-300
-                    ${isSubmitting || submitStatus === "success" ? "bg-slate-600 text-slate-400 cursor-not-allowed" : "cyber-button"}
-                  `}
-								>
-									{submitStatus === "submitting" ? (
-										<span className="flex items-center justify-center space-x-2">
-											<div className="w-4 h-4 border-2 border-slate-400 border-t-transparent rounded-full animate-spin"></div>
-											<span>{t.contact.form.submitting}</span>
-										</span>
-									) : submitStatus === "success" ? (
-										<span className="flex items-center justify-center space-x-2">
-											<FontAwesomeIcon icon={["fas", "check"]} />
-											<span>Message envoyé !</span>
-										</span>
-									) : (
-										t.contact.form.submit
-									)}
-								</button>
-
-								{/* Status messages */}
-								{submitStatus === "success" && (
-									<div className="p-4 bg-green-900/50 border border-green-500/50 rounded-lg text-green-400 text-center">
-										<div className="flex items-center justify-center space-x-2">
-											<FontAwesomeIcon icon={["fas", "check-circle"]} />
-											<span>{t.contact.form.success}</span>
-										</div>
-									</div>
-								)}
-
-								{submitStatus === "error" && (
-									<div className="p-4 bg-red-900/50 border border-red-500/50 rounded-lg text-red-400 text-center">
-										<div className="flex items-center justify-center space-x-2">
-											<FontAwesomeIcon icon={["fas", "exclamation-triangle"]} />
-											<span>{errorMessage || t.contact.form.error}</span>
-										</div>
-									</div>
-								)}
-							</form>
 						</div>
 					</div>
 				</div>

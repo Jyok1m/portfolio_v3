@@ -223,19 +223,7 @@ export const locales = {
 					label: "GitLab",
 					description: "Dépôt Git",
 				},
-			},
-			form: {
-				name: "Nom",
-				namePlaceholder: "Votre nom",
-				email: "Email",
-				emailPlaceholder: "votre@email.com",
-				message: "Message",
-				messagePlaceholder: "Votre message...",
-				submit: "Envoyer",
-				submitting: "Envoi en cours...",
-				success: "Message envoyé avec succès !",
-				error: "Erreur lors de l'envoi du message.",
-			},
+			}
 		},
 	},
 	en: {
@@ -461,19 +449,7 @@ export const locales = {
 					label: "GitLab",
 					description: "Git Repository",
 				},
-			},
-			form: {
-				name: "Name",
-				namePlaceholder: "Your name",
-				email: "Email",
-				emailPlaceholder: "your@email.com",
-				message: "Message",
-				messagePlaceholder: "Your message...",
-				submit: "Send",
-				submitting: "Sending...",
-				success: "Message sent successfully!",
-				error: "Error sending message.",
-			},
+			}
 		},
 	},
 };
