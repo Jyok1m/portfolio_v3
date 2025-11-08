@@ -41,7 +41,7 @@ export const locales = {
 		},
 		skills: {
 			title: "Compétences",
-			description: "Un éventail de technologies pour des solutions complètes",
+			description: "Un éventail de technologies et de compoétences pour des solutions complètes",
 			categories: {
 				cloud: {
 					title: "Cloud & DevOps",
@@ -105,110 +105,77 @@ export const locales = {
 			techDetails: {
 				// About section icons
 				"Cloud & DevOps":
-					"Je vois le DevOps comme une philosophie : automatiser et collaborer dès l'amont pour éviter les crises en aval. En pratique, je conçois des infrastructures AWS scalables avec Terraform, automatise les déploiements pour libérer du temps à l'innovation.",
+					"Le DevOps, c’est pour moi une manière de réduire la friction entre développement et production. Automatiser tôt, surveiller en continu et améliorer sans relâche.",
 				"Full-Stack":
-					"Pour moi, le développement fullstack c'est maîtriser toute la chaîne : de l'interface utilisateur élégante avec React/Next.js jusqu'aux APIs robustes en Node.js. L'objectif ? Créer des expériences cohérentes où technique et usage se rejoignent.",
-				AI: "L'IA, je la vois comme un amplificateur d'intelligence humaine plutôt qu'un remplacement. J'intègre OpenAI et LangChain pour créer des solutions qui augmentent les capacités métier sans perdre le contrôle.",
+					"J’aime concevoir un produit du front au back. Comprendre chaque couche me permet de construire des applications cohérentes et efficaces.",
+				AI: "L’IA m’intéresse parce qu’elle transforme les données en actions concrètes. Je l’utilise pour rendre les outils plus intelligents et réactifs.",
 				Teaching:
-					"Enseigner, c'est transmettre plus que des compétences : c'est partager une passion et accompagner des reconversions. En bootcamp, je forme des développeurs opérationnels tout en cultivant leur curiosité technique.",
-				// Skills section technologies
+					"Enseigner, c’est partager ce que j’aurais aimé apprendre plus tôt. Aider les autres à devenir autonomes reste l’un de mes plus grands moteurs.",
 
 				// DevOps
-
-				AWS: "AWS, c'est mon terrain de jeu cloud préféré : une palette d'outils pour construire des architectures robustes sans réinventer la roue. J'y déploie des infras qui tiennent la charge et maîtrisent les coûts.",
+				AWS: "Un environnement cloud complet et fiable qui me permet de construire des architectures robustes et scalables. J’apprécie sa flexibilité et son écosystème riche.",
 				Terraform:
-					"Terraform transforme l'infrastructure en code : fini les clics dans des interfaces, bonjour la reproductibilité. Une fois écrit, déployé partout de manière identique.",
+					"Un outil essentiel pour décrire l’infrastructure comme du code. Il apporte reproductibilité, traçabilité et confiance dans les déploiements.",
 				Ansible:
-					"Ansible, c'est l'harmonisateur d'environnements : une recette, mille serveurs configurés à l'identique. Fini les différences entre dev et prod qui cassent tout.",
-				Docker:
-					"Docker, c'est l'art d'emballer proprement : une app, ses dépendances, tout dans un conteneur portable. Plus jamais 'ça marche sur ma machine' !",
+					"Je l’utilise pour automatiser les configurations serveurs et garantir des environnements identiques. Moins d’erreurs, plus de cohérence.",
+				Docker: "Les conteneurs simplifient le déploiement et éliminent les problèmes d’environnement. Avec Docker, tout tourne pareil, partout.",
+				Traefik:
+					"Un reverse proxy moderne et intelligent, parfait pour Docker et Kubernetes. Je m’en sers pour gérer le routage, les certificats SSL et l’équilibrage de charge sans complexité.",
 				Kubernetes:
-					"Kubernetes orchestre le chaos des conteneurs : il scale, répare, équilibre automatiquement. Complexe à apprivoiser mais indispensable pour les apps modernes.",
-				"CI/CD":
-					"CI/CD, c'est ma ligne de production automatisée : code poussé, testé, déployé sans intervention humaine. La sérénité des livraisons continues.",
-				Jenkins:
-					"Jenkins, c'est le chef d'orchestre de mes pipelines : il coordonne, execute, signale. Un peu vintage mais tellement fiable pour automatiser les workflows.",
+					"Un orchestrateur exigeant mais incontournable. Une fois bien configuré, il gère la scalabilité, la résilience et la disponibilité sans intervention manuelle.",
+				"CI/CD": "Automatiser les builds, les tests et les déploiements rend les livraisons plus fiables. Moins d’erreurs, plus de sérénité.",
+				Jenkins: "Un outil historique du CI/CD, toujours efficace. Je l’utilise pour les pipelines personnalisés ou hors cloud.",
 				"GitLab CI":
-					"GitLab CI, c'est DevOps tout-en-un : code, CI/CD, monitoring dans une même interface. Simple et efficace quand on veut éviter de jongler entre outils.",
-				Prometheus:
-					"Prometheus, c'est l'œil qui surveille tout : métriques temps réel, alertes configurables, scraping automatique. La télémétrie qui anticipe les problèmes avant qu'ils arrivent.",
+					"Une solution intégrée pour coder, tester et déployer au même endroit. Idéale pour les équipes agiles et les projets collaboratifs.",
+				Prometheus: "Un outil fiable pour collecter les métriques et détecter les problèmes en amont. La base d’une bonne observabilité.",
 				Grafana:
-					"Grafana, c'est la beauté des données : dashboards élégants, visualisations parlantes, drill-down intuitif. Transformer les métriques en insights visuels compréhensibles.",
+					"Je l’utilise pour visualiser les métriques et identifier les tendances. Des dashboards clairs permettent de prendre de meilleures décisions.",
 				SonarQube:
-					"SonarQube, c'est l'inspecteur de code implacable : vulnérabilités détectées, qualité mesurée, dette technique quantifiée. Le garde-fou qui maintient un code propre et sécurisé.",
-				Cypress:
-					"Cypress, c'est les tests E2E comme si on était l'utilisateur : simulation réelle du navigateur, debugging visuel, assertions naturelles. Tester sans se prendre la tête.",
+					"Un outil indispensable pour maintenir la qualité du code. Il aide à repérer les vulnérabilités et la dette technique avant qu’elles ne coûtent cher.",
+				Cypress: "Un framework de test E2E simple et efficace. Il permet de tester le comportement utilisateur directement dans le navigateur.",
 				Playwright:
-					"Playwright, c'est le multi-navigateur sans effort : Chrome, Firefox, Safari en parallèle, mobile inclus. L'assurance que ça marche partout, vraiment partout.",
+					"Une solution moderne pour tester sur plusieurs navigateurs. Idéale pour garantir la compatibilité front-end sur tous les environnements.",
 				Artillery:
-					"Artillery, c'est l'artillerie lourde des tests de performance : load testing moderne, APIs et WebSockets, reporting détaillé. La puissance de feu pour valider la scalabilité.",
+					"Je l’utilise pour simuler de fortes charges et mesurer les performances. Mieux vaut découvrir les limites avant les utilisateurs.",
 
 				// Full-stack
-
-				React:
-					"React, c'est la révolution des interfaces : composants réutilisables, état prévisible, écosystème vivant. Le lego moderne du développement web qui transforme les idées en expériences fluides.",
-				"Next.js":
-					"Next.js, c'est React qui grandit : SSR, optimisations automatiques, routing intégré. Un framework qui anticipe mes besoins avant même que j'y pense.",
-				TypeScript:
-					"TypeScript, c'est JavaScript avec un filet de sécurité : le typage qui prévient les erreurs avant qu'elles n'arrivent. Plus de 'undefined is not a function' en prod !",
+				React: "Une librairie fiable pour créer des interfaces modernes et dynamiques. Les composants rendent le développement clair et modulaire.",
+				"Next.js": "Un framework complet qui optimise React pour la production. Rapide, structuré et prêt à l’emploi.",
+				TypeScript: "Le typage statique évite les erreurs classiques et renforce la stabilité du code. Un must sur les projets d’envergure.",
 				"Node.js":
-					"Node.js, c'est JavaScript qui sort du navigateur pour conquérir le serveur. Rapide, léger, parfait pour des APIs qui répondent au quart de tour.",
-				NestJS:
-					"NestJS apporte la structure d'Angular à Node.js : modules, décorateurs, injection de dépendances. Du code backend enfin organisé et maintenable.",
-				MongoDB:
-					"MongoDB, c'est la liberté du NoSQL : pas de schéma rigide, just store et query. Idéal quand les données évoluent plus vite que les migrations SQL.",
-				PostgreSQL:
-					"PostgreSQL, c'est le couteau suisse des bases de données : relationnel robuste, extensible, avec des features qui font rêver. Quand on a besoin de fiabilité, c'est mon choix.",
-				Express:
-					"Express, c'est Node.js en version minimaliste : léger, flexible, sans chichi. Parfait pour démarrer rapidement une API sans se prendre la tête.",
-				"React Native":
-					"React Native, c'est React qui s'évade vers le mobile : même syntaxe, performance native, iOS et Android d'un coup. Un seul code, deux plateformes conquises.",
-				Expo: "Expo, c'est React Native sans les galères : build cloud, hot reload magique, déploiement simplifié. Le mobile development enfin accessible et fluide.",
-				Flask:
-					"Flask, c'est Python en mode léger : micro-framework, liberté totale, extensibilité à la demande. Quand Django c'est trop et que tu veux garder le contrôle.",
-				Tailwind:
-					"Tailwind, c'est le CSS qui libère : utility-first, responsive par défaut, design system cohérent. Fini les feuilles de style interminables, bonjour la productivité.",
+					"Un environnement rapide et léger pour construire des APIs performantes. Son approche asynchrone convient parfaitement aux applications web modernes.",
+				NestJS: "Un framework backend structuré et maintenable. Idéal pour les applications Node.js complexes et durables.",
+				MongoDB: "Une base NoSQL flexible, parfaite quand le schéma évolue souvent. Simple à manipuler, elle facilite le prototypage rapide.",
+				PostgreSQL: "Une base de données relationnelle robuste et complète. Mon choix quand la fiabilité et la cohérence sont prioritaires.",
+				Express: "Un framework minimaliste et direct pour construire des APIs REST. Simple, rapide, efficace.",
+				"React Native": "Développer une seule base de code pour iOS et Android. Un gain de temps énorme sans sacrifier les performances.",
+				Expo: "Un écosystème React Native qui simplifie le développement mobile. Moins de configuration, plus de résultats.",
+				Flask: "Un micro-framework Python idéal pour les APIs légères et les prototypes IA. Sobre, rapide et extensible.",
+				Tailwind: "Un framework CSS moderne et pragmatique. Il accélère le design tout en gardant un style cohérent et maintenable.",
 
 				// AI Engineering
-
-				"OpenAI GPT":
-					"OpenAI, c'est avoir un super-assistant qui comprend le langage naturel. J'intègre ses capacités pour créer des expériences conversationnelles authentiques.",
+				"OpenAI GPT": "Une base solide pour créer des outils de génération de texte ou de conversation. Simple à intégrer, puissante à exploiter.",
 				LangChain:
-					"LangChain, c'est le pont entre l'IA et les applications métier : il chaîne les prompts, connecte les données, structure l'intelligence. L'IA devient enfin opérationnelle.",
-				FastAPI:
-					"FastAPI, c'est Python qui rivalise avec Node.js en vitesse : validation automatique, doc interactive générée, types partout. L'API moderne par excellence.",
-				Python:
-					"Python, c'est mon langage de l'efficacité : syntaxe claire, écosystème immense, parfait pour l'IA et l'automation. Simple à lire, puissant à l'usage.",
-				ML: "Machine Learning, c'est apprendre aux machines à reconnaître des patterns : données en entrée, prédictions en sortie. La magie statistique au service du métier.",
-				PyTorch:
-					"PyTorch, c'est le terrain de jeu des chercheurs en IA : graphes dynamiques, debugging naturel, prototypage rapide. Quand on veut expérimenter avant d'optimiser.",
-				TensorFlow:
-					"TensorFlow, c'est l'usine à modèles de Google : production-ready, écosystème complet, déploiement scalable. La référence pour industrialiser l'IA.",
+					"Le chaînon manquant entre modèles, données et logique métier. Il rend les LLM réellement utilisables dans des contextes concrets.",
+				FastAPI: "Un framework Python rapide et typé, parfait pour les APIs modernes. Sa documentation automatique facilite le travail en équipe.",
+				Python: "Mon langage principal pour l’IA et l’automatisation. Lisible, polyvalent et soutenu par un écosystème riche.",
+				ML: "Le machine learning consiste à faire apprendre des modèles à partir des données. Je l’utilise pour la prédiction, la classification et l’analyse.",
+				PyTorch: "Un framework flexible et intuitif, parfait pour expérimenter et prototyper rapidement des modèles IA.",
+				TensorFlow: "Un framework complet et optimisé pour la production. Idéal pour les projets IA à grande échelle.",
 				"Scikit-learn":
-					"Scikit-learn, c'est le couteau suisse du Machine Learning : algorithmes classiques, API uniforme, documentation parfaite. L'indispensable pour commencer en ML.",
-				Keras:
-					"Keras, c'est TensorFlow rendu simple : API intuitive, prototypage express, deep learning accessible. Quand on veut de la puissance sans la complexité.",
-				NumPy:
-					"NumPy, c'est les maths qui vont vite : calcul vectoriel, arrays n-dimensionnels, fondation de l'écosystème Python scientifique. La base de tout en data science.",
-				ChromaDB:
-					"ChromaDB, c'est la base vectorielle moderne : embeddings natifs, recherche sémantique fluide, intégration LangChain naturelle. L'IA qui se souvient intelligemment.",
-				Pinecone:
-					"Pinecone, c'est la base vectorielle cloud : recherche de similarité ultra-rapide, scale automatique, APIs simples. La mémoire distribuée de l'IA moderne.",
+					"Une bibliothèque simple et fiable pour les algorithmes classiques de machine learning. Parfaite pour tester et itérer rapidement.",
+				Keras: "Une interface intuitive au-dessus de TensorFlow qui facilite le prototypage rapide en deep learning.",
+				NumPy: "Le socle du calcul scientifique en Python. Je l’utilise pour toutes les manipulations numériques et le traitement de données.",
+				ChromaDB: "Une base vectorielle moderne pour la recherche sémantique et la mémoire d’IA. Idéale pour les applications contextuelles.",
+				Pinecone: "Une solution cloud rapide et scalable pour gérer les embeddings. Simple à intégrer, parfaite pour la production.",
 
 				// Formation
-
-				Bootcamp:
-					"Bootcamp, c'est l'immersion totale : 3 mois pour transformer des profils en développeurs opérationnels. Intensif mais efficace, avec du concret dès le premier jour.",
-				Mentorat:
-					"Mentorat, c'est l'accompagnement sur-mesure : chaque junior a son rythme, ses blocages, ses forces. Je guide sans faire à la place.",
-				Management:
-					"Management, c'est orchestrer les talents : vision claire, objectifs partagés, autonomie encouragée. Créer un environnement où chacun peut exceller.",
-				Passion:
-					"Passion, c'est l'étincelle qui allume tout : curiosité contagieuse, énergie communicative, persévérance face aux défis. L'ingrédient secret de la réussite.",
-				Debug:
-					"Debug, c'est l'art de la résolution : patience méthodique, hypothèses testées, solutions élégantes. Transformer les bugs en opportunités d'apprentissage.",
-				Veille:
-					"Veille, c'est rester dans la course : technologies émergentes, best practices, tendances marché. Curiosité permanente et adaptation constante.",
+				Bootcamp: "Une expérience d’apprentissage intense et concrète. On pratique dès le premier jour et on progresse vite.",
+				Mentorat: "Écouter, guider, faire grandir. J’aide les profils à trouver leur autonomie plutôt que de leur tracer le chemin.",
+				Management: "Manager, c’est donner du cadre sans brider. Clarté, coordination et confiance font la différence.",
+				Passion: "Ce qui me pousse à apprendre, créer et transmettre. La curiosité reste mon moteur principal.",
+				Debug: "Résoudre un bug, c’est comprendre le système. C’est une démarche logique et méthodique que j’apprécie.",
+				Veille: "Rester à jour fait partie du métier. J’observe, je teste et j’intègre ce qui améliore ma pratique.",
 			},
 		},
 		education: {
@@ -417,7 +384,7 @@ export const locales = {
 		},
 		skills: {
 			title: "Skills",
-			description: "A range of technologies for complete solutions",
+			description: "A range of technologies and skills for complete solutions",
 			categories: {
 				cloud: {
 					title: "Cloud & DevOps",
@@ -481,82 +448,65 @@ export const locales = {
 			techDetails: {
 				// About section icons
 				"Cloud & DevOps":
-					"I see DevOps as a philosophy: automate and collaborate upstream to prevent crises downstream. In practice, I design scalable AWS infrastructures with Terraform, automate deployments to free up time for innovation.",
+					"For me, DevOps is about reducing friction between teams and systems. Automate early, monitor constantly, and improve continuously.",
 				"Full-Stack":
-					"For me, fullstack development means mastering the entire chain: from elegant user interfaces with React/Next.js to robust APIs in Node.js. The goal? Creating coherent experiences where technology and usage converge.",
-				AI: "I see AI as an amplifier of human intelligence rather than a replacement. I integrate OpenAI and LangChain to create solutions that enhance business capabilities without losing control.",
-				Teaching:
-					"Teaching means transmitting more than skills: it's about sharing passion and supporting career transitions. In bootcamps, I train operational developers while cultivating their technical curiosity.",
-				// Skills section technologies
-				AWS: "AWS is my favorite cloud playground: a palette of tools to build robust architectures without reinventing the wheel. I deploy infrastructures that handle load and master costs.",
-				Terraform:
-					"Terraform transforms infrastructure into code: goodbye clicking through interfaces, hello reproducibility. Once written, deployed everywhere identically.",
-				Ansible:
-					"Ansible is the environment harmonizer: one recipe, a thousand identically configured servers. No more dev-prod differences that break everything.",
-				Docker:
-					"Docker is the art of clean packaging: an app, its dependencies, everything in a portable container. Never again 'it works on my machine'!",
-				Kubernetes:
-					"Kubernetes orchestrates container chaos: it scales, heals, balances automatically. Complex to tame but essential for modern apps.",
-				"CI/CD":
-					"CI/CD is my automated production line: code pushed, tested, deployed without human intervention. The serenity of continuous deliveries.",
-				Jenkins: "Jenkins is my pipeline conductor: it coordinates, executes, signals. A bit vintage but so reliable for automating workflows.",
-				"GitLab CI":
-					"GitLab CI is all-in-one DevOps: code, CI/CD, monitoring in the same interface. Simple and efficient when you want to avoid juggling tools.",
-				React:
-					"React is the interface revolution: reusable components, predictable state, living ecosystem. Modern web development lego that transforms ideas into fluid experiences.",
-				"Next.js":
-					"Next.js is React that grows up: SSR, automatic optimizations, integrated routing. A framework that anticipates my needs before I even think of them.",
-				TypeScript:
-					"TypeScript is JavaScript with a safety net: typing that prevents errors before they happen. No more 'undefined is not a function' in prod!",
-				"Node.js":
-					"Node.js is JavaScript breaking out of the browser to conquer the server. Fast, lightweight, perfect for APIs that respond in a snap.",
-				NestJS:
-					"NestJS brings Angular's structure to Node.js: modules, decorators, dependency injection. Backend code finally organized and maintainable.",
-				MongoDB: "MongoDB is NoSQL freedom: no rigid schema, just store and query. Ideal when data evolves faster than SQL migrations.",
-				PostgreSQL:
-					"PostgreSQL is the Swiss Army knife of databases: robust relational, extensible, with features that make you dream. When I need reliability, it's my choice.",
-				Express:
-					"Express is Node.js in minimalist version: lightweight, flexible, no fuss. Perfect for quickly starting an API without overthinking.",
-				"React Native":
-					"React Native is React escaping to mobile: same syntax, native performance, iOS and Android in one go. One code, two platforms conquered.",
-				Expo: "Expo is React Native without the headaches: cloud build, magical hot reload, simplified deployment. Mobile development finally accessible and smooth.",
-				Flask:
-					"Flask is Python in lightweight mode: micro-framework, total freedom, on-demand extensibility. When Django is too much and you want to keep control.",
-				Tailwind:
-					"Tailwind is CSS that liberates: utility-first, responsive by default, coherent design system. Goodbye endless stylesheets, hello productivity.",
-				"OpenAI GPT":
-					"OpenAI is like having a super-assistant that understands natural language. I integrate its capabilities to create authentic conversational experiences.",
-				LangChain:
-					"LangChain is the bridge between AI and business applications: it chains prompts, connects data, structures intelligence. AI finally becomes operational.",
-				FastAPI:
-					"FastAPI is Python rivaling Node.js in speed: automatic validation, generated interactive docs, types everywhere. The modern API par excellence.",
-				Python: "Python is my efficiency language: clear syntax, huge ecosystem, perfect for AI and automation. Simple to read, powerful in use.",
-				ML: "Machine Learning is teaching machines to recognize patterns: data in, predictions out. Statistical magic at the service of business.",
-				PyTorch:
-					"PyTorch is the AI researchers' playground: dynamic graphs, natural debugging, rapid prototyping. When you want to experiment before optimizing.",
-				TensorFlow:
-					"TensorFlow is Google's model factory: production-ready, complete ecosystem, scalable deployment. The reference for industrializing AI.",
-				"Scikit-learn":
-					"Scikit-learn is the Swiss Army knife of Machine Learning: classic algorithms, unified API, perfect documentation. Essential for starting in ML.",
-				Keras:
-					"Keras is TensorFlow made simple: intuitive API, express prototyping, accessible deep learning. When you want power without complexity.",
-				NumPy:
-					"NumPy is fast math: vectorized computation, n-dimensional arrays, foundation of Python's scientific ecosystem. The base of everything in data science.",
-				ChromaDB:
-					"ChromaDB is the modern vector database: native embeddings, fluid semantic search, natural LangChain integration. AI that remembers intelligently.",
-				Pinecone:
-					"Pinecone is the cloud vector database: ultra-fast similarity search, automatic scaling, simple APIs. The distributed memory of modern AI.",
-				Bootcamp:
-					"Bootcamp is total immersion: 3 months to transform profiles into operational developers. Intensive but effective, with concrete results from day one.",
-				Mentoring: "Mentoring is custom support: each junior has their pace, their blocks, their strengths. I guide without doing it for them.",
-				Management:
-					"Management is orchestrating talents: clear vision, shared objectives, encouraged autonomy. Creating an environment where everyone can excel.",
-				Passion:
-					"Passion is the spark that ignites everything: contagious curiosity, communicative energy, perseverance facing challenges. The secret ingredient of success.",
-				Debug:
-					"Debug is the art of problem-solving: methodical patience, tested hypotheses, elegant solutions. Transforming bugs into learning opportunities.",
-				"Tech watch":
-					"Tech watch is staying in the race: emerging technologies, best practices, market trends. Permanent curiosity and constant adaptation.",
+					"I like building products end-to-end, from design to data. Understanding the full stack makes everything more coherent and purposeful.",
+				AI: "AI fascinates me because it turns raw data into smart, actionable systems. I use it to make tools that think and adapt faster.",
+				Teaching: "Teaching is about sharing what I once had to figure out myself. Helping others gain autonomy is what keeps me motivated.",
+
+				// DevOps
+				AWS: "A mature and reliable cloud environment that lets me build scalable systems. I appreciate its flexibility and ecosystem depth.",
+				Terraform: "Infrastructure as code done right. It brings reproducibility, traceability, and confidence to every deployment.",
+				Ansible: "A simple, powerful way to automate server configuration. One command, consistent environments, no surprises.",
+				Docker: "Containers make deployment predictable and portable. No more 'it works on my machine' excuses.",
+				Traefik:
+					"A modern reverse proxy and load balancer that fits perfectly with Docker and Kubernetes. I use it to simplify routing, handle HTTPS, and centralize access control.",
+				Kubernetes: "A demanding but essential orchestrator. Once mastered, it handles scaling, recovery, and balancing with precision.",
+				"CI/CD": "Automating build, test, and deploy pipelines saves time and reduces stress. Consistency is the real productivity boost.",
+				Jenkins: "Old-school but still solid. Reliable when I need a fully customizable automation pipeline.",
+				"GitLab CI": "An all-in-one solution for code, CI/CD, and deployment. Simple, integrated, and great for small teams.",
+				Prometheus: "My go-to for collecting metrics and detecting issues early. Observability starts here.",
+				Grafana: "Visualizing data brings clarity. Dashboards turn metrics into decisions instead of guesswork.",
+				SonarQube: "The guardian of clean code. It spots vulnerabilities and technical debt before they become costly.",
+				Cypress: "End-to-end testing that feels natural. Fast, visual, and easy to maintain for front-end work.",
+				Playwright: "A modern, multi-browser testing tool. Reliable for ensuring consistent UX across all environments.",
+				Artillery: "I use it for load and stress testing. Better to break things myself than let users do it first.",
+
+				// Full-stack
+				React: "A reliable way to build fast, modular UIs. Components make complex interfaces manageable.",
+				"Next.js": "A complete framework that takes React to production level. Great balance between speed, SEO, and structure.",
+				TypeScript: "Static typing that prevents simple mistakes. It adds structure and peace of mind to JavaScript projects.",
+				"Node.js": "Fast, lightweight, and perfect for responsive APIs. Event-driven design just makes sense for the web.",
+				NestJS: "A structured and maintainable backend framework for Node.js. Ideal for long-term projects that need clarity.",
+				MongoDB: "A flexible NoSQL database for fast iteration. Perfect when the data model evolves frequently.",
+				PostgreSQL: "A solid, reliable relational database. My go-to when data integrity and scalability matter.",
+				Express: "Minimal, fast, and to the point. Great for quick APIs without unnecessary layers.",
+				"React Native": "Build once, deploy everywhere. I like how it bridges web and mobile without duplication.",
+				Expo: "A smooth developer experience for mobile apps. It simplifies builds, testing, and deployment.",
+				Flask: "A lightweight Python framework for APIs and prototypes. Simple, fast, and extendable when needed.",
+				Tailwind: "A clean, utility-first approach to styling. It keeps design consistent and fast to implement.",
+
+				// AI Engineering
+				"OpenAI GPT": "A strong base for text generation, summarization, and conversational tools. Practical and easy to integrate.",
+				LangChain: "The missing layer between LLMs, data, and logic. It makes AI actually usable in real workflows.",
+				FastAPI: "A fast and type-safe Python framework for APIs. The built-in docs are a huge productivity gain.",
+				Python: "My main language for AI and automation. Clear syntax, rich ecosystem, and fast to prototype with.",
+				ML: "Teaching systems to recognize patterns and make predictions. A perfect mix of math and experimentation.",
+				PyTorch: "Flexible and intuitive for research and prototyping. Great for experimenting quickly with ideas.",
+				TensorFlow: "Built for production-scale ML. Stable, optimized, and ready for deployment at scale.",
+				"Scikit-learn": "Clean, consistent, and well-documented. My go-to for classical ML algorithms and quick testing.",
+				Keras: "A clear and intuitive API for deep learning. Great for fast iteration and experimentation.",
+				NumPy: "The foundation of scientific computing in Python. I use it everywhere, from preprocessing to AI.",
+				ChromaDB: "A modern vector database for semantic search and memory. Excellent for context-aware AI apps.",
+				Pinecone: "A fast and scalable vector database in the cloud. Perfect for production-ready embeddings.",
+
+				// Training & Mentoring
+				Bootcamp: "An intense, hands-on learning experience. Real projects, real challenges, real progress.",
+				Mentorat: "Mentoring is about listening first. I help others find their path rather than giving them mine.",
+				Management: "Good management is about clarity and alignment. Give people context and trust, and they’ll deliver.",
+				Passion: "The drive to keep learning and building. Curiosity keeps everything moving forward.",
+				Debug: "Solving bugs is understanding systems deeply. It’s part logic, part patience, part satisfaction.",
+				Veille: "Staying up to date isn’t optional. Continuous learning keeps my methods sharp and relevant.",
 			},
 		},
 		education: {
