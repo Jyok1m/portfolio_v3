@@ -103,31 +103,6 @@ export default function Skills() {
 					))}
 				</div>
 
-				{/* Additional tech stack */}
-				<div className="mt-16 text-center">
-					<div className="inline-block bg-slate-900/50 rounded-lg p-6 border border-slate-700">
-						<p className="text-slate-400 mb-4 font-medium">{t.skills.additionalTech}</p>
-						<div className="flex flex-wrap justify-center gap-3">
-							{["Git", "Linux", "VS Code", "Figma", "Postman", "Redis", "Nginx", "GraphQL"].map((tech) => (
-								<span
-									key={tech}
-									className="px-3 py-1 bg-slate-800 rounded-full text-slate-300 text-sm border border-slate-600 hover:border-cyber-cyan hover:text-cyber-cyan transition-colors duration-300 cursor-pointer"
-									onClick={() =>
-										setSelectedTech({
-											name: tech,
-											icon: ["fas", "code"] as IconProp,
-											description: t.skills.techDetails[tech as keyof typeof t.skills.techDetails],
-											color: "cyber-cyan",
-										})
-									}
-								>
-									{tech}
-								</span>
-							))}
-						</div>
-					</div>
-				</div>
-
 				{/* Tech Modal */}
 				{selectedTech && <TechModal isOpen={!!selectedTech} onClose={() => setSelectedTech(null)} tech={selectedTech} />}
 			</div>

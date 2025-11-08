@@ -42,7 +42,6 @@ export const locales = {
 		skills: {
 			title: "Compétences",
 			description: "Un éventail de technologies pour des solutions complètes",
-			additionalTech: "Technologies Complémentaires",
 			categories: {
 				cloud: {
 					title: "Cloud & DevOps",
@@ -66,15 +65,41 @@ export const locales = {
 				},
 				fullstack: {
 					title: "Développement Fullstack",
-					skills: ["React", "Next.js", "TypeScript", "Node.js", "NestJS", "MongoDB", "PostgreSQL", "Express"],
+					skills: [
+						"React",
+						"Next.js",
+						"TypeScript",
+						"Node.js",
+						"NestJS",
+						"MongoDB",
+						"PostgreSQL",
+						"Express",
+						"React Native",
+						"Expo",
+						"Flask",
+						"Tailwind",
+					],
 				},
 				ai: {
 					title: "Intelligence Artificielle",
-					skills: ["OpenAI GPT", "LangChain", "FastAPI", "Python", "Machine Learning", "Ollama", "Vector DB"],
+					skills: [
+						"OpenAI GPT",
+						"LangChain",
+						"FastAPI",
+						"Python",
+						"ML",
+						"PyTorch",
+						"TensorFlow",
+						"Scikit-learn",
+						"Keras",
+						"NumPy",
+						"ChromaDB",
+						"Pinecone",
+					],
 				},
 				teaching: {
 					title: "Formation & Pédagogie",
-					skills: ["Bootcamp", "Mentorat", "Curriculum", "Évaluation", "Projets pratiques", "Veille techno"],
+					skills: ["Bootcamp", "Mentorat", "Management", "Passion", "Debug", "Veille"],
 				},
 			},
 			techDetails: {
@@ -120,6 +145,8 @@ export const locales = {
 
 				// Full-stack
 
+				React:
+					"React, c'est la révolution des interfaces : composants réutilisables, état prévisible, écosystème vivant. Le lego moderne du développement web qui transforme les idées en expériences fluides.",
 				"Next.js":
 					"Next.js, c'est React qui grandit : SSR, optimisations automatiques, routing intégré. Un framework qui anticipe mes besoins avant même que j'y pense.",
 				TypeScript:
@@ -134,6 +161,16 @@ export const locales = {
 					"PostgreSQL, c'est le couteau suisse des bases de données : relationnel robuste, extensible, avec des features qui font rêver. Quand on a besoin de fiabilité, c'est mon choix.",
 				Express:
 					"Express, c'est Node.js en version minimaliste : léger, flexible, sans chichi. Parfait pour démarrer rapidement une API sans se prendre la tête.",
+				"React Native":
+					"React Native, c'est React qui s'évade vers le mobile : même syntaxe, performance native, iOS et Android d'un coup. Un seul code, deux plateformes conquises.",
+				Expo: "Expo, c'est React Native sans les galères : build cloud, hot reload magique, déploiement simplifié. Le mobile development enfin accessible et fluide.",
+				Flask:
+					"Flask, c'est Python en mode léger : micro-framework, liberté totale, extensibilité à la demande. Quand Django c'est trop et que tu veux garder le contrôle.",
+				Tailwind:
+					"Tailwind, c'est le CSS qui libère : utility-first, responsive par défaut, design system cohérent. Fini les feuilles de style interminables, bonjour la productivité.",
+
+				// AI Engineering
+
 				"OpenAI GPT":
 					"OpenAI, c'est avoir un super-assistant qui comprend le langage naturel. J'intègre ses capacités pour créer des expériences conversationnelles authentiques.",
 				LangChain:
@@ -142,37 +179,36 @@ export const locales = {
 					"FastAPI, c'est Python qui rivalise avec Node.js en vitesse : validation automatique, doc interactive générée, types partout. L'API moderne par excellence.",
 				Python:
 					"Python, c'est mon langage de l'efficacité : syntaxe claire, écosystème immense, parfait pour l'IA et l'automation. Simple à lire, puissant à l'usage.",
-				"Machine Learning":
-					"Machine Learning, c'est apprendre aux machines à reconnaître des patterns : données en entrée, prédictions en sortie. La magie statistique au service du métier.",
-				Ollama: "Ollama, c'est l'IA qui reste à la maison : modèles de langage sur ma machine, sans dépendance cloud. Privacy et contrôle total.",
-				"Vector DB":
-					"Vector DB, c'est la mémoire sémantique de l'IA : elle comprend le sens, pas juste les mots. Essentielle pour des recherches intelligentes.",
+				ML: "Machine Learning, c'est apprendre aux machines à reconnaître des patterns : données en entrée, prédictions en sortie. La magie statistique au service du métier.",
+				PyTorch:
+					"PyTorch, c'est le terrain de jeu des chercheurs en IA : graphes dynamiques, debugging naturel, prototypage rapide. Quand on veut expérimenter avant d'optimiser.",
+				TensorFlow:
+					"TensorFlow, c'est l'usine à modèles de Google : production-ready, écosystème complet, déploiement scalable. La référence pour industrialiser l'IA.",
+				"Scikit-learn":
+					"Scikit-learn, c'est le couteau suisse du Machine Learning : algorithmes classiques, API uniforme, documentation parfaite. L'indispensable pour commencer en ML.",
+				Keras:
+					"Keras, c'est TensorFlow rendu simple : API intuitive, prototypage express, deep learning accessible. Quand on veut de la puissance sans la complexité.",
+				NumPy:
+					"NumPy, c'est les maths qui vont vite : calcul vectoriel, arrays n-dimensionnels, fondation de l'écosystème Python scientifique. La base de tout en data science.",
+				ChromaDB:
+					"ChromaDB, c'est la base vectorielle moderne : embeddings natifs, recherche sémantique fluide, intégration LangChain naturelle. L'IA qui se souvient intelligemment.",
+				Pinecone:
+					"Pinecone, c'est la base vectorielle cloud : recherche de similarité ultra-rapide, scale automatique, APIs simples. La mémoire distribuée de l'IA moderne.",
+
+				// Formation
+
 				Bootcamp:
 					"Bootcamp, c'est l'immersion totale : 3 mois pour transformer des profils en développeurs opérationnels. Intensif mais efficace, avec du concret dès le premier jour.",
 				Mentorat:
 					"Mentorat, c'est l'accompagnement sur-mesure : chaque junior a son rythme, ses blocages, ses forces. Je guide sans faire à la place.",
-				Curriculum:
-					"Curriculum, c'est l'architecture pédagogique : quoi apprendre, dans quel ordre, avec quels projets. La roadmap vers l'employabilité.",
-				Évaluation:
-					"Évaluation, c'est mesurer pour progresser : compétences techniques, soft skills, capacité d'adaptation. Objectif et bienveillant à la fois.",
-				"Projets pratiques":
-					"Projets pratiques, c'est apprendre en faisant : pas de théorie dans le vide, mais du code qui marche et résout des vrais problèmes.",
-				"Veille techno":
-					"Veille techno, c'est rester dans la course : technologies émergentes, best practices, tendances marché. Curiosité permanente obligatoire.",
-				// Additional technologies
-				Git: "Git, c'est la machine à remonter le temps du code : branches, merges, historique complet. Impossible de développer en équipe sans cette colonne vertébrale.",
-				Linux: "Linux, c'est ma maison : stable, configurable à l'infini, transparent. Sous le capot de presque tout ce qu'on utilise dans le cloud.",
-				"VS Code":
-					"VS Code, c'est l'éditeur qui lit dans mes pensées : IntelliSense, debugging intégré, extensions pour tout. Productivité maximale, poids minimal.",
-				Figma:
-					"Figma, c'est le pont entre design et dev : maquettes vivantes, composants réutilisables, collaboration en temps réel. Le pixel parfait enfin accessible.",
-				Postman:
-					"Postman, c'est mon laboratoire d'APIs : tester, documenter, partager les endpoints. Indispensable pour éviter les surprises en intégration.",
-				Redis: "Redis, c'est la mémoire flash de mes apps : ultra-rapide, clé-valeur simple, parfait pour du cache ou des sessions. La vitesse pure.",
-				GraphQL:
-					"GraphQL, c'est l'API à la carte : le client demande exactement ce qu'il veut, pas plus, pas moins. Fini le sur-fetching et les endpoints multiples.",
-				Traefik:
-					"Traefik, c'est le reverse proxy intelligent : découverte automatique des services, certificats SSL auto-générés, load balancing élégant. Le routage moderne sans configuration manuelle.",
+				Management:
+					"Management, c'est orchestrer les talents : vision claire, objectifs partagés, autonomie encouragée. Créer un environnement où chacun peut exceller.",
+				Passion:
+					"Passion, c'est l'étincelle qui allume tout : curiosité contagieuse, énergie communicative, persévérance face aux défis. L'ingrédient secret de la réussite.",
+				Debug:
+					"Debug, c'est l'art de la résolution : patience méthodique, hypothèses testées, solutions élégantes. Transformer les bugs en opportunités d'apprentissage.",
+				Veille:
+					"Veille, c'est rester dans la course : technologies émergentes, best practices, tendances marché. Curiosité permanente et adaptation constante.",
 			},
 		},
 		education: {
@@ -382,7 +418,6 @@ export const locales = {
 		skills: {
 			title: "Skills",
 			description: "A range of technologies for complete solutions",
-			additionalTech: "Additional Technologies",
 			categories: {
 				cloud: {
 					title: "Cloud & DevOps",
@@ -406,15 +441,41 @@ export const locales = {
 				},
 				fullstack: {
 					title: "Fullstack Development",
-					skills: ["React", "Next.js", "TypeScript", "Node.js", "NestJS", "MongoDB", "PostgreSQL", "Express"],
+					skills: [
+						"React",
+						"Next.js",
+						"TypeScript",
+						"Node.js",
+						"NestJS",
+						"MongoDB",
+						"PostgreSQL",
+						"Express",
+						"React Native",
+						"Expo",
+						"Flask",
+						"Tailwind",
+					],
 				},
 				ai: {
 					title: "Artificial Intelligence",
-					skills: ["OpenAI GPT", "LangChain", "FastAPI", "Python", "Machine Learning", "Ollama", "Vector DB"],
+					skills: [
+						"OpenAI GPT",
+						"LangChain",
+						"FastAPI",
+						"Python",
+						"ML",
+						"PyTorch",
+						"TensorFlow",
+						"Scikit-learn",
+						"Keras",
+						"NumPy",
+						"ChromaDB",
+						"Pinecone",
+					],
 				},
 				teaching: {
 					title: "Teaching & Pedagogy",
-					skills: ["Bootcamp", "Mentoring", "Curriculum", "Assessment", "Practical projects", "Tech watch"],
+					skills: ["Bootcamp", "Mentoring", "Management", "Passion", "Debug", "Tech watch"],
 				},
 			},
 			techDetails: {
@@ -441,6 +502,8 @@ export const locales = {
 				Jenkins: "Jenkins is my pipeline conductor: it coordinates, executes, signals. A bit vintage but so reliable for automating workflows.",
 				"GitLab CI":
 					"GitLab CI is all-in-one DevOps: code, CI/CD, monitoring in the same interface. Simple and efficient when you want to avoid juggling tools.",
+				React:
+					"React is the interface revolution: reusable components, predictable state, living ecosystem. Modern web development lego that transforms ideas into fluid experiences.",
 				"Next.js":
 					"Next.js is React that grows up: SSR, automatic optimizations, integrated routing. A framework that anticipates my needs before I even think of them.",
 				TypeScript:
@@ -454,6 +517,13 @@ export const locales = {
 					"PostgreSQL is the Swiss Army knife of databases: robust relational, extensible, with features that make you dream. When I need reliability, it's my choice.",
 				Express:
 					"Express is Node.js in minimalist version: lightweight, flexible, no fuss. Perfect for quickly starting an API without overthinking.",
+				"React Native":
+					"React Native is React escaping to mobile: same syntax, native performance, iOS and Android in one go. One code, two platforms conquered.",
+				Expo: "Expo is React Native without the headaches: cloud build, magical hot reload, simplified deployment. Mobile development finally accessible and smooth.",
+				Flask:
+					"Flask is Python in lightweight mode: micro-framework, total freedom, on-demand extensibility. When Django is too much and you want to keep control.",
+				Tailwind:
+					"Tailwind is CSS that liberates: utility-first, responsive by default, coherent design system. Goodbye endless stylesheets, hello productivity.",
 				"OpenAI GPT":
 					"OpenAI is like having a super-assistant that understands natural language. I integrate its capabilities to create authentic conversational experiences.",
 				LangChain:
@@ -461,42 +531,32 @@ export const locales = {
 				FastAPI:
 					"FastAPI is Python rivaling Node.js in speed: automatic validation, generated interactive docs, types everywhere. The modern API par excellence.",
 				Python: "Python is my efficiency language: clear syntax, huge ecosystem, perfect for AI and automation. Simple to read, powerful in use.",
-				"Machine Learning":
-					"Machine Learning is teaching machines to recognize patterns: data in, predictions out. Statistical magic at the service of business.",
-				Ollama: "Ollama is AI staying at home: language models on my machine, no cloud dependency. Privacy and total control.",
-				"Vector DB": "Vector DB is AI's semantic memory: it understands meaning, not just words. Essential for intelligent searches.",
+				ML: "Machine Learning is teaching machines to recognize patterns: data in, predictions out. Statistical magic at the service of business.",
+				PyTorch:
+					"PyTorch is the AI researchers' playground: dynamic graphs, natural debugging, rapid prototyping. When you want to experiment before optimizing.",
+				TensorFlow:
+					"TensorFlow is Google's model factory: production-ready, complete ecosystem, scalable deployment. The reference for industrializing AI.",
+				"Scikit-learn":
+					"Scikit-learn is the Swiss Army knife of Machine Learning: classic algorithms, unified API, perfect documentation. Essential for starting in ML.",
+				Keras:
+					"Keras is TensorFlow made simple: intuitive API, express prototyping, accessible deep learning. When you want power without complexity.",
+				NumPy:
+					"NumPy is fast math: vectorized computation, n-dimensional arrays, foundation of Python's scientific ecosystem. The base of everything in data science.",
+				ChromaDB:
+					"ChromaDB is the modern vector database: native embeddings, fluid semantic search, natural LangChain integration. AI that remembers intelligently.",
+				Pinecone:
+					"Pinecone is the cloud vector database: ultra-fast similarity search, automatic scaling, simple APIs. The distributed memory of modern AI.",
 				Bootcamp:
 					"Bootcamp is total immersion: 3 months to transform profiles into operational developers. Intensive but effective, with concrete results from day one.",
 				Mentoring: "Mentoring is custom support: each junior has their pace, their blocks, their strengths. I guide without doing it for them.",
-				Curriculum: "Curriculum is pedagogical architecture: what to learn, in what order, with which projects. The roadmap to employability.",
-				Assessment: "Assessment is measuring to progress: technical skills, soft skills, adaptability. Both objective and caring.",
-				"Practical projects": "Practical projects are learning by doing: no theory in a vacuum, but code that works and solves real problems.",
-				"Tech watch": "Tech watch is staying in the race: emerging technologies, best practices, market trends. Permanent curiosity required.",
-				// Additional technologies
-				Git: "Git is the code time machine: branches, merges, complete history. Impossible to develop in a team without this backbone.",
-				Linux: "Linux is my home: stable, infinitely configurable, transparent. Under the hood of almost everything we use in the cloud.",
-				"VS Code":
-					"VS Code is the editor that reads my mind: IntelliSense, integrated debugging, extensions for everything. Maximum productivity, minimal weight.",
-				Figma:
-					"Figma is the bridge between design and dev: living mockups, reusable components, real-time collaboration. Pixel-perfect finally accessible.",
-				Postman: "Postman is my API laboratory: test, document, share endpoints. Essential to avoid integration surprises.",
-				Redis: "Redis is the flash memory of my apps: ultra-fast, simple key-value, perfect for cache or sessions. Pure speed.",
-				Traefik:
-					"Traefik is the intelligent reverse proxy: automatic service discovery, auto-generated SSL certificates, elegant load balancing. Modern routing without manual configuration.",
-				Prometheus:
-					"Prometheus is the all-seeing eye: real-time metrics, configurable alerts, automatic scraping. Telemetry that anticipates problems before they happen.",
-				Grafana:
-					"Grafana is data made beautiful: elegant dashboards, meaningful visualizations, intuitive drill-down. Transforming metrics into understandable visual insights.",
-				SonarQube:
-					"SonarQube is the relentless code inspector: vulnerabilities detected, quality measured, technical debt quantified. The guardian that keeps code clean and secure.",
-				Cypress:
-					"Cypress is E2E testing like being the user: real browser simulation, visual debugging, natural assertions. Testing without the headache.",
-				Playwright:
-					"Playwright is multi-browser made effortless: Chrome, Firefox, Safari in parallel, mobile included. The assurance it works everywhere, truly everywhere.",
-				Artillery:
-					"Artillery is the heavy artillery of performance testing: modern load testing, APIs and WebSockets, detailed reporting. The firepower to validate scalability.",
-				GraphQL:
-					"GraphQL is the à la carte API: the client asks for exactly what it wants, no more, no less. No more over-fetching and multiple endpoints.",
+				Management:
+					"Management is orchestrating talents: clear vision, shared objectives, encouraged autonomy. Creating an environment where everyone can excel.",
+				Passion:
+					"Passion is the spark that ignites everything: contagious curiosity, communicative energy, perseverance facing challenges. The secret ingredient of success.",
+				Debug:
+					"Debug is the art of problem-solving: methodical patience, tested hypotheses, elegant solutions. Transforming bugs into learning opportunities.",
+				"Tech watch":
+					"Tech watch is staying in the race: emerging technologies, best practices, market trends. Permanent curiosity and constant adaptation.",
 			},
 		},
 		education: {
