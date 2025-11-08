@@ -72,15 +72,6 @@ export default function Hero() {
 							{t.hero.ctaSecondary}
 						</button>
 					</div>
-
-					{/* Tech badges */}
-					<div className="flex flex-wrap gap-3 pt-4">
-						{["Cloud & DevOps", "Fullstack", "AI/LLM", "Teaching"].map((tech) => (
-							<span key={tech} className="tech-badge">
-								{tech}
-							</span>
-						))}
-					</div>
 				</div>
 
 				{/* Right 3D Scene (visible on large screens) */}

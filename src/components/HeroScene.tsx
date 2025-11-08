@@ -164,11 +164,6 @@ function AICore() {
 
 			{/* Particules autour du cœur */}
 			<Sparkles count={100} scale={6} size={3} speed={0.4} color="#38bdf8" />
-
-			{/* Texte orbital */}
-			<Text position={[0, -2.5, 0]} fontSize={0.4} color="#6366f1" anchorX="center" anchorY="middle">
-				console.log("hello world");
-			</Text>
 		</Float>
 	);
 }
