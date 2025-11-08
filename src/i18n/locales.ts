@@ -71,58 +71,73 @@ export const locales = {
 				Teaching:
 					"Enseigner, c'est transmettre plus que des compétences : c'est partager une passion et accompagner des reconversions. En bootcamp, je forme des développeurs opérationnels tout en cultivant leur curiosité technique.",
 				// Skills section technologies
-				AWS: "Plateforme cloud leader pour déployer des infrastructures scalables, gérer les services managés et optimiser les coûts d'exploitation.",
-				Terraform: "Infrastructure as Code pour provisionner et gérer les ressources cloud de manière déclarative, reproductible et versionnée.",
-				Ansible: "Automatisation de la configuration et du déploiement d'applications, permettant une gestion cohérente des environnements.",
-				Docker: "Conteneurisation d'applications pour garantir la portabilité, la cohérence et l'efficacité des déploiements multi-environnements.",
+				AWS: "AWS, c'est mon terrain de jeu cloud préféré : une palette d'outils pour construire des architectures robustes sans réinventer la roue. J'y déploie des infras qui tiennent la charge et maîtrisent les coûts.",
+				Terraform:
+					"Terraform transforme l'infrastructure en code : fini les clics dans des interfaces, bonjour la reproductibilité. Une fois écrit, déployé partout de manière identique.",
+				Ansible:
+					"Ansible, c'est l'harmonisateur d'environnements : une recette, mille serveurs configurés à l'identique. Fini les différences entre dev et prod qui cassent tout.",
+				Docker:
+					"Docker, c'est l'art d'emballer proprement : une app, ses dépendances, tout dans un conteneur portable. Plus jamais 'ça marche sur ma machine' !",
 				Kubernetes:
-					"Orchestration de conteneurs pour gérer des applications distribuées à grande échelle avec résilience et montée en charge automatique.",
+					"Kubernetes orchestre le chaos des conteneurs : il scale, répare, équilibre automatiquement. Complexe à apprivoiser mais indispensable pour les apps modernes.",
 				"CI/CD":
-					"Pipelines d'intégration et déploiement continus pour automatiser les tests, builds et mises en production avec qualité et rapidité.",
-				Jenkins: "Serveur d'automatisation open-source pour orchestrer les pipelines de développement et maintenir la qualité du code.",
-				"GitLab CI": "Solution DevOps intégrée combinant gestion de code, CI/CD et monitoring dans une plateforme unifiée et collaborative.",
+					"CI/CD, c'est ma ligne de production automatisée : code poussé, testé, déployé sans intervention humaine. La sérénité des livraisons continues.",
+				Jenkins:
+					"Jenkins, c'est le chef d'orchestre de mes pipelines : il coordonne, execute, signale. Un peu vintage mais tellement fiable pour automatiser les workflows.",
+				"GitLab CI":
+					"GitLab CI, c'est DevOps tout-en-un : code, CI/CD, monitoring dans une même interface. Simple et efficace quand on veut éviter de jongler entre outils.",
 				"Next.js":
-					"Framework React full-stack pour créer des applications web performantes avec SSR/SSG, optimisation automatique et expérience développeur exceptionnelle.",
+					"Next.js, c'est React qui grandit : SSR, optimisations automatiques, routing intégré. Un framework qui anticipe mes besoins avant même que j'y pense.",
 				TypeScript:
-					"Superset de JavaScript apportant typage statique pour réduire les erreurs, améliorer la maintenabilité et l'expérience développeur.",
-				"Node.js": "Runtime JavaScript côté serveur pour construire des APIs rapides, scalables et des applications temps réel performantes.",
-				NestJS: "Framework Node.js inspiré d'Angular pour créer des APIs robustes, modulaires et maintenables avec TypeScript native.",
-				MongoDB: "Base de données NoSQL flexible et scalable, parfaite pour les applications modernes nécessitant agilité et performances.",
-				PostgreSQL: "Système de gestion de base de données relationnelle avancé, fiable et extensible pour les applications critiques d'entreprise.",
-				Express: "Framework web minimaliste et flexible pour Node.js, idéal pour créer rapidement des APIs RESTful et des applications web.",
+					"TypeScript, c'est JavaScript avec un filet de sécurité : le typage qui prévient les erreurs avant qu'elles n'arrivent. Plus de 'undefined is not a function' en prod !",
+				"Node.js":
+					"Node.js, c'est JavaScript qui sort du navigateur pour conquérir le serveur. Rapide, léger, parfait pour des APIs qui répondent au quart de tour.",
+				NestJS:
+					"NestJS apporte la structure d'Angular à Node.js : modules, décorateurs, injection de dépendances. Du code backend enfin organisé et maintenable.",
+				MongoDB:
+					"MongoDB, c'est la liberté du NoSQL : pas de schéma rigide, just store et query. Idéal quand les données évoluent plus vite que les migrations SQL.",
+				PostgreSQL:
+					"PostgreSQL, c'est le couteau suisse des bases de données : relationnel robuste, extensible, avec des features qui font rêver. Quand on a besoin de fiabilité, c'est mon choix.",
+				Express:
+					"Express, c'est Node.js en version minimaliste : léger, flexible, sans chichi. Parfait pour démarrer rapidement une API sans se prendre la tête.",
 				"OpenAI GPT":
-					"Modèles de langage avancés pour intégrer des capacités conversationnelles et de génération de contenu intelligent dans les applications.",
+					"OpenAI, c'est avoir un super-assistant qui comprend le langage naturel. J'intègre ses capacités pour créer des expériences conversationnelles authentiques.",
 				LangChain:
-					"Framework pour développer des applications alimentées par des LLMs, simplifiant l'intégration de l'IA dans des workflows complexes.",
+					"LangChain, c'est le pont entre l'IA et les applications métier : il chaîne les prompts, connecte les données, structure l'intelligence. L'IA devient enfin opérationnelle.",
 				FastAPI:
-					"Framework Python moderne et rapide pour créer des APIs avec validation automatique, documentation interactive et performance optimale.",
-				Python: "Langage polyvalent excellent pour l'IA, le machine learning, l'automation et le développement backend rapide et maintenable.",
+					"FastAPI, c'est Python qui rivalise avec Node.js en vitesse : validation automatique, doc interactive générée, types partout. L'API moderne par excellence.",
+				Python:
+					"Python, c'est mon langage de l'efficacité : syntaxe claire, écosystème immense, parfait pour l'IA et l'automation. Simple à lire, puissant à l'usage.",
 				"Machine Learning":
-					"Techniques d'apprentissage automatique pour créer des modèles prédictifs et des systèmes intelligents adaptés aux besoins métier.",
-				Ollama: "Plateforme pour exécuter des modèles de langage localement, offrant contrôle, confidentialité et personnalisation avancée.",
+					"Machine Learning, c'est apprendre aux machines à reconnaître des patterns : données en entrée, prédictions en sortie. La magie statistique au service du métier.",
+				Ollama: "Ollama, c'est l'IA qui reste à la maison : modèles de langage sur ma machine, sans dépendance cloud. Privacy et contrôle total.",
 				"Vector DB":
-					"Bases de données vectorielles pour stocker et rechercher efficacement des embeddings, essentielles pour les applications IA sémantiques.",
+					"Vector DB, c'est la mémoire sémantique de l'IA : elle comprend le sens, pas juste les mots. Essentielle pour des recherches intelligentes.",
 				Bootcamp:
-					"Formation intensive et pratique pour transformer rapidement des profils en développeurs opérationnels avec méthodologies pédagogiques éprouvées.",
+					"Bootcamp, c'est l'immersion totale : 3 mois pour transformer des profils en développeurs opérationnels. Intensif mais efficace, avec du concret dès le premier jour.",
 				Mentorat:
-					"Accompagnement personnalisé de développeurs juniors pour accélérer leur montée en compétences et leur intégration professionnelle.",
-				Curriculum: "Conception de programmes de formation tech alignés sur les besoins du marché et les évolutions technologiques actuelles.",
+					"Mentorat, c'est l'accompagnement sur-mesure : chaque junior a son rythme, ses blocages, ses forces. Je guide sans faire à la place.",
+				Curriculum:
+					"Curriculum, c'est l'architecture pédagogique : quoi apprendre, dans quel ordre, avec quels projets. La roadmap vers l'employabilité.",
 				Évaluation:
-					"Méthodes d'assessment techniques pour mesurer objectivement les compétences et orienter les parcours d'apprentissage individuels.",
-				"Projets pratiques": "Pédagogie par projet pour ancrer les apprentissages dans des réalisations concrètes et professionnalisantes.",
+					"Évaluation, c'est mesurer pour progresser : compétences techniques, soft skills, capacité d'adaptation. Objectif et bienveillant à la fois.",
+				"Projets pratiques":
+					"Projets pratiques, c'est apprendre en faisant : pas de théorie dans le vide, mais du code qui marche et résout des vrais problèmes.",
 				"Veille techno":
-					"Surveillance continue des innovations technologiques pour maintenir l'excellence pédagogique et l'employabilité des apprenants.",
+					"Veille techno, c'est rester dans la course : technologies émergentes, best practices, tendances marché. Curiosité permanente obligatoire.",
 				// Additional technologies
-				Git: "Système de contrôle de version distribué indispensable pour collaborer efficacement et maintenir l'historique des projets de développement.",
-				Linux: "Système d'exploitation open-source robuste et flexible, fondamental pour les environnements de développement et production serveur.",
+				Git: "Git, c'est la machine à remonter le temps du code : branches, merges, historique complet. Impossible de développer en équipe sans cette colonne vertébrale.",
+				Linux: "Linux, c'est ma maison : stable, configurable à l'infini, transparent. Sous le capot de presque tout ce qu'on utilise dans le cloud.",
 				"VS Code":
-					"Éditeur de code moderne et extensible offrant une productivité maximale avec debugging intégré, extensions et collaboration temps réel.",
-				Figma: "Outil de design collaboratif pour créer des interfaces utilisateur cohérentes et traduire efficacement les concepts visuels en code.",
-				Postman: "Plateforme de développement d'API pour tester, documenter et monitorer les services web avec collaboration d'équipe intégrée.",
-				Redis: "Base de données en mémoire ultra-rapide pour le caching, sessions et traitement de données temps réel à haute performance.",
-				Nginx: "Serveur web et proxy inverse haute performance pour servir du contenu statique, load balancing et termination SSL.",
+					"VS Code, c'est l'éditeur qui lit dans mes pensées : IntelliSense, debugging intégré, extensions pour tout. Productivité maximale, poids minimal.",
+				Figma:
+					"Figma, c'est le pont entre design et dev : maquettes vivantes, composants réutilisables, collaboration en temps réel. Le pixel parfait enfin accessible.",
+				Postman:
+					"Postman, c'est mon laboratoire d'APIs : tester, documenter, partager les endpoints. Indispensable pour éviter les surprises en intégration.",
+				Redis: "Redis, c'est la mémoire flash de mes apps : ultra-rapide, clé-valeur simple, parfait pour du cache ou des sessions. La vitesse pure.",
+				Nginx: "Nginx, c'est le portier haute performance : il distribue, cache, sécurise le trafic web sans broncher. Léger mais costaud.",
 				GraphQL:
-					"Langage de requête API flexible permettant aux clients de demander exactement les données nécessaires avec efficacité et typage fort.",
+					"GraphQL, c'est l'API à la carte : le client demande exactement ce qu'il veut, pas plus, pas moins. Fini le sur-fetching et les endpoints multiples.",
 			},
 		},
 		education: {
@@ -361,45 +376,63 @@ export const locales = {
 				Teaching:
 					"Teaching means transmitting more than skills: it's about sharing passion and supporting career transitions. In bootcamps, I train operational developers while cultivating their technical curiosity.",
 				// Skills section technologies
-				AWS: "Leading cloud platform for deploying scalable infrastructures, managing managed services and optimizing operational costs.",
-				Terraform: "Infrastructure as Code to provision and manage cloud resources declaratively, reproducibly and versioned.",
-				Ansible: "Configuration and application deployment automation, enabling consistent environment management.",
-				Docker: "Application containerization to ensure portability, consistency and efficiency of multi-environment deployments.",
-				Kubernetes: "Container orchestration to manage large-scale distributed applications with resilience and automatic scaling.",
-				"CI/CD": "Continuous integration and deployment pipelines to automate testing, builds and production releases with quality and speed.",
-				Jenkins: "Open-source automation server to orchestrate development pipelines and maintain code quality.",
-				"GitLab CI": "Integrated DevOps solution combining code management, CI/CD and monitoring in a unified and collaborative platform.",
+				AWS: "AWS is my favorite cloud playground: a palette of tools to build robust architectures without reinventing the wheel. I deploy infrastructures that handle load and master costs.",
+				Terraform:
+					"Terraform transforms infrastructure into code: goodbye clicking through interfaces, hello reproducibility. Once written, deployed everywhere identically.",
+				Ansible:
+					"Ansible is the environment harmonizer: one recipe, a thousand identically configured servers. No more dev-prod differences that break everything.",
+				Docker:
+					"Docker is the art of clean packaging: an app, its dependencies, everything in a portable container. Never again 'it works on my machine'!",
+				Kubernetes:
+					"Kubernetes orchestrates container chaos: it scales, heals, balances automatically. Complex to tame but essential for modern apps.",
+				"CI/CD":
+					"CI/CD is my automated production line: code pushed, tested, deployed without human intervention. The serenity of continuous deliveries.",
+				Jenkins: "Jenkins is my pipeline conductor: it coordinates, executes, signals. A bit vintage but so reliable for automating workflows.",
+				"GitLab CI":
+					"GitLab CI is all-in-one DevOps: code, CI/CD, monitoring in the same interface. Simple and efficient when you want to avoid juggling tools.",
 				"Next.js":
-					"Full-stack React framework to create performant web applications with SSR/SSG, automatic optimization and exceptional developer experience.",
-				TypeScript: "JavaScript superset bringing static typing to reduce errors, improve maintainability and developer experience.",
-				"Node.js": "Server-side JavaScript runtime to build fast, scalable APIs and performant real-time applications.",
-				NestJS: "Angular-inspired Node.js framework to create robust, modular and maintainable APIs with native TypeScript.",
-				MongoDB: "Flexible and scalable NoSQL database, perfect for modern applications requiring agility and performance.",
-				PostgreSQL: "Advanced, reliable and extensible relational database management system for critical enterprise applications.",
-				Express: "Minimal and flexible web framework for Node.js, ideal for quickly creating RESTful APIs and web applications.",
-				"OpenAI GPT": "Advanced language models to integrate conversational capabilities and intelligent content generation into applications.",
-				LangChain: "Framework for developing LLM-powered applications, simplifying AI integration into complex workflows.",
-				FastAPI: "Modern and fast Python framework to create APIs with automatic validation, interactive documentation and optimal performance.",
-				Python: "Versatile language excellent for AI, machine learning, automation and fast, maintainable backend development.",
-				"Machine Learning": "Automatic learning techniques to create predictive models and intelligent systems adapted to business needs.",
-				Ollama: "Platform to run language models locally, offering control, privacy and advanced customization.",
-				"Vector DB": "Vector databases to efficiently store and search embeddings, essential for semantic AI applications.",
-				Bootcamp: "Intensive and practical training to quickly transform profiles into operational developers with proven pedagogical methodologies.",
-				Mentoring: "Personalized support for junior developers to accelerate their skill development and professional integration.",
-				Curriculum: "Design of tech training programs aligned with market needs and current technological developments.",
-				Assessment: "Technical assessment methods to objectively measure skills and guide individual learning paths.",
-				"Practical projects": "Project-based pedagogy to anchor learning in concrete and professionalizing achievements.",
-				"Tech watch": "Continuous monitoring of technological innovations to maintain pedagogical excellence and learner employability.",
+					"Next.js is React that grows up: SSR, automatic optimizations, integrated routing. A framework that anticipates my needs before I even think of them.",
+				TypeScript:
+					"TypeScript is JavaScript with a safety net: typing that prevents errors before they happen. No more 'undefined is not a function' in prod!",
+				"Node.js":
+					"Node.js is JavaScript breaking out of the browser to conquer the server. Fast, lightweight, perfect for APIs that respond in a snap.",
+				NestJS:
+					"NestJS brings Angular's structure to Node.js: modules, decorators, dependency injection. Backend code finally organized and maintainable.",
+				MongoDB: "MongoDB is NoSQL freedom: no rigid schema, just store and query. Ideal when data evolves faster than SQL migrations.",
+				PostgreSQL:
+					"PostgreSQL is the Swiss Army knife of databases: robust relational, extensible, with features that make you dream. When I need reliability, it's my choice.",
+				Express:
+					"Express is Node.js in minimalist version: lightweight, flexible, no fuss. Perfect for quickly starting an API without overthinking.",
+				"OpenAI GPT":
+					"OpenAI is like having a super-assistant that understands natural language. I integrate its capabilities to create authentic conversational experiences.",
+				LangChain:
+					"LangChain is the bridge between AI and business applications: it chains prompts, connects data, structures intelligence. AI finally becomes operational.",
+				FastAPI:
+					"FastAPI is Python rivaling Node.js in speed: automatic validation, generated interactive docs, types everywhere. The modern API par excellence.",
+				Python: "Python is my efficiency language: clear syntax, huge ecosystem, perfect for AI and automation. Simple to read, powerful in use.",
+				"Machine Learning":
+					"Machine Learning is teaching machines to recognize patterns: data in, predictions out. Statistical magic at the service of business.",
+				Ollama: "Ollama is AI staying at home: language models on my machine, no cloud dependency. Privacy and total control.",
+				"Vector DB": "Vector DB is AI's semantic memory: it understands meaning, not just words. Essential for intelligent searches.",
+				Bootcamp:
+					"Bootcamp is total immersion: 3 months to transform profiles into operational developers. Intensive but effective, with concrete results from day one.",
+				Mentoring: "Mentoring is custom support: each junior has their pace, their blocks, their strengths. I guide without doing it for them.",
+				Curriculum: "Curriculum is pedagogical architecture: what to learn, in what order, with which projects. The roadmap to employability.",
+				Assessment: "Assessment is measuring to progress: technical skills, soft skills, adaptability. Both objective and caring.",
+				"Practical projects": "Practical projects are learning by doing: no theory in a vacuum, but code that works and solves real problems.",
+				"Tech watch": "Tech watch is staying in the race: emerging technologies, best practices, market trends. Permanent curiosity required.",
 				// Additional technologies
-				Git: "Distributed version control system essential for effective collaboration and maintaining development project history.",
-				Linux: "Robust and flexible open-source operating system, fundamental for development and server production environments.",
+				Git: "Git is the code time machine: branches, merges, complete history. Impossible to develop in a team without this backbone.",
+				Linux: "Linux is my home: stable, infinitely configurable, transparent. Under the hood of almost everything we use in the cloud.",
 				"VS Code":
-					"Modern and extensible code editor offering maximum productivity with integrated debugging, extensions and real-time collaboration.",
-				Figma: "Collaborative design tool to create consistent user interfaces and effectively translate visual concepts into code.",
-				Postman: "API development platform to test, document and monitor web services with integrated team collaboration.",
-				Redis: "Ultra-fast in-memory database for caching, sessions and real-time data processing with high performance.",
-				Nginx: "High-performance web server and reverse proxy for serving static content, load balancing and SSL termination.",
-				GraphQL: "Flexible API query language allowing clients to request exactly the necessary data with efficiency and strong typing.",
+					"VS Code is the editor that reads my mind: IntelliSense, integrated debugging, extensions for everything. Maximum productivity, minimal weight.",
+				Figma:
+					"Figma is the bridge between design and dev: living mockups, reusable components, real-time collaboration. Pixel-perfect finally accessible.",
+				Postman: "Postman is my API laboratory: test, document, share endpoints. Essential to avoid integration surprises.",
+				Redis: "Redis is the flash memory of my apps: ultra-fast, simple key-value, perfect for cache or sessions. Pure speed.",
+				Nginx: "Nginx is the high-performance doorman: it distributes, caches, secures web traffic without breaking a sweat. Light but tough.",
+				GraphQL:
+					"GraphQL is the à la carte API: the client asks for exactly what it wants, no more, no less. No more over-fetching and multiple endpoints.",
 			},
 		},
 		education: {
