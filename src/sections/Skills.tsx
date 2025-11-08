@@ -62,12 +62,12 @@ export default function Skills() {
 							</div>
 
 							{/* Skills grid */}
-							<div className="grid grid-cols-2 gap-3">
+							<div className="grid grid-cols-3 gap-2">
 								{category.skills.map((skill, skillIndex) => (
 									<div
 										key={skill}
 										className={`
-                      px-3 py-2 bg-slate-800/50 rounded-lg text-sm font-medium text-center
+                      px-1 py-1 bg-slate-800/50 rounded-lg text-sm font-medium text-center
                       border transition-all duration-300 hover:scale-105 cursor-pointer
                       ${
 												category.color === "cyber-cyan"

@@ -61,7 +61,6 @@ export const locales = {
 						"SonarQube",
 						"Cypress",
 						"Playwright",
-						"Locust",
 						"Artillery",
 					],
 				},
@@ -88,6 +87,9 @@ export const locales = {
 				Teaching:
 					"Enseigner, c'est transmettre plus que des compétences : c'est partager une passion et accompagner des reconversions. En bootcamp, je forme des développeurs opérationnels tout en cultivant leur curiosité technique.",
 				// Skills section technologies
+
+				// DevOps
+
 				AWS: "AWS, c'est mon terrain de jeu cloud préféré : une palette d'outils pour construire des architectures robustes sans réinventer la roue. J'y déploie des infras qui tiennent la charge et maîtrisent les coûts.",
 				Terraform:
 					"Terraform transforme l'infrastructure en code : fini les clics dans des interfaces, bonjour la reproductibilité. Une fois écrit, déployé partout de manière identique.",
@@ -113,10 +115,11 @@ export const locales = {
 					"Cypress, c'est les tests E2E comme si on était l'utilisateur : simulation réelle du navigateur, debugging visuel, assertions naturelles. Tester sans se prendre la tête.",
 				Playwright:
 					"Playwright, c'est le multi-navigateur sans effort : Chrome, Firefox, Safari en parallèle, mobile inclus. L'assurance que ça marche partout, vraiment partout.",
-				Locust:
-					"Locust, c'est l'armée de testeurs virtuels : montée en charge progressive, scénarios réalistes, métriques précises. Savoir si l'app tiendra la charge avant le jour J.",
 				Artillery:
 					"Artillery, c'est l'artillerie lourde des tests de performance : load testing moderne, APIs et WebSockets, reporting détaillé. La puissance de feu pour valider la scalabilité.",
+
+				// Full-stack
+
 				"Next.js":
 					"Next.js, c'est React qui grandit : SSR, optimisations automatiques, routing intégré. Un framework qui anticipe mes besoins avant même que j'y pense.",
 				TypeScript:
@@ -398,7 +401,6 @@ export const locales = {
 						"SonarQube",
 						"Cypress",
 						"Playwright",
-						"Locust",
 						"Artillery",
 					],
 				},
@@ -491,8 +493,6 @@ export const locales = {
 					"Cypress is E2E testing like being the user: real browser simulation, visual debugging, natural assertions. Testing without the headache.",
 				Playwright:
 					"Playwright is multi-browser made effortless: Chrome, Firefox, Safari in parallel, mobile included. The assurance it works everywhere, truly everywhere.",
-				Locust:
-					"Locust is the virtual tester army: progressive load ramping, realistic scenarios, precise metrics. Knowing if the app will handle the load before D-day.",
 				Artillery:
 					"Artillery is the heavy artillery of performance testing: modern load testing, APIs and WebSockets, detailed reporting. The firepower to validate scalability.",
 				GraphQL:
