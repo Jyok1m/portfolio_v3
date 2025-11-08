@@ -33,8 +33,8 @@ export default function About() {
 									{/* Animated tech icons representation */}
 									<div className="grid grid-cols-2 gap-4 w-full h-full p-8">
 										{[
-											{ icon: ["fas", "cloud"] as IconProp, label: "Cloud" },
-											{ icon: ["fas", "atom"] as IconProp, label: "React" },
+											{ icon: ["fas", "cloud"] as IconProp, label: "Cloud & DevOps" },
+											{ icon: ["fas", "atom"] as IconProp, label: "Full-Stack" },
 											{ icon: ["fas", "robot"] as IconProp, label: "AI" },
 											{ icon: ["fas", "graduation-cap"] as IconProp, label: "Teaching" },
 										].map((item, index) => (

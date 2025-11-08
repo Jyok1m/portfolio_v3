@@ -63,9 +63,9 @@ export const locales = {
 			},
 			techDetails: {
 				// About section icons
-				Cloud:
+				"Cloud & DevOps":
 					"Expertise en architectures cloud scalables avec AWS, déploiement d'infrastructures robustes et automatisation DevOps pour des solutions d'entreprise.",
-				React:
+				"Full-Stack":
 					"Développement d'interfaces utilisateur modernes et performantes avec React, Next.js et l'écosystème JavaScript/TypeScript pour des expériences web exceptionnelles.",
 				AI: "Intégration d'intelligence artificielle via OpenAI, LangChain et développement de solutions IA personnalisées pour automatiser et enrichir les applications.",
 				Teaching:
@@ -353,8 +353,9 @@ export const locales = {
 			},
 			techDetails: {
 				// About section icons
-				Cloud: "Expertise in scalable cloud architectures with AWS, deploying robust infrastructures and DevOps automation for enterprise solutions.",
-				React:
+				"Cloud & DevOps":
+					"Expertise in scalable cloud architectures with AWS, deploying robust infrastructures and DevOps automation for enterprise solutions.",
+				"Full-Stack":
 					"Development of modern and performant user interfaces with React, Next.js and JavaScript/TypeScript ecosystem for exceptional web experiences.",
 				AI: "Artificial intelligence integration via OpenAI, LangChain and development of custom AI solutions to automate and enrich applications.",
 				Teaching: "Technical training in bootcamps, mentoring junior developers and creating curricula adapted to current tech market needs.",
