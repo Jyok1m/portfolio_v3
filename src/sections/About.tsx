@@ -17,37 +17,6 @@ export default function About() {
 							{/* Content */}
 							<div className="space-y-6">
 								<p className="text-lg text-slate-300 leading-relaxed">{t.about.content}</p>
-
-								{/* Key points */}
-								<div className="space-y-4">
-									<div className="flex items-start space-x-3">
-										<div className="w-2 h-2 bg-cyber-cyan rounded-full mt-3 flex-shrink-0"></div>
-										<p className="text-slate-300">
-											<span className="text-cyber-cyan font-semibold">Cloud & DevOps:</span> Architecture AWS, Terraform, Kubernetes
-										</p>
-									</div>
-
-									<div className="flex items-start space-x-3">
-										<div className="w-2 h-2 bg-cyber-purple rounded-full mt-3 flex-shrink-0"></div>
-										<p className="text-slate-300">
-											<span className="text-cyber-purple font-semibold">Fullstack:</span> React/Next.js, Node.js/NestJS
-										</p>
-									</div>
-
-									<div className="flex items-start space-x-3">
-										<div className="w-2 h-2 bg-cyber-cyan rounded-full mt-3 flex-shrink-0"></div>
-										<p className="text-slate-300">
-											<span className="text-cyber-cyan font-semibold">AI/LLM:</span> LangChain, OpenAI, FastAPI
-										</p>
-									</div>
-
-									<div className="flex items-start space-x-3">
-										<div className="w-2 h-2 bg-cyber-purple rounded-full mt-3 flex-shrink-0"></div>
-										<p className="text-slate-300">
-											<span className="text-cyber-purple font-semibold">Teaching:</span> Bootcamp, mentorat, formation intensive
-										</p>
-									</div>
-								</div>
 							</div>
 
 							{/* Visual element */}
