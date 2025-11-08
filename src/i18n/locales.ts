@@ -179,8 +179,8 @@ export const locales = {
 			},
 		},
 		education: {
-			title: "Diplômes & Certificats",
-			subtitle: "Mon parcours académique et professionnel en management, technologie et intelligence artificielle",
+			title: "Diplômes & Certifications",
+			subtitle: "De l'hôtellerie et la finance à l'IA : un parcours de reconversion guidé par la curiosité et l'apprentissage continu",
 			badges: {
 				degree: "Diplôme",
 				certification: "Certification",
@@ -511,7 +511,7 @@ export const locales = {
 		},
 		education: {
 			title: "Degrees & Certificates",
-			subtitle: "My academic and professional journey in management, technology and artificial intelligence",
+			subtitle: "From hospitality and finance to AI: a career transformation journey driven by curiosity and continuous learning",
 			badges: {
 				degree: "Degree",
 				certification: "Certification",

@@ -29,7 +29,7 @@ export default function About() {
 
 							{/* Visual element */}
 							<div className="relative">
-								<div className="w-full h-64 bg-gradient-to-br from-cyber-cyan/20 to-cyber-purple/20 rounded-lg border border-cyber-cyan/30 flex items-center justify-center relative overflow-hidden">
+								<div className="w-full bg-gradient-to-br from-cyber-cyan/20 to-cyber-purple/20 rounded-lg border border-cyber-cyan/30 flex items-center justify-center relative overflow-hidden">
 									{/* Animated tech icons representation */}
 									<div className="grid grid-cols-2 gap-4 w-full h-full p-8">
 										{[
