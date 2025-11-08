@@ -37,7 +37,7 @@ export const locales = {
 			description:
 				"Mon parcours est celui d'une reconversion audacieuse : de la finance et l'hôtellerie à l'intelligence artificielle, en passant par le développement web et le DevOps. Une évolution guidée par la curiosité et la passion de transmettre.",
 			content:
-				"Diplômé en management hôtelier et finance, j'ai découvert ma passion pour la technologie et opéré une reconversion vers le développement fullstack, puis le DevOps et enfin l'IA. Aujourd'hui, je conçois des infrastructures Cloud avec Terraform, développe avec React/Node.js et intègre des LLM via LangChain. En parallèle, je forme la nouvelle génération de professionnels tech en bootcamp.",
+				"Diplômé en management hôtelier et finance, j'ai découvert ma passion pour la technologie et opéré une reconversion vers le développement fullstack, avant d'évoluer vers l'expertise DevOps puis l'intelligence artificielle. Aujourd'hui, je conçois et déploie des infrastructures Cloud scalables avec Terraform et AWS, développe des applications avec React/Next.js et Node.js, et intègre des solutions IA via LangChain et OpenAI. Cette polyvalence technique, combinée à mon expérience business, me permet de créer des solutions complètes et de former la nouvelle génération de professionnels tech en bootcamp.",
 		},
 		skills: {
 			title: "Compétences",
@@ -264,7 +264,7 @@ export const locales = {
 			description:
 				"My journey is one of bold career transformation: from finance and hospitality to artificial intelligence, through web development and DevOps. An evolution guided by curiosity and the passion to share knowledge.",
 			content:
-				"With degrees in hospitality management and finance, I discovered my passion for technology and made a career shift to fullstack development, then DevOps, and finally AI. Today, I design Cloud infrastructures with Terraform, develop with React/Node.js, and integrate LLMs via LangChain. In parallel, I train the next generation of tech professionals in bootcamps.",
+				"With degrees in hospitality management and finance, I discovered my passion for technology and made a career shift to fullstack development, before evolving to DevOps expertise and then artificial intelligence. Today, I design and deploy scalable Cloud infrastructures with Terraform and AWS, build applications with React/Next.js and Node.js, and integrate AI solutions via LangChain and OpenAI. This technical versatility, combined with my business background, enables me to create comprehensive solutions and train the next generation of tech professionals in bootcamps.",
 		},
 		skills: {
 			title: "Skills",
