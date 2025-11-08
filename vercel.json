@@ -1,6 +1,6 @@
 {
 	"buildCommand": "yarn build:vercel",
 	"outputDirectory": "dist",
-	"installCommand": "yarn install --frozen-lockfile",
+	"installCommand": "node scripts/setup-npmrc.js && yarn install --frozen-lockfile",
 	"framework": "vite"
 }
