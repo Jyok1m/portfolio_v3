@@ -29,7 +29,9 @@ export default function Header() {
 			<div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
 				<div className="flex items-center justify-between">
 					{/* Logo */}
-					<div className="text-xl sm:text-2xl font-bold neon-text logo-glow cursor-pointer">JJ</div>
+					<div className="cursor-pointer">
+						<img src="/documents/pictures/logo.png" alt="Joachim Jasmin" className="h-8 sm:h-10 w-auto logo-glow" />
+					</div>
 
 					{/* Desktop Navigation - Show only on large screens */}
 					<nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">

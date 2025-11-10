@@ -27,54 +27,44 @@ export default function About() {
 								<p className="text-lg text-slate-300 leading-relaxed">{t.about.content}</p>
 							</div>
 
-							{/* Visual element */}
-							<div className="relative">
-								<div className="w-full bg-gradient-to-br from-cyber-cyan/20 to-cyber-purple/20 rounded-lg border border-cyber-cyan/30 flex items-center justify-center relative overflow-hidden">
-									{/* Animated tech icons representation */}
-									<div className="grid grid-cols-2 gap-4 w-full h-full p-8">
+							{/* Profile Photo */}
+							<div className="relative flex justify-center">
+								<div className="relative">
+									{/* Profile image */}
+									<div className="w-64 h-64 rounded-full border-4 border-cyber-cyan/50 p-2 bg-gradient-to-br from-cyber-cyan/20 to-cyber-purple/20">
+										<img src="/documents/pictures/profile_pic.jpg" alt="Joachim Jasmin" className="w-full h-full object-cover rounded-full" />
+									</div>
+
+									{/* Animated glow effect */}
+									<div className="absolute inset-0 rounded-full bg-gradient-to-br from-cyber-cyan/30 to-cyber-purple/30 animate-pulse opacity-50"></div>
+
+									{/* Tech icons floating around */}
+									<div className="absolute inset-0">
 										{[
-											{ icon: ["fas", "cloud"] as IconProp, label: "Cloud & DevOps" },
-											{ icon: ["fas", "atom"] as IconProp, label: "Full-Stack" },
-											{ icon: ["fas", "robot"] as IconProp, label: "AI" },
-											{ icon: ["fas", "graduation-cap"] as IconProp, label: "Teaching" },
+											{ icon: ["fas", "cloud"] as IconProp, name: "Cloud & DevOps", position: "top-0 left-0 -translate-x-4 -translate-y-4" },
+											{ icon: ["fas", "atom"] as IconProp, name: "Full-Stack", position: "top-0 right-0 translate-x-4 -translate-y-4" },
+											{ icon: ["fas", "robot"] as IconProp, name: "AI", position: "bottom-0 left-0 -translate-x-4 translate-y-4" },
+											{ icon: ["fas", "graduation-cap"] as IconProp, name: "Teaching", position: "bottom-0 right-0 translate-x-4 translate-y-4" },
 										].map((item, index) => (
 											<div
-												key={item.label}
-												className="cyber-card bg-slate-800/50 flex flex-col items-center justify-center p-4 animate-pulse-slow cursor-pointer hover:scale-105 transition-transform duration-300"
-												style={{ animationDelay: `${index * 0.5}s` }}
+												key={index}
+												className={`absolute ${item.position} w-12 h-12 bg-cyber-dark/80 border border-cyber-cyan/50 rounded-full flex items-center justify-center animate-float cursor-pointer hover:scale-110 transition-transform duration-300`}
+												style={{
+													animationDelay: `${index * 1.5}s`,
+													animationDuration: `${6 + index}s`,
+												}}
 												onClick={() =>
 													setSelectedTech({
-														name: item.label,
+														name: item.name,
 														icon: item.icon,
-														description: t.skills.techDetails[item.label as keyof typeof t.skills.techDetails],
+														description: "Cliquez pour en savoir plus",
 														color: "cyber-cyan",
 													})
 												}
 											>
-												<div className="text-2xl mb-2">
-													<FontAwesomeIcon icon={item.icon} className="text-cyber-cyan" />
-												</div>
-												<div className="text-cyber-cyan text-sm font-medium">{item.label}</div>
+												<FontAwesomeIcon icon={item.icon} className="text-cyber-cyan text-lg" />
 											</div>
 										))}
-									</div>
-
-									{/* Connecting lines effect */}
-									<div className="absolute inset-0 pointer-events-none">
-										<svg className="w-full h-full opacity-30">
-											<line x1="25%" y1="25%" x2="75%" y2="25%" stroke="#38bdf8" strokeWidth="1" strokeDasharray="5,5">
-												<animate attributeName="stroke-dashoffset" values="0;10" dur="2s" repeatCount="indefinite" />
-											</line>
-											<line x1="25%" y1="75%" x2="75%" y2="75%" stroke="#38bdf8" strokeWidth="1" strokeDasharray="5,5">
-												<animate attributeName="stroke-dashoffset" values="10;0" dur="2s" repeatCount="indefinite" />
-											</line>
-											<line x1="25%" y1="25%" x2="25%" y2="75%" stroke="#6366f1" strokeWidth="1" strokeDasharray="5,5">
-												<animate attributeName="stroke-dashoffset" values="0;10" dur="2s" repeatCount="indefinite" />
-											</line>
-											<line x1="75%" y1="25%" x2="75%" y2="75%" stroke="#6366f1" strokeWidth="1" strokeDasharray="5,5">
-												<animate attributeName="stroke-dashoffset" values="10;0" dur="2s" repeatCount="indefinite" />
-											</line>
-										</svg>
 									</div>
 								</div>
 							</div>

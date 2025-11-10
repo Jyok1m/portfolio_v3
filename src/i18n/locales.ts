@@ -30,6 +30,7 @@ export const locales = {
 			subtitle: "Expert en DevOps, IA et Développement Web & Mobile FullStack - je transforme les idées en solutions techniques complètes.",
 			ctaPrimary: "Voir mes projets",
 			ctaSecondary: "Me contacter",
+			downloadCV: "Télécharger mon CV",
 		},
 		about: {
 			title: "À propos de moi",
@@ -408,6 +409,7 @@ export const locales = {
 			subtitle: "DevOps, AI and Web & Mobile FullStack Development expert - I transform ideas into complete technical solutions.",
 			ctaPrimary: "View my projects",
 			ctaSecondary: "Contact me",
+			downloadCV: "Download CV",
 		},
 		about: {
 			title: "About me",
