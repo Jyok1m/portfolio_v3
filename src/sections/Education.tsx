@@ -31,7 +31,7 @@ export default function Education() {
 			title: t.education.items.rncp.title,
 			institution: t.education.items.rncp.institution,
 			year: "2023",
-			icon: ["fas", "certificate"] as IconProp,
+			icon: ["fas", "award"] as IconProp,
 			color: "cyber-cyan",
 			description: t.education.items.rncp.description,
 			pdfPath: "/documents/certificates/RNCP_6-Joachim_Jasmin.pdf",
