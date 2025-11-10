@@ -64,7 +64,7 @@ export default function About() {
 													setSelectedTech({
 														name: item.name,
 														icon: item.icon,
-														description: "Cliquez pour en savoir plus",
+														description: t.skills.techDetails[item.name as keyof typeof t.skills.techDetails] || `En savoir plus sur ${item.name}`,
 														color: "cyber-cyan",
 													})
 												}
