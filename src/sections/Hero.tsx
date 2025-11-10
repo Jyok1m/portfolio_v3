@@ -68,7 +68,7 @@ export default function Hero() {
 							{t.hero.ctaPrimary}
 						</button>
 
-						<a
+						{/* <a
 							href="/documents/cv/CV_joachim_jasmin.pdf"
 							download="CV_Joachim_Jasmin.pdf"
 							className="cyber-button-secondary text-lg inline-flex items-center justify-center gap-2 no-underline"
@@ -82,7 +82,7 @@ export default function Hero() {
 								/>
 							</svg>
 							{t.hero.downloadCV}
-						</a>
+						</a> */}
 
 						<button onClick={() => scrollToSection("contact")} className="cyber-button-secondary text-lg">
 							{t.hero.ctaSecondary}
