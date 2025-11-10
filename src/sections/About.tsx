@@ -32,7 +32,14 @@ export default function About() {
 								<div className="relative">
 									{/* Profile image */}
 									<div className="w-64 h-64 rounded-full border-4 border-cyber-cyan/50 p-2 bg-gradient-to-br from-cyber-cyan/20 to-cyber-purple/20">
-										<img src="/documents/pictures/profile_pic.jpg" alt="Joachim Jasmin" className="w-full h-full object-cover rounded-full" />
+										<img
+											src="/documents/pictures/profile_pic.jpg"
+											alt="Photo de profil de Joachim Jasmin - Expert Cloud DevOps, Développeur FullStack et Ingénieur IA"
+											className="w-full h-full object-cover rounded-full"
+											width="256"
+											height="256"
+											loading="lazy"
+										/>
 									</div>
 
 									{/* Animated glow effect */}

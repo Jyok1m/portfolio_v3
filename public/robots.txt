@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://joachimjasmin.com/sitemap.xml
+
+# Allow access to important resources
+Allow: /documents/cv/
+Allow: /documents/pictures/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.svg
+Allow: /*.pdf
+
+# Disallow development and build files
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /dist/
+Disallow: /build/
+
+# Crawl delay (optional - be respectful to servers)
+Crawl-delay: 1

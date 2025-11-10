@@ -30,7 +30,14 @@ export default function Header() {
 				<div className="flex items-center justify-between">
 					{/* Logo */}
 					<div className="cursor-pointer">
-						<img src="/documents/pictures/logo.png" alt="Joachim Jasmin" className="h-8 sm:h-10 w-auto logo-glow" />
+						<img
+							src="/documents/pictures/logo.png"
+							alt="Logo Joachim Jasmin - Ingénieur Cloud DevOps et IA"
+							className="h-8 sm:h-10 w-auto logo-glow"
+							width="40"
+							height="40"
+							loading="eager"
+						/>
 					</div>
 
 					{/* Desktop Navigation - Show only on large screens */}
