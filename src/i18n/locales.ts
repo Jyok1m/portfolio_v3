@@ -327,7 +327,7 @@ export const locales = {
 					name: "Génération Sauveteur",
 					description:
 						"Conçus par des professionnels du sauvetage, ce jeu permet d'apprendre sur la sécurité aquatique et l'environnement tout en vous amusant !",
-					stack: ["React", "Symphony", "Nginx", "OVH", "MariaDB"],
+					stack: ["React", "Symfony", "Nginx", "OVH", "MariaDB"],
 					links: {
 						site: "https://app.generationsauveteur.fr/",
 					},
@@ -692,7 +692,7 @@ export const locales = {
 					slug: "generation_sauveteurs",
 					name: "Génération Sauveteur",
 					description: "Created by professional rescuers, this educational game teaches water safety and environmental awareness while having fun.",
-					stack: ["React", "Symphony", "Nginx", "OVH", "MariaDB"],
+					stack: ["React", "Symfony", "Nginx", "OVH", "MariaDB"],
 					links: {
 						site: "https://app.generationsauveteur.fr/",
 					},
