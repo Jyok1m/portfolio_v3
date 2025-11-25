@@ -85,11 +85,21 @@ export default function ProjectsLinks() {
 										</a>
 									)}
 								</div>
+
 								{project.links.repo && (
 									<a href={project.links.repo} className="flex-1 cyber-button-secondary text-center" target="_blank" rel="noopener noreferrer">
 										<span className="flex items-center justify-center space-x-2">
 											<FontAwesomeIcon icon={["fas", "code-branch"]} className="w-4 h-4" />
 											<span>{t.projects.cta.repo}</span>
+										</span>
+									</a>
+								)}
+
+								{project.links.repoInfra && (
+									<a href={project.links.repoInfra} className="flex-1 cyber-button-secondary text-center" target="_blank" rel="noopener noreferrer">
+										<span className="flex items-center justify-center space-x-2">
+											<FontAwesomeIcon icon={["fas", "code-branch"]} className="w-4 h-4" />
+											<span>{t.projects.cta.repoInfra}</span>
 										</span>
 									</a>
 								)}

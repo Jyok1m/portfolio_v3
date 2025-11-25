@@ -285,6 +285,7 @@ export const locales = {
 				"repo-front": "Front",
 				"repo-back": "Back",
 				repo: "Microservice",
+				repoInfra: "Infrastructure",
 			},
 			items: [
 				{
@@ -292,10 +293,12 @@ export const locales = {
 					name: "Odyssai",
 					description:
 						"Application de jeu de rôle narratif propulsée par l’IA, où le joueur devient le héros de sa propre histoire. Vous pouvez créer des mondes, façonner des personnages et faire évoluer le scénario à travers de vraies conversations naturelles.",
-					stack: ["Flask", "Expo", "LangChain", "MongoDB", "Docker", "Docker Compose", "ChromaDB", "OpenAI", "fly.io"],
+					stack: ["NestJS", "React", "LangChain", "MongoDB", "Docker", "Docker Compose", "ChromaDB", "OpenAI", "fly.io"],
 					links: {
-						"repo-front": "https://github.com/Jyok1m/odyssai-app",
-						"repo-back": "https://github.com/Jyok1m/odyssai-core",
+						site: "https://odyssai.app/",
+						"repo-front": "https://gitlab.com/odyssai/web",
+						"repo-back": "https://gitlab.com/odyssai/odyssai-backend",
+						repoInfra: "https://gitlab.com/odyssai/odyssai-infra",
 					},
 					status: "Actif",
 				},
