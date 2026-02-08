@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                withVaultSecret(path: 'fontawesome-token', key: 'FONTAWESOME_TOKEN') {
+                withCredentials([string(credentialsId: 'fontawesome-token', variable: 'FONTAWESOME_TOKEN')]) {
                     sh '''
                         echo "$FONTAWESOME_TOKEN" > .fa-token
                         docker build --secret id=FONTAWESOME_TOKEN,src=.fa-token -t $DOCKER_IMAGE:$DOCKER_TAG .
