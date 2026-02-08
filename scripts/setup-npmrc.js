@@ -12,7 +12,7 @@ const generateNpmrc = () => {
 	const authToken = process.env.FONTAWESOME_TOKEN;
 
 	if (!authToken) {
-		console.log("⚠️  FONTAWESOME_TOKEN not found - using fallback build without Font Awesome Pro");
+		console.log("FONTAWESOME_TOKEN not found - using fallback build without Font Awesome Pro");
 		return;
 	}
 
@@ -24,9 +24,9 @@ const generateNpmrc = () => {
 
 	try {
 		fs.writeFileSync(npmrcPath, npmrcContent, "utf8");
-		console.log("✅ Generated .npmrc for Font Awesome Pro");
+		console.log("Generated .npmrc for Font Awesome Pro");
 	} catch (error) {
-		console.error("❌ Failed to generate .npmrc:", error.message);
+		console.error("Failed to generate .npmrc:", error.message);
 		process.exit(1);
 	}
 };
