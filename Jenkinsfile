@@ -3,11 +3,18 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = 'jyok1m/portfolio'
-        DOCKER_TAG = 'latest'
+        DOCKER_TAG = "${env.BRANCH_NAME == 'main' ? 'latest' : env.BRANCH_NAME == 'stg' ? 'staging' : 'dev'}"
     }
 
     stages {
         stage('Build') {
+            when {
+                anyOf {
+                    branch 'dev'
+                    branch 'stg'
+                    branch 'main'
+                }
+            }
             steps {
                 withCredentials([string(credentialsId: 'fontawesome-token', variable: 'FONTAWESOME_TOKEN')]) {
                     sh '''
@@ -20,6 +27,13 @@ pipeline {
         }
 
         stage('Publish') {
+            when {
+                anyOf {
+                    branch 'dev'
+                    branch 'stg'
+                    branch 'main'
+                }
+            }
             steps {
                 withCredentials([usernamePassword(credentialsId: 'dockerhub-credentials', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
                     sh '''
