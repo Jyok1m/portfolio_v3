@@ -1,3 +1,4 @@
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Hero from "./sections/Hero";
 import About from "./sections/About";
@@ -7,11 +8,15 @@ import Passions from "./sections/Passions";
 import ProjectsLinks from "./sections/ProjectsLinks";
 import Pricing from "./sections/Pricing";
 import Contact from "./sections/Contact";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useLocale } from "./i18n/useLocale";
+import { useScrollToSection } from "./hooks/useScrollToSection";
+import { useSeoMeta } from "./hooks/useSeoMeta";
 
-function App() {
-	const { t } = useLocale();
+function PortfolioPage() {
+	const { t, locale } = useLocale();
+
+	useScrollToSection();
+	useSeoMeta(locale);
 
 	return (
 		<div className="min-h-screen bg-cyber-dark">
@@ -74,6 +79,14 @@ function App() {
 				</div>
 			</footer>
 		</div>
+	);
+}
+
+function App() {
+	return (
+		<Routes>
+			<Route path="*" element={<PortfolioPage />} />
+		</Routes>
 	);
 }
 

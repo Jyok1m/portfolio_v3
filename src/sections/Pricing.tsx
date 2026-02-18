@@ -1,18 +1,13 @@
 import { useState } from "react";
 import { useLocale } from "../i18n/useLocale";
+import { useNavigateToSection } from "../hooks/useNavigateToSection";
 import SectionTitle from "../components/SectionTitle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Pricing() {
 	const { t } = useLocale();
 	const [openAccordion, setOpenAccordion] = useState<number | null>(null);
-
-	const scrollToContact = () => {
-		const element = document.getElementById("contact");
-		if (element) {
-			element.scrollIntoView({ behavior: "smooth" });
-		}
-	};
+	const navigateToSection = useNavigateToSection();
 
 	const plans = [
 		{
@@ -61,7 +56,7 @@ export default function Pricing() {
 
 				{/* TJM Reference */}
 				<div className="text-center mb-12">
-					<span className="inline-block px-4 py-2 rounded-full bg-slate-800/80 border border-slate-700 text-slate-300 text-sm font-mono">
+					<span className="inline-block px-4 py-2 rounded-full bg-slate-800/80 border border-slate-700 text-slate-300 text-sm">
 						{t.pricing.tjm} — <span className="text-slate-400">{t.pricing.tjmNote}</span>
 					</span>
 				</div>
@@ -116,7 +111,7 @@ export default function Pricing() {
 
 							{/* CTA */}
 							<button
-								onClick={scrollToContact}
+								onClick={() => navigateToSection("contact")}
 								className={`w-full px-6 py-3 rounded-lg font-semibold transition-all duration-300 border ${plan.buttonClass}`}
 							>
 								{t.pricing.cta}

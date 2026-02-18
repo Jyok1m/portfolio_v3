@@ -1,17 +1,12 @@
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import { useLocale } from "../i18n/useLocale";
+import { useNavigateToSection } from "../hooks/useNavigateToSection";
 import HeroScene from "../components/HeroScene";
 
 export default function Hero() {
 	const { t } = useLocale();
-
-	const scrollToSection = (sectionId: string) => {
-		const element = document.getElementById(sectionId);
-		if (element) {
-			element.scrollIntoView({ behavior: "smooth" });
-		}
-	};
+	const navigateToSection = useNavigateToSection();
 
 	return (
 		<section id="hero" className="min-h-screen flex items-center relative overflow-hidden bg-gradient-cyber pt-24 sm:pt-32">
@@ -64,7 +59,7 @@ export default function Hero() {
 
 					{/* CTA Buttons */}
 					<div className="flex flex-col gap-4">
-						<button onClick={() => scrollToSection("projects")} className="cyber-button text-lg">
+						<button onClick={() => navigateToSection("projects")} className="cyber-button text-lg">
 							{t.hero.ctaPrimary}
 						</button>
 
@@ -84,7 +79,7 @@ export default function Hero() {
 							{t.hero.downloadCV}
 						</a> */}
 
-						<button onClick={() => scrollToSection("contact")} className="cyber-button-secondary text-lg">
+						<button onClick={() => navigateToSection("contact")} className="cyber-button-secondary text-lg">
 							{t.hero.ctaSecondary}
 						</button>
 					</div>

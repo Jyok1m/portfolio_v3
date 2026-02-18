@@ -1,8 +1,15 @@
 User-agent: *
 Allow: /
-
-# Sitemap location
 Sitemap: https://joachimjasmin.com/sitemap.xml
+
+# Allow access to sections
+Allow: /a-propos
+Allow: /competences
+Allow: /formation
+Allow: /passions
+Allow: /projets
+Allow: /tarifs
+Allow: /contact
 
 # Allow access to important resources
 Allow: /documents/cv/
