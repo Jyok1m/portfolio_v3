@@ -21,6 +21,7 @@ export default function Header() {
 		{ key: "education", label: t.nav.education, id: "education" },
 		{ key: "interests", label: t.nav.interests, id: "interests" },
 		{ key: "projects", label: t.nav.projects, id: "projects" },
+		{ key: "pricing", label: t.nav.pricing, id: "pricing" },
 		{ key: "contact", label: t.nav.contact, id: "contact" },
 	];
 

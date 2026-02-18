@@ -5,6 +5,7 @@ import Skills from "./sections/Skills";
 import Education from "./sections/Education";
 import Passions from "./sections/Passions";
 import ProjectsLinks from "./sections/ProjectsLinks";
+import Pricing from "./sections/Pricing";
 import Contact from "./sections/Contact";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useLocale } from "./i18n/useLocale";
@@ -30,6 +31,7 @@ function App() {
 				<Education />
 				<Passions />
 				<ProjectsLinks />
+				<Pricing />
 				<Contact />
 			</main>
 

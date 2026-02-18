@@ -36,6 +36,9 @@ import {
 	faEye,
 	faCode,
 	faRugbyBall,
+	faCheck,
+	faChevronDown,
+	faShieldHalved,
 } from "@fortawesome/pro-solid-svg-icons";
 
 // Ajouter les icônes à la librairie
@@ -75,5 +78,8 @@ library.add(
 	faFileExclamation,
 	faFilePdf,
 	faEye,
-	faCode
+	faCode,
+	faCheck,
+	faChevronDown,
+	faShieldHalved
 );
