@@ -394,7 +394,7 @@ export const locales = {
 				surmesure: {
 					name: "Sur-mesure / Enterprise",
 					emoji: "🟣",
-					price: "Sur devis (à partir de 15 000 €)",
+					price: "Sur devis (à\u00A0partir\u00A0de\u00A015\u00A0000\u00A0€)",
 					target: "PME établies, scale-ups, entreprises réglementées",
 					includes: "Tout Professionnel +",
 					features: [

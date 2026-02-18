@@ -61,7 +61,7 @@ export default function Pricing() {
 
 				{/* TJM Reference */}
 				<div className="text-center mb-12">
-					<span className="inline-block px-4 py-2 rounded-full bg-slate-800/80 border border-slate-700 text-slate-300 text-sm font-mono">
+					<span className="inline-block px-4 py-2 rounded-full bg-slate-800/80 border border-slate-700 text-slate-300 text-sm">
 						{t.pricing.tjm} — <span className="text-slate-400">{t.pricing.tjmNote}</span>
 					</span>
 				</div>
