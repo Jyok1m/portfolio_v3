@@ -59,8 +59,8 @@ pipeline {
                     sh '''
                         ssh -i "$SSH_KEY" -p "$HOST_PORT" -o StrictHostKeyChecking=no "$SSH_USER@$HOST_IP" \
                             "echo '$DOCKER_PASS' | docker login -u '$DOCKER_USER' --password-stdin && \
-                             docker compose -f /opt/portfolio/docker-compose.yml pull && \
-                             docker compose -f /opt/portfolio/docker-compose.yml up -d && \
+                             docker compose -f /opt/apps/docker-compose.yml pull portfolio-frontend && \
+                             docker compose -f /opt/apps/docker-compose.yml up portfolio-frontend -d && \
                              docker logout"
                     '''
                 }
