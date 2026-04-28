@@ -274,6 +274,7 @@ export const locales = {
 			status: {
 				active: "Actif",
 				paused: "En pause",
+				wip: "En cours de dev",
 			},
 			techStack: "Stack Technique :",
 			moreProjects: {
@@ -286,7 +287,7 @@ export const locales = {
 				"repo-front": "Front",
 				"repo-back": "Back",
 				repo: "Microservice",
-				repoInfra: "Infrastructure",
+				// repoInfra: "Infrastructure",
 			},
 			items: [
 				{
@@ -294,14 +295,14 @@ export const locales = {
 					name: "Odyssai",
 					description:
 						"Application de jeu de rôle narratif propulsée par l’IA, où le joueur devient le héros de sa propre histoire. Vous pouvez créer des mondes, façonner des personnages et faire évoluer le scénario à travers de vraies conversations naturelles.",
-					stack: ["NestJS", "React", "LangChain", "MongoDB", "Docker", "Docker Compose", "ChromaDB", "OpenAI", "fly.io"],
+					stack: ["NestJS", "React", "LangChain", "MongoDB", "Docker", "Docker Compose", "ChromaDB", "OpenAI"],
 					links: {
-						site: "https://odyssai.app/",
+						// site: "https://odyssai.app/",
 						"repo-front": "https://gitlab.com/odyssai/web",
 						"repo-back": "https://gitlab.com/odyssai/odyssai-backend",
-						repoInfra: "https://gitlab.com/odyssai/odyssai-infra",
+						// repoInfra: "https://gitlab.com/odyssai/odyssai-infra",
 					},
-					status: "Actif",
+					status: "En cours de dev",
 				},
 				{
 					slug: "neoney",
@@ -716,6 +717,7 @@ export const locales = {
 			status: {
 				active: "Active",
 				paused: "Paused",
+				wip: "Work in Progress",
 			},
 			techStack: "Tech Stack:",
 			moreProjects: {
@@ -727,6 +729,7 @@ export const locales = {
 				"repo-front": "Frontend",
 				"repo-back": "Backend",
 				repo: "Microservice",
+				repoInfra: "Infrastructure",
 			},
 			items: [
 				{
@@ -734,13 +737,13 @@ export const locales = {
 					name: "Odyssai",
 					description:
 						"An AI-powered narrative role-playing game where the player becomes the hero of their own story. You can create worlds, shape characters, and influence the plot through natural conversations.",
-					stack: ["Flask", "Expo", "LangChain", "MongoDB", "Docker", "Docker Compose", "ChromaDB", "OpenAI", "fly.io"],
+					stack: ["Flask", "Expo", "LangChain", "MongoDB", "Docker", "Docker Compose", "ChromaDB", "OpenAI"],
 					links: {
-						site: "#",
 						"repo-front": "https://github.com/Jyok1m/odyssai-app",
 						"repo-back": "https://github.com/Jyok1m/odyssai-core",
+						// repoInfra: "https://gitlab.com/odyssai/odyssai-infra",
 					},
-					status: "Active",
+					status: "Work in progress",
 				},
 				{
 					slug: "neoney",
