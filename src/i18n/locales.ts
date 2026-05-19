@@ -27,8 +27,9 @@ export const locales = {
 			contact: "Contact",
 		},
 		hero: {
-			title: "Ingénieur et formateur IA, DevOps et Web & Mobile.",
-			subtitle: "Expert en DevOps, IA et Développement Web & Mobile FullStack - je transforme les idées en solutions techniques complètes.",
+			title: "Ingénieur Cloud, DevOps & IA — Formateur Tech",
+			subtitle:
+				"Je conçois, déploie et sécurise des plateformes scalables — du POC IA à l'infrastructure de production. Double culture finance & tech : je parle aussi bien ROI que Terraform.",
 			ctaPrimary: "Voir mes projets",
 			ctaSecondary: "Me contacter",
 			downloadCV: "Télécharger mon CV",
@@ -36,9 +37,9 @@ export const locales = {
 		about: {
 			title: "À propos de moi",
 			description:
-				"Mon parcours est celui d'une reconversion audacieuse : de la finance et l'hôtellerie à l'intelligence artificielle, en passant par le développement web et le DevOps. Une évolution guidée par la curiosité et la passion de transmettre.",
+				"Un profil hybride rare : finance d'entreprise, hôtellerie internationale, puis ingénierie logicielle, DevOps et IA. Je relie la stratégie business aux décisions techniques — pour livrer des produits qui tiennent en production.",
 			content:
-				"Diplômé en management hôtelier et finance, j'ai découvert ma passion pour la technologie et opéré une reconversion vers le développement fullstack, avant d'évoluer vers l'expertise DevOps puis l'intelligence artificielle. Aujourd'hui, je conçois et déploie des infrastructures Cloud scalables avec Terraform et AWS, développe des applications avec React/Next.js et Node.js, et intègre des solutions IA via LangChain et OpenAI. Cette polyvalence technique, combinée à mon expérience business, me permet de créer des solutions complètes et de former la nouvelle génération de professionnels tech en bootcamp.",
+				"Diplômé en management hôtelier (Glion) et finance (SKEMA), j'ai opéré une reconversion vers le développement fullstack, avant d'évoluer vers le DevOps puis l'ingénierie IA. Aujourd'hui, j'accompagne PME, startups et scale-ups : conception d'infrastructures Cloud scalables (Terraform, AWS, Kubernetes), applications React/Next.js et Node.js, intégrations IA (LangChain, OpenAI, RAG). Je forme aussi la prochaine génération de développeurs en bootcamp. Ma valeur : transformer un besoin métier en architecture technique défendable, sans sur-ingénierie ni dette cachée.",
 		},
 		skills: {
 			title: "Compétences",
@@ -356,15 +357,15 @@ export const locales = {
 		},
 		pricing: {
 			title: "Tarifs & Prestations",
-			subtitle: "Des formules adaptées à chaque besoin, du projet vitrine à l'architecture enterprise",
-			tjm: "TJM : 500 €/jour",
-			tjmNote: "Ajustable selon complexité et urgence",
+			subtitle: "Des formules adaptées à chaque besoin, du projet vitrine à l'architecture enterprise. Tarifs indicatifs, devis personnalisé après cadrage.",
+			tjm: "TJM : 450 – 650 €/jour",
+			tjmNote: "Fourchette selon complexité, durée et urgence",
 			cta: "Demander un devis",
 			plans: {
 				essentiel: {
 					name: "Essentiel",
 					emoji: "🟢",
-					price: "À partir de 3 000 €",
+					price: "3 000 – 5 000 €",
 					target: "Artisans, indépendants, associations",
 					features: [
 						"Frontend responsive, backend API, base de données",
@@ -379,7 +380,7 @@ export const locales = {
 				professionnel: {
 					name: "Professionnel",
 					emoji: "🔵",
-					price: "À partir de 8 000 €",
+					price: "8 000 – 15 000 €",
 					target: "PME, startups, agences",
 					includes: "Tout Essentiel +",
 					features: [
@@ -395,7 +396,7 @@ export const locales = {
 				surmesure: {
 					name: "Sur-mesure / Enterprise",
 					emoji: "🟣",
-					price: "Sur devis (à\u00A0partir\u00A0de\u00A015\u00A0000\u00A0€)",
+					price: "15\u00A0000\u00A0–\u00A040\u00A0000\u00A0€+",
 					target: "PME établies, scale-ups, entreprises réglementées",
 					includes: "Tout Professionnel +",
 					features: [
@@ -412,12 +413,14 @@ export const locales = {
 			alacarte: {
 				title: "Prestations à la carte",
 				items: [
-					{ name: "Audit de sécurité", price: "1 500 – 3 000 €" },
-					{ name: "Audit fonctionnel / technique", price: "1 000 – 2 000 €" },
+					{ name: "Audit de sécurité (OWASP)", price: "1 500 – 3 000 €" },
+					{ name: "Audit fonctionnel / technique", price: "1 000 – 2 500 €" },
 					{ name: "Conteneurisation d'un existant", price: "1 500 – 4 000 €" },
-					{ name: "Migration cloud", price: "Sur devis" },
-					{ name: "Formation / transfert de compétences", price: "500 €/jour" },
-					{ name: "Intervention urgente", price: "TJM × 1.5" },
+					{ name: "Migration cloud (AWS / GCP / Azure)", price: "5 000 – 20 000 €" },
+					{ name: "Mise en place CI/CD complet", price: "2 000 – 6 000 €" },
+					{ name: "Intégration IA / RAG / chatbot", price: "3 000 – 12 000 €" },
+					{ name: "Formation / transfert de compétences", price: "500 – 800 €/jour" },
+					{ name: "Intervention urgente (sous 48h)", price: "TJM × 1.5" },
 				],
 			},
 			transparency: {
@@ -482,8 +485,9 @@ export const locales = {
 			contact: "Contact",
 		},
 		hero: {
-			title: "Cloud & DevOps, Fullstack and AI Engineer — and Teacher.",
-			subtitle: "DevOps, AI and Web & Mobile FullStack Development expert - I transform ideas into complete technical solutions.",
+			title: "Cloud, DevOps & AI Engineer — Tech Educator",
+			subtitle:
+				"I design, ship and secure scalable platforms — from AI POCs to production-grade infrastructure. Dual finance & tech background: I speak ROI as fluently as Terraform.",
 			ctaPrimary: "View my projects",
 			ctaSecondary: "Contact me",
 			downloadCV: "Download CV",
@@ -491,9 +495,9 @@ export const locales = {
 		about: {
 			title: "About me",
 			description:
-				"My journey is one of bold career transformation: from finance and hospitality to artificial intelligence, through web development and DevOps. An evolution guided by curiosity and the passion to share knowledge.",
+				"A rare hybrid profile: corporate finance, international hospitality, then software engineering, DevOps and AI. I connect business strategy to technical decisions — to ship products that actually hold up in production.",
 			content:
-				"With degrees in hospitality management and finance, I discovered my passion for technology and made a career shift to fullstack development, before evolving to DevOps expertise and then artificial intelligence. Today, I design and deploy scalable Cloud infrastructures with Terraform and AWS, build applications with React/Next.js and Node.js, and integrate AI solutions via LangChain and OpenAI. This technical versatility, combined with my business background, enables me to create comprehensive solutions and train the next generation of tech professionals in bootcamps.",
+				"With degrees in hospitality management (Glion) and finance (SKEMA), I transitioned to fullstack development, then evolved into DevOps and AI engineering. Today I work with SMBs, startups and scale-ups: scalable Cloud infrastructure (Terraform, AWS, Kubernetes), React/Next.js and Node.js applications, AI integrations (LangChain, OpenAI, RAG). I also train the next generation of developers in bootcamps. My value: turning a business need into a defensible technical architecture, without over-engineering or hidden debt.",
 		},
 		skills: {
 			title: "Skills",
@@ -797,15 +801,15 @@ export const locales = {
 
 		pricing: {
 			title: "Pricing & Services",
-			subtitle: "Packages tailored to every need, from showcase projects to enterprise architecture",
-			tjm: "Daily rate: €500/day",
-			tjmNote: "Adjustable based on complexity and urgency",
+			subtitle: "Packages tailored to every need, from showcase projects to enterprise architecture. Indicative ranges — final quote after scoping.",
+			tjm: "Daily rate: €450 – €650/day",
+			tjmNote: "Range depends on complexity, duration and urgency",
 			cta: "Request a quote",
 			plans: {
 				essentiel: {
 					name: "Essential",
 					emoji: "🟢",
-					price: "Starting from €3,000",
+					price: "€3,000 – €5,000",
 					target: "Craftspeople, freelancers, nonprofits",
 					features: [
 						"Responsive frontend, backend API, database",
@@ -820,7 +824,7 @@ export const locales = {
 				professionnel: {
 					name: "Professional",
 					emoji: "🔵",
-					price: "Starting from €8,000",
+					price: "€8,000 – €15,000",
 					target: "SMBs, startups, agencies",
 					includes: "Everything in Essential +",
 					features: [
@@ -836,7 +840,7 @@ export const locales = {
 				surmesure: {
 					name: "Custom / Enterprise",
 					emoji: "🟣",
-					price: "Custom quote (from €15,000)",
+					price: "€15,000 – €40,000+",
 					target: "Established SMBs, scale-ups, regulated companies",
 					includes: "Everything in Professional +",
 					features: [
@@ -853,12 +857,14 @@ export const locales = {
 			alacarte: {
 				title: "À la carte services",
 				items: [
-					{ name: "Security audit", price: "€1,500 – €3,000" },
-					{ name: "Functional / technical audit", price: "€1,000 – €2,000" },
+					{ name: "Security audit (OWASP)", price: "€1,500 – €3,000" },
+					{ name: "Functional / technical audit", price: "€1,000 – €2,500" },
 					{ name: "Containerization of existing app", price: "€1,500 – €4,000" },
-					{ name: "Cloud migration", price: "Custom quote" },
-					{ name: "Training / knowledge transfer", price: "€500/day" },
-					{ name: "Emergency intervention", price: "Daily rate × 1.5" },
+					{ name: "Cloud migration (AWS / GCP / Azure)", price: "€5,000 – €20,000" },
+					{ name: "Full CI/CD setup", price: "€2,000 – €6,000" },
+					{ name: "AI / RAG / chatbot integration", price: "€3,000 – €12,000" },
+					{ name: "Training / knowledge transfer", price: "€500 – €800/day" },
+					{ name: "Emergency intervention (within 48h)", price: "Daily rate × 1.5" },
 				],
 			},
 			transparency: {
