@@ -58,13 +58,11 @@ pipeline {
                         ssh -i "$SSH_KEY" -p "$HOST_PORT" \
                             -o StrictHostKeyChecking=no \
                             "$SSH_USER@$SSH_HOST" \
-                            DOCKER_PASS="$DOCKER_PASS" DOCKER_USER="$DOCKER_USER" \
-                            'bash -s' <<'REMOTE'
-                            echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
-                            docker compose -f /opt/portfolio/docker-compose.yml pull portfolio
-                            docker compose -f /opt/portfolio/docker-compose.yml up portfolio -d
-                            docker logout
-                            REMOTE
+                            "set -e && \
+                            echo '$DOCKER_PASS' | docker login -u '$DOCKER_USER' --password-stdin && \
+                            docker compose -f /opt/portfolio/docker-compose.yml pull portfolio && \
+                            docker compose -f /opt/portfolio/docker-compose.yml up portfolio -d && \
+                            docker logout"
                     '''
                 }
             }
