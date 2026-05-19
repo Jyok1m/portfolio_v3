@@ -27,9 +27,9 @@ export const locales = {
 			contact: "Contact",
 		},
 		hero: {
-			title: "Ingénieur Cloud, DevOps & IA — Formateur Tech",
+			title: "Ingénieur Cloud, DevOps & IA — Formateur",
 			subtitle:
-				"Je conçois, déploie et sécurise des plateformes scalables — du POC IA à l'infrastructure de production. Double culture finance & tech : je parle aussi bien ROI que Terraform.",
+				"Je travaille sur des projets web, mobile et IA, du prototype à la mise en production. Un parcours en finance avant la tech, qui m'aide à comprendre le contexte métier des projets que j'accompagne.",
 			ctaPrimary: "Voir mes projets",
 			ctaSecondary: "Me contacter",
 			downloadCV: "Télécharger mon CV",
@@ -37,9 +37,9 @@ export const locales = {
 		about: {
 			title: "À propos de moi",
 			description:
-				"Un profil hybride rare : finance d'entreprise, hôtellerie internationale, puis ingénierie logicielle, DevOps et IA. Je relie la stratégie business aux décisions techniques — pour livrer des produits qui tiennent en production.",
+				"Un parcours en plusieurs étapes : finance d'entreprise et hôtellerie internationale, puis reconversion vers le développement, le DevOps et l'IA. J'essaie d'appliquer ce que j'ai appris dans chaque domaine aux projets sur lesquels je travaille aujourd'hui.",
 			content:
-				"Diplômé en management hôtelier (Glion) et finance (SKEMA), j'ai opéré une reconversion vers le développement fullstack, avant d'évoluer vers le DevOps puis l'ingénierie IA. Aujourd'hui, j'accompagne PME, startups et scale-ups : conception d'infrastructures Cloud scalables (Terraform, AWS, Kubernetes), applications React/Next.js et Node.js, intégrations IA (LangChain, OpenAI, RAG). Je forme aussi la prochaine génération de développeurs en bootcamp. Ma valeur : transformer un besoin métier en architecture technique défendable, sans sur-ingénierie ni dette cachée.",
+				"Après des études en management hôtelier (Glion) et en finance (SKEMA), je me suis reconverti vers le développement fullstack, puis progressivement vers le DevOps et l'ingénierie IA. J'accompagne aujourd'hui des PME, startups et associations sur la conception d'infrastructures Cloud (Terraform, AWS, Kubernetes), le développement d'applications React/Next.js et Node.js, et l'intégration de solutions IA (LangChain, OpenAI, RAG). J'interviens aussi comme formateur en bootcamp. J'essaie d'aller à l'essentiel : comprendre le besoin, proposer une solution adaptée et éviter de sur-construire.",
 		},
 		skills: {
 			title: "Compétences",
@@ -357,7 +357,7 @@ export const locales = {
 		},
 		pricing: {
 			title: "Tarifs & Prestations",
-			subtitle: "Des formules adaptées à chaque besoin, du projet vitrine à l'architecture enterprise. Tarifs indicatifs, devis personnalisé après cadrage.",
+			subtitle: "Quelques repères pour situer un projet, du petit site jusqu'à une architecture plus complète. Les fourchettes sont indicatives, le tarif final dépend du cadrage.",
 			tjm: "TJM : 450 – 650 €/jour",
 			tjmNote: "Fourchette selon complexité, durée et urgence",
 			cta: "Demander un devis",
@@ -425,12 +425,12 @@ export const locales = {
 			},
 			transparency: {
 				title: "Transparence",
-				text: "Mes tarifs incluent l'hébergement, la gestion du nom de domaine et l'infrastructure. Pas de frais cachés : vous recevez un rapport mensuel détaillé de l'état de votre application.",
+				text: "Les formules incluent l'hébergement, la gestion du nom de domaine et l'infrastructure. Un rapport mensuel est partagé pour faire le point sur l'état de l'application.",
 			},
 		},
 		contact: {
 			title: "Contactez-moi",
-			description: "Prêt pour de nouveaux défis techniques",
+			description: "Ouvert aux échanges autour de nouveaux projets ou collaborations",
 			connectTitle: "Connectons-nous",
 			availability: {
 				status: "Disponible pour de nouveaux projets",
@@ -485,9 +485,9 @@ export const locales = {
 			contact: "Contact",
 		},
 		hero: {
-			title: "Cloud, DevOps & AI Engineer — Tech Educator",
+			title: "Cloud, DevOps & AI Engineer — Teacher",
 			subtitle:
-				"I design, ship and secure scalable platforms — from AI POCs to production-grade infrastructure. Dual finance & tech background: I speak ROI as fluently as Terraform.",
+				"I work on web, mobile and AI projects, from prototype to production. A background in finance before tech helps me understand the business context of the projects I work on.",
 			ctaPrimary: "View my projects",
 			ctaSecondary: "Contact me",
 			downloadCV: "Download CV",
@@ -495,9 +495,9 @@ export const locales = {
 		about: {
 			title: "About me",
 			description:
-				"A rare hybrid profile: corporate finance, international hospitality, then software engineering, DevOps and AI. I connect business strategy to technical decisions — to ship products that actually hold up in production.",
+				"A multi-step journey: corporate finance and international hospitality, then a shift into development, DevOps and AI. I try to bring something useful from each of these worlds to the projects I work on today.",
 			content:
-				"With degrees in hospitality management (Glion) and finance (SKEMA), I transitioned to fullstack development, then evolved into DevOps and AI engineering. Today I work with SMBs, startups and scale-ups: scalable Cloud infrastructure (Terraform, AWS, Kubernetes), React/Next.js and Node.js applications, AI integrations (LangChain, OpenAI, RAG). I also train the next generation of developers in bootcamps. My value: turning a business need into a defensible technical architecture, without over-engineering or hidden debt.",
+				"After studying hospitality management (Glion) and finance (SKEMA), I moved into fullstack development, then gradually toward DevOps and AI engineering. I now work with SMBs, startups and nonprofits on Cloud infrastructure (Terraform, AWS, Kubernetes), React/Next.js and Node.js applications, and AI integrations (LangChain, OpenAI, RAG). I also teach in bootcamps. I try to keep things simple: understand the need, propose a suitable solution, and avoid over-building.",
 		},
 		skills: {
 			title: "Skills",
@@ -801,7 +801,7 @@ export const locales = {
 
 		pricing: {
 			title: "Pricing & Services",
-			subtitle: "Packages tailored to every need, from showcase projects to enterprise architecture. Indicative ranges — final quote after scoping.",
+			subtitle: "A few reference points to help size a project, from small sites to more complete architectures. Ranges are indicative — the final quote depends on the scope.",
 			tjm: "Daily rate: €450 – €650/day",
 			tjmNote: "Range depends on complexity, duration and urgency",
 			cta: "Request a quote",
@@ -869,12 +869,12 @@ export const locales = {
 			},
 			transparency: {
 				title: "Transparency",
-				text: "My pricing includes hosting, domain name management, and infrastructure. No hidden fees: you receive a detailed monthly report on the status of your application.",
+				text: "Packages include hosting, domain name management and infrastructure. A monthly report is shared to give visibility on the application's status.",
 			},
 		},
 		contact: {
 			title: "Contact me",
-			description: "Ready for new technical challenges",
+			description: "Open to conversations around new projects or collaborations",
 			connectTitle: "Let's connect",
 			availability: {
 				status: "Available for new projects",
