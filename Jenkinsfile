@@ -4,6 +4,7 @@ pipeline {
     environment {
         DOCKER_IMAGE = 'jyok1m/portfolio'
         DOCKER_TAG = "${env.BRANCH_NAME == 'main' ? 'latest' : env.BRANCH_NAME == 'stg' ? 'staging' : 'dev'}"
+        SSH_HOST = "host.docker.internal"
     }
 
     stages {
@@ -46,22 +47,24 @@ pipeline {
         }
 
         stage('Deploy') {
-            when {
-                branch 'main'
-            }
+            when { branch 'main' }
             steps {
                 withCredentials([
                     sshUserPrivateKey(credentialsId: 'host-ssh-key', keyFileVariable: 'SSH_KEY', usernameVariable: 'SSH_USER'),
-                    string(credentialsId: 'host-gateway-ip', variable: 'HOST_IP'),
                     string(credentialsId: 'host-ssh-port', variable: 'HOST_PORT'),
                     usernamePassword(credentialsId: 'dockerhub-credentials', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')
                 ]) {
                     sh '''
-                        ssh -i "$SSH_KEY" -p "$HOST_PORT" -o StrictHostKeyChecking=no "$SSH_USER@$HOST_IP" \
-                            "echo '$DOCKER_PASS' | docker login -u '$DOCKER_USER' --password-stdin && \
-                             docker compose -f /opt/portfolio/docker-compose.yml pull portfolio && \
-                             docker compose -f /opt/portfolio/docker-compose.yml up portfolio -d && \
-                             docker logout"
+                        ssh -i "$SSH_KEY" -p "$HOST_PORT" \
+                            -o StrictHostKeyChecking=no \
+                            "$SSH_USER@$SSH_HOST" \
+                            DOCKER_PASS="$DOCKER_PASS" DOCKER_USER="$DOCKER_USER" \
+                            'bash -s' <<'REMOTE'
+                            echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
+                            docker compose -f /opt/portfolio/docker-compose.yml pull portfolio
+                            docker compose -f /opt/portfolio/docker-compose.yml up portfolio -d
+                            docker logout
+                            REMOTE
                     '''
                 }
             }
