@@ -39,6 +39,9 @@ import {
 	faCheck,
 	faChevronDown,
 	faShieldHalved,
+	faShop,
+	faWrench,
+	faScissors,
 } from "@fortawesome/pro-solid-svg-icons";
 
 // Ajouter les icônes à la librairie
@@ -81,5 +84,8 @@ library.add(
 	faCode,
 	faCheck,
 	faChevronDown,
-	faShieldHalved
+	faShieldHalved,
+	faShop,
+	faWrench,
+	faScissors
 );

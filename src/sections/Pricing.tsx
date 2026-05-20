@@ -3,6 +3,7 @@ import { useLocale } from "../i18n/useLocale";
 import { useNavigateToSection } from "../hooks/useNavigateToSection";
 import SectionTitle from "../components/SectionTitle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import type { IconName } from "@fortawesome/fontawesome-svg-core";
 
 export default function Pricing() {
 	const { t } = useLocale();
@@ -57,8 +58,32 @@ export default function Pricing() {
 				{/* TJM Reference */}
 				<div className="text-center mb-12">
 					<span className="inline-block px-4 py-2 rounded-full bg-slate-800/80 border border-slate-700 text-slate-300 text-sm">
-						{t.pricing.tjm} — <span className="text-slate-400">{t.pricing.tjmNote}</span>
+						{t.pricing.tjm} <span className="text-slate-400">({t.pricing.tjmNote})</span>
 					</span>
+				</div>
+
+				{/* Pour qui ? */}
+				<div className="max-w-5xl mx-auto mb-16">
+					<div className="text-center mb-8">
+						<h3 className="text-2xl lg:text-3xl font-bold text-white mb-3">{t.pricing.forWhom.title}</h3>
+						<p className="text-slate-400 max-w-2xl mx-auto">{t.pricing.forWhom.subtitle}</p>
+					</div>
+					<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
+						{t.pricing.forWhom.items.map((item: { icon: string; title: string; description: string }, i: number) => (
+							<div
+								key={i}
+								className="bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-lg p-5 transition-all duration-300 hover:border-cyber-cyan/50 hover:shadow-cyber"
+							>
+								<div className="flex items-center gap-3 mb-3">
+									<div className="w-10 h-10 rounded-full bg-cyber-cyan/10 flex items-center justify-center shrink-0">
+										<FontAwesomeIcon icon={["fas", item.icon as IconName]} className="text-cyber-cyan" />
+									</div>
+									<h4 className="text-base font-semibold text-white">{item.title}</h4>
+								</div>
+								<p className="text-sm text-slate-300 leading-relaxed">{item.description}</p>
+							</div>
+						))}
+					</div>
 				</div>
 
 				{/* Pricing Cards */}
